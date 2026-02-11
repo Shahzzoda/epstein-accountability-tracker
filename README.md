@@ -1,4 +1,45 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Rep Finder
+
+Rep Finder is a simple, clerical, and bipartisan application designed to make it easy for every citizen to participate in democracy by connecting them with their congressional representatives.
+
+## Pages
+
+### 1. Landing Page (`/`)
+- **Mission Statement**: Explains the purpose of the app.
+- **Geolocation**: A "Find My Representatives" button uses the browser's Geolocation API to detect the user's coordinates.
+- **Backend API**: Send coordinates to our internal API route `/api/locate`.
+
+### 2. Results Page (`/results`)
+- **Filtering**: Filters a static dataset of legislators based on the user's State and Congressional District.
+- **Display**: Shows cards for:
+    - **Senators** (2 per state)
+    - **Representative** (1 per district)
+- **Details**: Each card includes the legislator's photo, party, tenure, office address, phone number, and website.
+
+## Approach & Architecture
+
+### Tech Stack
+- **Framework**: [Next.js](https://nextjs.org/) (App Router)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Language**: TypeScript
+
+### Data Flow
+1. **Geolocation**: The app requests the user's location (Latitude/Longitude).
+2. **District Lookup**: 
+   - The app calls `/api/locate` with these coordinates.
+   - The API proxies the request to the **U.S. Census Bureau Geocoder API** (`geocoding.geo.census.gov`).
+   - It parses the response to identify the correct "Congressional District" and State FIPS code.
+3. **Legislator Lookup**:
+   - The app loads a static JSON file (`current_legislators.json`).
+   - It filters this data client-side to find members matching the State and District.
+   - Images are loaded dynamically using the legislator's unique Bioguide ID.
+
+## Credits
+
+This project relies on the excellent data and assets provided by the **[unitedstates](https://github.com/unitedstates)** GitHub organization.
+
+- **Legislator Data**: Sourced from [unitedstates/congress-legislators](https://github.com/unitedstates/congress-legislators).
+- **Legislator Images**: Sourced from [unitedstates/images](https://github.com/unitedstates/images).
 
 ## Getting Started
 
@@ -8,29 +49,6 @@ First, run the development server:
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
