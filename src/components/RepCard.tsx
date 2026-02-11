@@ -30,82 +30,118 @@ interface Legislator {
     terms: Term[];
 }
 
-interface RepCardProps {
-    legislator: Legislator;
+interface ScoreData {
+    score: number;
+    status: string;
+    notes?: string;
 }
 
-export default function RepCard({ legislator }: RepCardProps) {
+interface RepCardProps {
+    legislator: Legislator;
+    scoreData?: ScoreData;
+}
+
+export default function RepCard({ legislator, scoreData }: RepCardProps) {
+    const [expanded, setExpanded] = React.useState(false);
     const currentTerm = legislator.terms[legislator.terms.length - 1];
     const { name } = legislator;
     const isSenator = currentTerm.type === 'sen';
 
-    // Calculate tenure (approximate) - simplified
-    const firstTerm = legislator.terms[0];
-    const startYear = new Date(firstTerm.start).getFullYear();
+    const startYear = new Date(legislator.terms[0].start).getFullYear();
     const yearsInOffice = new Date().getFullYear() - startYear;
 
     const imageUrl = `https://raw.githubusercontent.com/unitedstates/images/master/congress/225x275/${legislator.id.bioguide}.jpg`;
 
+    // Score Logic (1-5)
+    // 0 is bad, 5 is outstanding.
+    const score = scoreData?.score || 2.5;
+    const status = scoreData?.status || 'Unknown';
+
+    const getScoreColor = (s: number) => {
+        if (s > 2.5) return 'text-green-600';
+        if (s < 2.5) return 'text-red-600';
+        return 'text-slate-400'; // Unknown / 2.5 (Grey)
+    };
+
+    const scoreColor = getScoreColor(score);
+
     return (
-        <div className="bg-white shadow-lg rounded-lg overflow-hidden border border-slate-200 flex hover:shadow-xl transition-shadow">
-            <div className="w-32 bg-slate-100 flex-shrink-0 relative">
-                <img
-                    src={imageUrl}
-                    alt={name.official_full}
-                    className="w-full h-full object-cover"
-                    onError={(e) => {
-                        (e.target as HTMLImageElement).src = 'https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg';
-                    }}
-                />
-            </div>
-            <div className="p-6 flex flex-col gap-4 flex-grow">
-                <div className="flex justify-between items-start">
-                    <div>
-                        <h2 className="text-xl font-bold text-slate-900">{name.official_full}</h2>
-                        <p className="text-sm font-medium text-slate-500 uppercase tracking-wide">
-                            {isSenator ? `Senator - ${currentTerm.state}` : `Representative - ${currentTerm.state} District ${currentTerm.district}`}
-                        </p>
-                        <p className={`text-sm font-semibold mt-1 ${currentTerm.party === 'Democrat' ? 'text-blue-600' : currentTerm.party === 'Republican' ? 'text-red-600' : 'text-purple-600'}`}>
-                            {currentTerm.party}
-                        </p>
-                    </div>
-                    <div className="text-right text-xs text-slate-400">
-                        <p>Serving since {startYear}</p>
-                        <p>({yearsInOffice} years)</p>
-                    </div>
+        <div
+            className={`bg-white shadow-sm rounded-lg overflow-hidden border border-slate-200 transition-all cursor-pointer hover:shadow-md ${expanded ? 'ring-2 ring-indigo-500' : ''}`}
+            onClick={() => setExpanded(!expanded)}
+        >
+            {/* Collapsed Row View */}
+            <div className="flex items-center p-4 gap-4">
+                {/* Image */}
+                <div className="w-16 h-16 bg-slate-100 flex-shrink-0 rounded-full overflow-hidden border border-slate-100">
+                    <img
+                        src={imageUrl}
+                        alt={name.official_full}
+                        className="w-full h-full object-cover"
+                        onError={(e) => {
+                            (e.target as HTMLImageElement).src = 'https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg';
+                        }}
+                    />
                 </div>
 
-                <div className="space-y-2 text-sm text-slate-700">
-                    {currentTerm.address && (
-                        <div className="flex gap-2">
-                            <span className="font-semibold w-16">Address:</span>
-                            <span>{currentTerm.address}</span>
-                        </div>
-                    )}
-                    {currentTerm.phone && (
-                        <div className="flex gap-2">
-                            <span className="font-semibold w-16">Phone:</span>
-                            <a href={`tel:${currentTerm.phone}`} className="text-blue-600 hover:underline">{currentTerm.phone}</a>
-                        </div>
-                    )}
-                    {currentTerm.url && (
-                        <div className="flex gap-2">
-                            <span className="font-semibold w-16">Website:</span>
-                            <a href={currentTerm.url} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline break-all">
-                                {currentTerm.url}
-                            </a>
-                        </div>
-                    )}
-                    {currentTerm.contact_form && (
-                        <div className="flex gap-2">
-                            <span className="font-semibold w-16">Contact:</span>
-                            <a href={currentTerm.contact_form} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline break-all">
-                                Form
-                            </a>
-                        </div>
+                {/* Name & Role */}
+                <div className="flex-grow min-w-0">
+                    <h2 className="text-lg font-bold text-slate-900 truncate">{name.official_full}</h2>
+                    <p className="text-sm text-slate-500 uppercase tracking-wide">
+                        {isSenator ? `United States Senator (${currentTerm.state})` : `U.S. Representative (${currentTerm.state}-${currentTerm.district})`} &middot; {currentTerm.party}
+                    </p>
+                </div>
+
+                {/* Score Summary */}
+                <div className="text-right flex-shrink-0">
+                    <div className={`text-2xl font-black ${scoreColor}`}>{score.toFixed(1)}/5</div>
+                    <div className="text-xs text-slate-500 font-medium uppercase">{status}</div>
+                </div>
+
+                {/* Expand Icon */}
+                <div className="text-slate-400">
+                    {expanded ? (
+                        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 15l7-7 7 7" /></svg>
+                    ) : (
+                        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
                     )}
                 </div>
             </div>
+
+            {/* Expanded Details View */}
+            {expanded && (
+                <div className="border-t border-slate-100 p-6 bg-slate-50 flex flex-col md:flex-row gap-6 animate-in slide-in-from-top-2 duration-200">
+                    {/* Score Breakdown Area */}
+                    <div className="flex-1 space-y-3">
+                        <h3 className="font-semibold text-slate-900 border-b border-slate-200 pb-2">Epstein Accountability Score</h3>
+                        <div className="flex items-baseline gap-2">
+                            <span className={`text-3xl font-bold ${scoreColor}`}>{score}</span>
+                            <span className="text-slate-500">/ 5</span>
+                        </div>
+                        <p className="text-sm text-slate-700 leading-relaxed">
+                            {scoreData?.notes || "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Neutral/Baseline'."}
+                        </p>
+                    </div>
+
+                    {/* Contact & Bio Info */}
+                    <div className="flex-1 space-y-2 text-sm text-slate-600 border-l border-slate-200 pl-0 md:pl-6 border-l-0 md:border-l">
+                        <h3 className="font-semibold text-slate-900 border-b border-slate-200 pb-2 mb-3">Contact & Details</h3>
+                        <p><span className="font-medium">Tenure:</span> {yearsInOffice} years (Since {startYear})</p>
+                        {currentTerm.phone && (
+                            <p><span className="font-medium">Phone:</span> <a href={`tel:${currentTerm.phone}`} className="text-blue-600 hover:underline">{currentTerm.phone}</a></p>
+                        )}
+                        {currentTerm.address && (
+                            <p><span className="font-medium">Office:</span> {currentTerm.address}</p>
+                        )}
+                        {currentTerm.url && (
+                            <p><span className="font-medium">Website:</span> <a href={currentTerm.url} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline break-all">{currentTerm.url}</a></p>
+                        )}
+                        {currentTerm.contact_form && (
+                            <p><span className="font-medium">Contact:</span> <a href={currentTerm.contact_form} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Form</a></p>
+                        )}
+                    </div>
+                </div>
+            )}
         </div>
     );
 }

@@ -81,14 +81,17 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center justify-center p-6 bg-slate-50 text-slate-800">
       <div className="max-w-2xl text-center space-y-8">
         <h1 className="text-4xl font-bold tracking-tight sm:text-6xl text-slate-900">
-          Participate in <span className="text-blue-600">Democracy</span>
+          Epstein transparency <span className="text-blue-600">tracked to your district.</span>
         </h1>
 
-        <p className="text-lg leading-8 text-slate-600">
-          Our mission is to make it easy for every citizen to connect with their representatives.
-          We believe that an informed and engaged public is the cornerstone of a healthy republic.
-          Find out who represents you and how to contact them.
-        </p>
+        <div className="space-y-4">
+          <p className="text-lg leading-8 text-slate-600">
+            We’re building a public record of what Congress required, what DOJ/FBI have released, what they’re withholding, and which elected officials pushed for disclosure versus slowed it down. Then we tie it to your Rep and Senators with a simple scorecard and sources.
+          </p>
+          <p className="text-xl font-semibold text-slate-800">
+            Want to see yours?
+          </p>
+        </div>
 
         <div className="flex flex-col items-center justify-center gap-4">
           <button
@@ -96,16 +99,15 @@ export default function Home() {
             disabled={loading}
             className="rounded-md bg-indigo-600 px-6 py-3.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 disabled:opacity-50 disabled:cursor-not-allowed transition-all"
           >
-            {loading ? 'Locating...' : 'Find My Representatives'}
+            {loading ? 'Locating...' : 'Find my representatives'}
           </button>
 
           {error && (
             <p className="text-red-500 text-sm mt-2">{error}</p>
           )}
 
-          <p className="text-xs text-slate-400 mt-4">
-            We will ask for your location to identify your congressional district.
-            Your location data is not stored.
+          <p className="text-xs text-slate-400 mt-4 max-w-md mx-auto">
+            If you share location, we use it once to find your congressional district. We don’t store it.
           </p>
         </div>
       </div>

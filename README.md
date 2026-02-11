@@ -1,12 +1,14 @@
 # Rep Finder
 
-Rep Finder is a simple, clerical, and bipartisan application designed to make it easy for every citizen to participate in democracy by connecting them with their congressional representatives.
+**Epstein transparency — tracked to your district.**
+
+We’re building a public record of what Congress required, what DOJ/FBI have released, what they’re withholding, and which elected officials pushed for disclosure versus slowed it down. Then we tie it to your Rep and Senators with a simple scorecard and sources.
 
 ## Pages
 
 ### 1. Landing Page (`/`)
-- **Mission Statement**: Explains the purpose of the app.
-- **Geolocation**: A "Find My Representatives" button uses the browser's Geolocation API to detect the user's coordinates.
+- **Mission**: Explain the transparency initiative.
+- **Action**: "Find my representatives" button to locate the user's district.
 - **Backend API**: Send coordinates to our internal API route `/api/locate`.
 
 ### 2. Results Page (`/results`)

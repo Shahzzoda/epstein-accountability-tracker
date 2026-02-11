@@ -51,6 +51,7 @@ function ResultsContent() {
     const stateFips = searchParams.get('stateFips');
 
     const [legislators, setLegislators] = useState<Legislator[]>([]);
+    const [scores, setScores] = useState<any>(null);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState('');
 
@@ -64,16 +65,22 @@ function ResultsContent() {
 
         const fetchData = async () => {
             try {
-                const res = await fetch('/data/current_legislators.json');
-                if (!res.ok) throw new Error('Failed to load legislator data');
-                const data: Legislator[] = await res.json();
+                // Fetch both legislators and scores in parallel
+                const [legRes, scoreRes] = await Promise.all([
+                    fetch('/data/current_legislators.json'),
+                    fetch('/data/epstein_scores.json')
+                ]);
+
+                if (!legRes.ok) throw new Error('Failed to load legislator data');
+                // if (!scoreRes.ok) console.warn('Failed to load scores'); // Non-fatal
+
+                const data: Legislator[] = await legRes.json();
+                const scoreData = scoreRes.ok ? await scoreRes.json() : null;
+                setScores(scoreData);
 
                 const filtered = data.filter(leg => {
                     // Start by picking the last term
                     let currentTerm = leg.terms[leg.terms.length - 1];
-
-                    // Sanity check: if the last term end date is in the past, scanning backwards?
-                    // Usually "current" file means they are currently serving, but let's just log.
 
                     // Filter by State
                     if (currentTerm.state !== stateAbbr) return false;
@@ -84,13 +91,11 @@ function ResultsContent() {
                     // Include Representative for the specific district
                     const targetDist = parseInt(district || '0');
                     if (currentTerm.type === 'rep') {
-                        // console.log(`Checking ${leg.name.official_full} - Term: ${currentTerm.state} ${currentTerm.district} vs Target: ${stateAbbr} ${targetDist}`);
                         if (currentTerm.district === targetDist) return true;
                     }
 
                     return false;
                 });
-                console.log(`Debug: StateFips=${stateFips} -> Abbr=${stateAbbr}, District=${district}. Found ${filtered.length} matches.`);
 
                 setLegislators(filtered);
             } catch (err: any) {
@@ -103,28 +108,16 @@ function ResultsContent() {
         fetchData();
     }, [stateAbbr, district]);
 
-    if (!stateFips || !district) {
-        return (
-            <div className="flex items-center justify-center min-h-screen">
-                <div className="text-center">
-                    <p className="text-xl text-slate-500 mb-4">Missing location information.</p>
-                    <button
-                        onClick={() => window.location.href = '/'}
-                        className="text-indigo-600 hover:underline font-semibold"
-                    >
-                        &larr; Go Home
-                    </button>
-                </div>
-            </div>
-        );
-    }
+    // ... (rendering logic)
 
     return (
         <div className="max-w-4xl mx-auto space-y-8">
-            <header className="text-center space-y-2">
-                <h1 className="text-3xl font-bold text-slate-900">Your Representatives</h1>
-                <p className="text-slate-600">
-                    Found for {stateAbbr} District {district}
+            <header className="text-center space-y-2 mb-8">
+                <h1 className="text-3xl font-bold tracking-tight sm:text-4xl text-slate-900">
+                    How are your representatives doing?
+                </h1>
+                <p className="text-slate-600 max-w-2xl mx-auto text-sm md:text-base leading-relaxed">
+                    Epstein transparency tracked to <span className="text-blue-600 font-semibold">{stateAbbr}-{district}</span>.
                 </p>
             </header>
 
@@ -139,15 +132,16 @@ function ResultsContent() {
             ) : legislators.length === 0 ? (
                 <div className="text-center p-12 text-slate-500">
                     <p>No representatives found regarding this location.</p>
-                    <p className="text-sm">Debug: State {stateAbbr}, District {district}</p>
                 </div>
             ) : (
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    {legislators.map((leg, index) => (
-                        // Using index as key because IDs might be complex or nested, though bioguide is better if available
-                        // leg.id.bioguide is unique
-                        <RepCard key={index} legislator={leg} />
-                    ))}
+                <div className="flex flex-col gap-4">
+                    {legislators.map((leg, index) => {
+                        const bioguideId = leg.id.bioguide;
+                        const score = scores?.scores?.[bioguideId] || scores?.default;
+                        return (
+                            <RepCard key={bioguideId} legislator={leg} scoreData={score} />
+                        );
+                    })}
                 </div>
             )}
 
