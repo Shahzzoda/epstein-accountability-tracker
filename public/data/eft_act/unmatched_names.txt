@@ -2,3 +2,5 @@ Greene, Marjorie Taylor [R-GA] (State: GA, Party: R) - Key: greene|marjorie|GA|R
 LaMalfa, Doug [R-CA] (State: CA, Party: R) - Key: lamalfa|doug|CA|R
 Perez, Marie Gluesenkamp [D-WA] (State: WA, Party: D) - Key: perez|marie|WA|D
 Sherrill, Mikie [D-NJ] (State: NJ, Party: D) - Key: sherrill|mikie|NJ|D
+
+note: people who voted for the act but could not be found on our list
