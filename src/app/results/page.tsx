@@ -1,172 +1,177 @@
 'use client';
 
-import { useSearchParams } from 'next/navigation';
+import { useRouter, useSearchParams } from 'next/navigation';
 import { useEffect, useState, Suspense } from 'react';
 import RepCard from '../../components/RepCard';
 
-// Using a simplified FIPS to State Abbreviation map
 const fipsToState: Record<string, string> = {
-    '01': 'AL', '02': 'AK', '04': 'AZ', '05': 'AR', '06': 'CA', '08': 'CO', '09': 'CT', '10': 'DE', '11': 'DC',
-    '12': 'FL', '13': 'GA', '15': 'HI', '16': 'ID', '17': 'IL', '18': 'IN', '19': 'IA', '20': 'KS', '21': 'KY',
-    '22': 'LA', '23': 'ME', '24': 'MD', '25': 'MA', '26': 'MI', '27': 'MN', '28': 'MS', '29': 'MO', '30': 'MT',
-    '31': 'NE', '32': 'NV', '33': 'NH', '34': 'NJ', '35': 'NM', '36': 'NY', '37': 'NC', '38': 'ND', '39': 'OH',
-    '40': 'OK', '41': 'OR', '42': 'PA', '44': 'RI', '45': 'SC', '46': 'SD', '47': 'TN', '48': 'TX', '49': 'UT',
-    '50': 'VT', '51': 'VA', '53': 'WA', '54': 'WV', '55': 'WI', '56': 'WY', '60': 'AS', '66': 'GU', '69': 'MP',
-    '72': 'PR', '78': 'VI'
+  '01': 'AL', '02': 'AK', '04': 'AZ', '05': 'AR', '06': 'CA', '08': 'CO', '09': 'CT', '10': 'DE', '11': 'DC',
+  '12': 'FL', '13': 'GA', '15': 'HI', '16': 'ID', '17': 'IL', '18': 'IN', '19': 'IA', '20': 'KS', '21': 'KY',
+  '22': 'LA', '23': 'ME', '24': 'MD', '25': 'MA', '26': 'MI', '27': 'MN', '28': 'MS', '29': 'MO', '30': 'MT',
+  '31': 'NE', '32': 'NV', '33': 'NH', '34': 'NJ', '35': 'NM', '36': 'NY', '37': 'NC', '38': 'ND', '39': 'OH',
+  '40': 'OK', '41': 'OR', '42': 'PA', '44': 'RI', '45': 'SC', '46': 'SD', '47': 'TN', '48': 'TX', '49': 'UT',
+  '50': 'VT', '51': 'VA', '53': 'WA', '54': 'WV', '55': 'WI', '56': 'WY', '60': 'AS', '66': 'GU', '69': 'MP',
+  '72': 'PR', '78': 'VI'
 };
 
 interface Term {
-    type: string;
-    start: string;
-    end: string;
-    state: string;
-    district?: number;
-    party: string;
-    url?: string;
-    address?: string;
-    phone?: string;
-    contact_form?: string;
-    office?: string;
+  type: string;
+  state: string;
+  district?: number;
+  party: string;
 }
 
 interface Legislator {
-    id: {
-        bioguide: string;
+  id: {
+    bioguide: string;
+  };
+  name: {
+    official_full: string;
+  };
+  terms: Term[];
+}
+
+interface ScoreEntry {
+  score: number;
+  status: string;
+  notes?: string;
+  epstein_transparency_act?: {
+    sponsored?: boolean;
+    cosponsored?: boolean;
+    cosponsored_date?: string | null;
+    signed?: 'yes' | 'no' | boolean | string;
+    discharge_petition?: {
+      signed?: boolean;
+      date?: string | null;
     };
-    name: {
-        first: string;
-        last: string;
-        official_full: string;
-    };
-    bio: {
-        birthday: string;
-        gender: string;
-    };
-    terms: Term[];
+  };
+}
+
+interface ScoreFile {
+  scores?: Record<string, ScoreEntry>;
+  default?: ScoreEntry;
 }
 
 function ResultsContent() {
-    const searchParams = useSearchParams();
-    const district = searchParams.get('district');
-    const stateFips = searchParams.get('stateFips');
+  const router = useRouter();
+  const searchParams = useSearchParams();
+  const district = searchParams.get('district');
+  const stateFips = searchParams.get('stateFips');
 
-    const [legislators, setLegislators] = useState<Legislator[]>([]);
-    const [scores, setScores] = useState<any>(null);
-    const [loading, setLoading] = useState(true);
-    const [error, setError] = useState('');
+  const [legislators, setLegislators] = useState<Legislator[]>([]);
+  const [scores, setScores] = useState<ScoreFile | null>(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState('');
 
-    const stateAbbr = stateFips ? fipsToState[stateFips] : null;
+  const stateAbbr = stateFips ? fipsToState[stateFips] : null;
 
-    useEffect(() => {
-        if (!stateAbbr) {
-            setLoading(false);
-            return;
-        }
+  useEffect(() => {
+    if (!stateAbbr) {
+      setLoading(false);
+      return;
+    }
 
-        const fetchData = async () => {
-            try {
-                // Fetch both legislators and scores in parallel
-                const [legRes, scoreRes] = await Promise.all([
-                    fetch('/data/current_legislators.json'),
-                    fetch('/data/epstein_scores.json')
-                ]);
+    const fetchData = async () => {
+      try {
+        const [legRes, scoreRes] = await Promise.all([
+          fetch('/data/current_legislators.json'),
+          fetch('/data/epstein_scores.json')
+        ]);
 
-                if (!legRes.ok) throw new Error('Failed to load legislator data');
-                // if (!scoreRes.ok) console.warn('Failed to load scores'); // Non-fatal
+        if (!legRes.ok) throw new Error('Failed to load legislator data');
 
-                const data: Legislator[] = await legRes.json();
-                const scoreData = scoreRes.ok ? await scoreRes.json() : null;
-                setScores(scoreData);
+        const data: Legislator[] = await legRes.json();
+        const scoreData: ScoreFile | null = scoreRes.ok ? await scoreRes.json() : null;
+        setScores(scoreData);
 
-                const filtered = data.filter(leg => {
-                    // Start by picking the last term
-                    let currentTerm = leg.terms[leg.terms.length - 1];
+        const targetDist = parseInt(district || '0');
+        const filtered = data.filter((leg) => {
+          const currentTerm = leg.terms[leg.terms.length - 1];
 
-                    // Filter by State
-                    if (currentTerm.state !== stateAbbr) return false;
+          if (currentTerm.state !== stateAbbr) return false;
+          if (currentTerm.type === 'sen') return true;
+          if (currentTerm.type === 'rep' && currentTerm.district === targetDist) return true;
+          return false;
+        });
 
-                    // Include all Senators for the state
-                    if (currentTerm.type === 'sen') return true;
+        setLegislators(filtered);
+      } catch (err: unknown) {
+        const message = err instanceof Error ? err.message : 'Failed to load representative data';
+        setError(message);
+      } finally {
+        setLoading(false);
+      }
+    };
 
-                    // Include Representative for the specific district
-                    const targetDist = parseInt(district || '0');
-                    if (currentTerm.type === 'rep') {
-                        if (currentTerm.district === targetDist) return true;
-                    }
+    fetchData();
+  }, [stateAbbr, district]);
 
-                    return false;
-                });
+  return (
+    <div className="mx-auto w-full max-w-6xl space-y-8">
+      <header className="fade-up border-b border-[var(--border)] pb-6">
+        <p className="text-xs font-semibold uppercase tracking-[0.12em] text-slate-500">District snapshot</p>
+        <h1 className="mt-2 text-3xl leading-tight text-slate-900 sm:text-4xl">Your lawmakers, on the record</h1>
+        <p className="mt-2 max-w-3xl text-sm leading-relaxed text-[var(--ink-soft)] sm:text-base">
+          These profiles show what each member did in public records tied to Epstein-file disclosure. Area loaded:{' '}
+          <span className="whitespace-nowrap font-semibold text-[var(--brand-blue)]">{stateAbbr}-{district}</span>.
+        </p>
+      </header>
 
-                setLegislators(filtered);
-            } catch (err: any) {
-                setError(err.message);
-            } finally {
-                setLoading(false);
-            }
-        };
-
-        fetchData();
-    }, [stateAbbr, district]);
-
-    // ... (rendering logic)
-
-    return (
-        <div className="max-w-4xl mx-auto space-y-8">
-            <header className="text-center space-y-2 mb-8">
-                <h1 className="text-3xl font-bold tracking-tight sm:text-4xl text-slate-900">
-                    How are your representatives doing?
-                </h1>
-                <p className="text-slate-600 max-w-2xl mx-auto text-sm md:text-base leading-relaxed">
-                    Epstein transparency tracked to <span className="text-blue-600 font-semibold">{stateAbbr}-{district}</span>.
-                </p>
-            </header>
-
-            {loading ? (
-                <div className="flex justify-center p-12">
-                    <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-indigo-600"></div>
-                </div>
-            ) : error ? (
-                <div className="text-center text-red-600 p-4 bg-red-50 rounded-lg">
-                    <p>Error: {error}</p>
-                </div>
-            ) : legislators.length === 0 ? (
-                <div className="text-center p-12 text-slate-500">
-                    <p>No representatives found regarding this location.</p>
-                </div>
-            ) : (
-                <div className="flex flex-col gap-4">
-                    {legislators.map((leg, index) => {
-                        const bioguideId = leg.id.bioguide;
-                        const score = scores?.scores?.[bioguideId] || scores?.default;
-                        return (
-                            <RepCard key={bioguideId} legislator={leg} scoreData={score} />
-                        );
-                    })}
-                </div>
-            )}
-
-            <div className="text-center">
-                <button
-                    onClick={() => window.location.href = '/'}
-                    className="text-indigo-600 hover:underline font-semibold"
-                >
-                    &larr; Search Again
-                </button>
-            </div>
+      {loading ? (
+        <div className="flex justify-center p-12">
+          <div className="h-12 w-12 animate-spin rounded-full border-b-2 border-[var(--brand-blue)]" />
         </div>
-    );
+      ) : error ? (
+        <div className="rounded-lg border border-red-200 bg-red-50 p-4 text-center text-red-700">
+          <p>Error: {error}</p>
+        </div>
+      ) : legislators.length === 0 ? (
+        <div className="p-12 text-center text-slate-500">
+          <p>No representatives found regarding this location.</p>
+        </div>
+      ) : (
+        <div className="flex flex-col">
+          {legislators.map((leg) => {
+            const bioguideId = leg.id.bioguide;
+            const score = scores?.scores?.[bioguideId] || scores?.default;
+            return (
+              <RepCard
+                key={bioguideId}
+                legislator={leg}
+                scoreData={score}
+                districtLabel={`${stateAbbr}-${district}`}
+                stateFips={stateFips || ''}
+                district={district || ''}
+              />
+            );
+          })}
+        </div>
+      )}
+
+      <div className="text-center">
+        <button
+          onClick={() => router.push('/')}
+          className="font-semibold text-[var(--brand-blue)] hover:underline"
+        >
+          &larr; Check another district
+        </button>
+      </div>
+    </div>
+  );
 }
 
 export default function Results() {
-    return (
-        <main className="min-h-screen bg-slate-50 p-6">
-            <Suspense fallback={
-                <div className="flex justify-center p-12">
-                    <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-indigo-600"></div>
-                </div>
-            }>
-                <ResultsContent />
-            </Suspense>
-        </main>
-    );
+  return (
+    <main className="startup-shell min-h-screen p-6">
+      <Suspense
+        fallback={
+          <div className="flex justify-center p-12">
+            <div className="h-12 w-12 animate-spin rounded-full border-b-2 border-[var(--brand-blue)]" />
+          </div>
+        }
+      >
+        <ResultsContent />
+      </Suspense>
+    </main>
+  );
 }

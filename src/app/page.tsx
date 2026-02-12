@@ -2,6 +2,8 @@
 
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
+import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Home() {
   const router = useRouter();
@@ -30,47 +32,17 @@ export default function Home() {
           }
 
           const data = await response.json();
-          // Assuming data returns something like { district: '12', state: '24' } or similar
-          // The Census API returns properties like "CD119", "STATE", "GEOID"
-          // We need to map or pass this to the results page.
-          // Let's pass the raw district/state codes or whatever the JSON uses.
-          // Note: The Census API returns FIPS codes for state.
-          // We might need a mapping if current_legislators.json uses state abbreviations (e.g., "CA").
-
-          // For now, let's redirect with the raw result and handle mapping on the results page or here if needed.
-          // However, better to make the URL clean: /results?district=12&state=CA
-          // The Census API returns "STATE" as a FIPS code (e.g., "06" for California).
-          // We might need to map FIPS to Abbreviation. I'll add a utility for that or just pass the FIPS and handle it.
-          // Let's pass the raw data for now and refine.
-
-          // Actually, let's look at the API response structure again. 
-          // Usually returns "BASENAME": "119th Congressional District 12" -> District 12
-          // "STATE": "06"
-
-          // Simplified: Just pass lat/lon to results and let results do the fetching? 
-          // No, the prompt said: "button -> hits share address... backend api hits Census... page 2 info on reps"
-          // So the flow: Landing -> [Click] -> API returns District Info -> Redirect to Results with District Info.
-
-          // Let's assume for now we get a district number and state FIPS.
-          // Construct URL.
-
-          // Wait, I don't have the FIPS to State Abbrev map yet.
-          // I'll skip the mapping for a second and just pass the raw data returned to the URL query strings.
-          // We can refine this.
-
-          // The API now returns { district: "19", state: "36", ... }
           const district = data.district || '00';
           const stateFips = data.state || '00';
-
           router.push(`/results?district=${district}&stateFips=${stateFips}`);
-
-        } catch (err: any) {
-          setError(err.message || 'An error occurred while locating you.');
+        } catch (err: unknown) {
+          const message = err instanceof Error ? err.message : 'An error occurred while locating you.';
+          setError(message);
         } finally {
           setLoading(false);
         }
       },
-      (err) => {
+      () => {
         setError('Unable to retrieve your location. Please allow location access.');
         setLoading(false);
       }
@@ -78,39 +50,76 @@ export default function Home() {
   };
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center p-6 bg-slate-50 text-slate-800">
-      <div className="max-w-2xl text-center space-y-8">
-        <h1 className="text-4xl font-bold tracking-tight sm:text-6xl text-slate-900">
-          Epstein transparency <span className="text-blue-600">tracked to your district.</span>
-        </h1>
+    <main className="startup-shell min-h-screen p-6 text-[var(--ink)]">
+      <section className="mx-auto grid w-full max-w-6xl items-start gap-8 py-10 lg:grid-cols-[1.2fr_0.8fr] lg:py-14">
+        <div className="fade-up space-y-5">
+          <h1 className="text-4xl leading-tight sm:text-5xl lg:text-6xl">
+            Who pushed for <span className="text-[var(--brand-blue)]">full disclosure.</span>
+            <span className="block text-slate-900">Who did not act.</span>
+          </h1>
+          <p className="max-w-3xl text-base leading-relaxed text-slate-800 sm:text-lg">
+            We track public-record actions on Epstein files by lawmaker, including recorded votes, bill sponsorships, cosponsorships, and discharge petition signatures, and we link every claim to a source from the House Clerk, Congress.gov, and discharge petition records so people can verify the record, check their district, and share what they find.
+          </p>
 
-        <div className="space-y-4">
-          <p className="text-lg leading-8 text-slate-600">
-            We’re building a public record of what Congress required, what DOJ/FBI have released, what they’re withholding, and which elected officials pushed for disclosure versus slowed it down. Then we tie it to your Rep and Senators with a simple scorecard and sources.
-          </p>
-          <p className="text-xl font-semibold text-slate-800">
-            Want to see yours?
-          </p>
+          <div id="find-lawmakers" className="max-w-xl space-y-3 pt-1">
+            <p className="text-sm leading-relaxed text-slate-700">
+              Use location once to identify your House district, then review your Representative and both Senators.
+            </p>
+            <button
+              onClick={handleFindReps}
+              disabled={loading}
+              className="rounded-lg bg-[var(--brand-blue)] px-6 py-3.5 text-sm font-semibold text-white transition hover:bg-[#0d2f59] disabled:cursor-not-allowed disabled:opacity-50"
+            >
+              {loading ? 'Locating your district...' : 'Find my lawmakers'}
+            </button>
+            {error && (
+              <p className="rounded-md border border-red-200 bg-red-50 p-2 text-sm text-red-700">{error}</p>
+            )}
+            <div className="flex flex-wrap items-center gap-3 pt-1">
+              <Link href="/report/C000127" className="text-sm font-semibold text-[var(--brand-blue)] hover:underline">
+                View an example profile
+              </Link>
+              <span className="text-slate-400">•</span>
+              <Link href="/epstein-files" className="text-sm font-semibold text-[var(--brand-blue)] hover:underline">
+                Sources & Method
+              </Link>
+            </div>
+            <p className="pt-1 text-sm leading-relaxed text-slate-700">
+              Location is used only to map your district for this session. We do not store precise coordinates.
+            </p>
+          </div>
         </div>
 
-        <div className="flex flex-col items-center justify-center gap-4">
-          <button
-            onClick={handleFindReps}
-            disabled={loading}
-            className="rounded-md bg-indigo-600 px-6 py-3.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 disabled:opacity-50 disabled:cursor-not-allowed transition-all"
-          >
-            {loading ? 'Locating...' : 'Find my representatives'}
-          </button>
-
-          {error && (
-            <p className="text-red-500 text-sm mt-2">{error}</p>
-          )}
-
-          <p className="text-xs text-slate-400 mt-4 max-w-md mx-auto">
-            If you share location, we use it once to find your congressional district. We don’t store it.
+        <div className="fade-up space-y-4 lg:pt-3">
+          <div className="rounded-xl border border-[var(--border)] bg-white p-5 shadow-sm">
+            <p className="text-xs font-semibold uppercase tracking-[0.12em] text-slate-500">Example report preview</p>
+            <div className="mt-2 flex items-center justify-between">
+              <h2 className="text-xl text-slate-900">Transparency score</h2>
+              <p className="text-3xl font-black text-rose-700">F</p>
+            </div>
+            <div className="mt-4 space-y-3">
+              <div className="overflow-hidden rounded-lg border border-[var(--border)] bg-slate-50">
+                <Image
+                  src="/transparency-docs.svg"
+                  alt="Transparency records preview"
+                  width={900}
+                  height={900}
+                  className="h-auto w-full object-cover"
+                />
+              </div>
+              <div className="flex items-center justify-between pt-1">
+                <p className="text-xs text-slate-600">Source-linked entries in each row</p>
+                <Link href="/report/C000127" className="text-xs font-semibold text-[var(--brand-blue)] hover:underline">
+                  View record
+                </Link>
+              </div>
+            </div>
+          </div>
+          <p className="text-sm leading-relaxed text-slate-700">
+            Every claim links to a primary source. <Link href="/epstein-files" className="font-semibold text-[var(--brand-blue)] hover:underline">Read Sources & Method</Link>.
           </p>
         </div>
-      </div>
+      </section>
     </main>
   );
 }

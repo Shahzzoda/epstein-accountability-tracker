@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" fill="none">
+  <rect width="1200" height="630" fill="#0F294A"/>
+  <rect x="54" y="54" width="1092" height="522" rx="20" fill="#132F55" stroke="#28598E"/>
+  <text x="96" y="190" fill="#E7EFF8" font-family="Avenir Next, Segoe UI, Arial" font-size="44" font-weight="700">
+    Epstein Files Tracker
+  </text>
+  <text x="96" y="270" fill="#FFFFFF" font-family="Avenir Next, Segoe UI, Arial" font-size="66" font-weight="800">
+    Lawmaker Report
+  </text>
+  <text x="96" y="336" fill="#BFD1E5" font-family="Avenir Next, Segoe UI, Arial" font-size="34" font-weight="600">
+    Votes. Sponsorships. Petition signatures. Committee roles.
+  </text>
+  <text x="96" y="500" fill="#F2C36B" font-family="Avenir Next, Segoe UI, Arial" font-size="30" font-weight="700">
+    Check the public record before you share.
+  </text>
+</svg>
