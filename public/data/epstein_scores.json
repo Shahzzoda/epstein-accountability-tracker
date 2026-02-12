@@ -23,7 +23,14 @@
       "epstein_transparency_act": {
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "Senate Judiciary Committee",
+          "thomas_id": "SSJU"
+        }
+      ]
     },
     "S000033": {
       "official_full": "Bernard Sanders",
@@ -43,7 +50,14 @@
       "epstein_transparency_act": {
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "Senate Judiciary Committee",
+          "thomas_id": "SSJU"
+        }
+      ]
     },
     "B001261": {
       "official_full": "John Barrasso",
@@ -83,7 +97,14 @@
       "epstein_transparency_act": {
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "Senate Judiciary Committee",
+          "thomas_id": "SSJU"
+        }
+      ]
     },
     "D000563": {
       "official_full": "Richard J. Durbin",
@@ -93,7 +114,14 @@
       "epstein_transparency_act": {
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Ranking Member",
+          "committee": "Senate Judiciary Committee",
+          "thomas_id": "SSJU"
+        }
+      ]
     },
     "G000359": {
       "official_full": "Lindsey Graham",
@@ -103,7 +131,14 @@
       "epstein_transparency_act": {
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "Senate Judiciary Committee",
+          "thomas_id": "SSJU"
+        }
+      ]
     },
     "M000355": {
       "official_full": "Mitch McConnell",
@@ -183,7 +218,14 @@
       "epstein_transparency_act": {
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "Senate Judiciary Committee",
+          "thomas_id": "SSJU"
+        }
+      ]
     },
     "A000055": {
       "official_full": "Robert B. Aderholt",
@@ -246,7 +288,14 @@
       "epstein_transparency_act": {
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "Senate Judiciary Committee",
+          "thomas_id": "SSJU"
+        }
+      ]
     },
     "B001277": {
       "official_full": "Richard Blumenthal",
@@ -256,7 +305,14 @@
       "epstein_transparency_act": {
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "Senate Judiciary Committee",
+          "thomas_id": "SSJU"
+        }
+      ]
     },
     "B001236": {
       "official_full": "John Boozman",
@@ -396,7 +452,14 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "House Judiciary Committee",
+          "thomas_id": "HSJU"
+        }
+      ]
     },
     "C001053": {
       "official_full": "Tom Cole",
@@ -550,7 +613,14 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "House Oversight Committee",
+          "thomas_id": "HSGO"
+        }
+      ]
     },
     "G000559": {
       "official_full": "John Garamendi",
@@ -572,7 +642,14 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "House Oversight Committee",
+          "thomas_id": "HSGO"
+        }
+      ]
     },
     "G000386": {
       "official_full": "Chuck Grassley",
@@ -582,7 +659,14 @@
       "epstein_transparency_act": {
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Chairman",
+          "committee": "Senate Judiciary Committee",
+          "thomas_id": "SSJU"
+        }
+      ]
     },
     "G000546": {
       "official_full": "Sam Graves",
@@ -668,7 +752,14 @@
       "epstein_transparency_act": {
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "Senate Judiciary Committee",
+          "thomas_id": "SSJU"
+        }
+      ]
     },
     "H001061": {
       "official_full": "John Hoeven",
@@ -712,7 +803,14 @@
         "sponsored": false,
         "cosponsored": true,
         "cosponsored_date": "07/17/2025"
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "House Judiciary Committee",
+          "thomas_id": "HSJU"
+        }
+      ]
     },
     "J000293": {
       "official_full": "Ron Johnson",
@@ -733,7 +831,19 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Chair",
+          "committee": "House Judiciary Committee",
+          "thomas_id": "HSJU"
+        },
+        {
+          "title": "Member",
+          "committee": "House Oversight Committee",
+          "thomas_id": "HSGO"
+        }
+      ]
     },
     "K000009": {
       "official_full": "Marcy Kaptur",
@@ -819,7 +929,14 @@
       "epstein_transparency_act": {
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "Senate Judiciary Committee",
+          "thomas_id": "SSJU"
+        }
+      ]
     },
     "L000397": {
       "official_full": "Zoe Lofgren",
@@ -830,7 +947,14 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "House Judiciary Committee",
+          "thomas_id": "HSJU"
+        }
+      ]
     },
     "L000491": {
       "official_full": "Frank D. Lucas",
@@ -863,7 +987,14 @@
         "sponsored": false,
         "cosponsored": true,
         "cosponsored_date": "07/16/2025"
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "House Oversight Committee",
+          "thomas_id": "HSGO"
+        }
+      ]
     },
     "M000133": {
       "official_full": "Edward J. Markey",
@@ -906,7 +1037,14 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "House Judiciary Committee",
+          "thomas_id": "HSJU"
+        }
+      ]
     },
     "M001143": {
       "official_full": "Betty McCollum",
@@ -1002,7 +1140,14 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "House Judiciary Committee",
+          "thomas_id": "HSJU"
+        }
+      ]
     },
     "N000015": {
       "official_full": "Richard E. Neal",
@@ -1024,7 +1169,14 @@
         "sponsored": false,
         "cosponsored": true,
         "cosponsored_date": "07/23/2025"
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "House Oversight Committee",
+          "thomas_id": "HSGO"
+        }
+      ]
     },
     "P000034": {
       "official_full": "Frank Pallone, Jr.",
@@ -1143,7 +1295,14 @@
       "epstein_transparency_act": {
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "Senate Judiciary Committee",
+          "thomas_id": "SSJU"
+        }
+      ]
     },
     "S000148": {
       "official_full": "Charles E. Schumer",
@@ -1351,7 +1510,14 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "House Oversight Committee",
+          "thomas_id": "HSGO"
+        }
+      ]
     },
     "V000128": {
       "official_full": "Chris Van Hollen",
@@ -1426,7 +1592,14 @@
       "epstein_transparency_act": {
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "Senate Judiciary Committee",
+          "thomas_id": "SSJU"
+        }
+      ]
     },
     "W000795": {
       "official_full": "Joe Wilson",
@@ -1535,7 +1708,14 @@
         "sponsored": false,
         "cosponsored": true,
         "cosponsored_date": "07/15/2025"
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "House Judiciary Committee",
+          "thomas_id": "HSJU"
+        }
+      ]
     },
     "S001194": {
       "official_full": "Brian Schatz",
@@ -1610,7 +1790,14 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "House Judiciary Committee",
+          "thomas_id": "HSJU"
+        }
+      ]
     },
     "B001285": {
       "official_full": "Julia Brownley",
@@ -1834,7 +2021,14 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "House Oversight Committee",
+          "thomas_id": "HSGO"
+        }
+      ]
     },
     "C001098": {
       "official_full": "Ted Cruz",
@@ -1844,7 +2038,14 @@
       "epstein_transparency_act": {
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "Senate Judiciary Committee",
+          "thomas_id": "SSJU"
+        }
+      ]
     },
     "W000814": {
       "official_full": "Randy K. Weber, Sr.",
@@ -1941,7 +2142,14 @@
       "epstein_transparency_act": {
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "Senate Judiciary Committee",
+          "thomas_id": "SSJU"
+        }
+      ]
     },
     "C001101": {
       "official_full": "Katherine M. Clark",
@@ -1985,7 +2193,14 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "House Oversight Committee",
+          "thomas_id": "HSGO"
+        }
+      ]
     },
     "H001072": {
       "official_full": "J. French Hill",
@@ -2050,7 +2265,14 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "House Judiciary Committee",
+          "thomas_id": "HSJU"
+        }
+      ]
     },
     "T000474": {
       "official_full": "Norma J. Torres",
@@ -2248,7 +2470,19 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "House Judiciary Committee",
+          "thomas_id": "HSJU"
+        },
+        {
+          "title": "Member",
+          "committee": "House Oversight Committee",
+          "thomas_id": "HSGO"
+        }
+      ]
     },
     "R000600": {
       "official_full": "Aumua Amata Coleman Radewagen",
@@ -2288,7 +2522,14 @@
       "epstein_transparency_act": {
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "Senate Judiciary Committee",
+          "thomas_id": "SSJU"
+        }
+      ]
     },
     "R000605": {
       "official_full": "Mike Rounds",
@@ -2342,7 +2583,14 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Chair",
+          "committee": "House Oversight Committee",
+          "thomas_id": "HSGO"
+        }
+      ]
     },
     "E000296": {
       "official_full": "Dwight Evans",
@@ -2363,7 +2611,14 @@
       "epstein_transparency_act": {
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "Senate Judiciary Committee",
+          "thomas_id": "SSJU"
+        }
+      ]
     },
     "H001076": {
       "official_full": "Margaret Wood Hassan",
@@ -2405,7 +2660,19 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "House Judiciary Committee",
+          "thomas_id": "HSJU"
+        },
+        {
+          "title": "Member",
+          "committee": "House Oversight Committee",
+          "thomas_id": "HSGO"
+        }
+      ]
     },
     "K000389": {
       "official_full": "Ro Khanna",
@@ -2416,7 +2683,14 @@
         "signed": "yes",
         "sponsored": true,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "House Oversight Committee",
+          "thomas_id": "HSGO"
+        }
+      ]
     },
     "P000613": {
       "official_full": "Jimmy Panetta",
@@ -2460,7 +2734,14 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "House Judiciary Committee",
+          "thomas_id": "HSJU"
+        }
+      ]
     },
     "B001303": {
       "official_full": "Lisa Blunt Rochester",
@@ -2526,7 +2807,14 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "House Oversight Committee",
+          "thomas_id": "HSGO"
+        }
+      ]
     },
     "B001299": {
       "official_full": "Jim Banks",
@@ -2557,7 +2845,14 @@
         "signed": "no",
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "House Oversight Committee",
+          "thomas_id": "HSGO"
+        }
+      ]
     },
     "J000299": {
       "official_full": "Mike Johnson",
@@ -2579,7 +2874,14 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Ranking Member",
+          "committee": "House Judiciary Committee",
+          "thomas_id": "HSJU"
+        }
+      ]
     },
     "B001301": {
       "official_full": "Jack Bergman",
@@ -2709,7 +3011,14 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "House Judiciary Committee",
+          "thomas_id": "HSJU"
+        }
+      ]
     },
     "E000298": {
       "official_full": "Ron Estes",
@@ -2783,7 +3092,14 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "House Oversight Committee",
+          "thomas_id": "HSGO"
+        }
+      ]
     },
     "B001306": {
       "official_full": "Troy Balderson",
@@ -2828,7 +3144,14 @@
         "sponsored": false,
         "cosponsored": true,
         "cosponsored_date": "07/29/2025"
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "House Judiciary Committee",
+          "thomas_id": "HSJU"
+        }
+      ]
     },
     "C001055": {
       "official_full": "Ed Case",
@@ -2895,7 +3218,14 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "House Judiciary Committee",
+          "thomas_id": "HSJU"
+        }
+      ]
     },
     "C001121": {
       "official_full": "Jason Crow",
@@ -2939,7 +3269,14 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "House Judiciary Committee",
+          "thomas_id": "HSJU"
+        }
+      ]
     },
     "F000469": {
       "official_full": "Russ Fulcher",
@@ -2961,7 +3298,14 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "House Judiciary Committee",
+          "thomas_id": "HSJU"
+        }
+      ]
     },
     "C001117": {
       "official_full": "Sean Casten",
@@ -3027,7 +3371,14 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "House Oversight Committee",
+          "thomas_id": "HSGO"
+        }
+      ]
     },
     "S001208": {
       "official_full": "Elissa Slotkin",
@@ -3059,7 +3410,14 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "House Oversight Committee",
+          "thomas_id": "HSGO"
+        }
+      ]
     },
     "C001119": {
       "official_full": "Angie Craig",
@@ -3126,7 +3484,14 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "House Judiciary Committee",
+          "thomas_id": "HSJU"
+        }
+      ]
     },
     "K000394": {
       "official_full": "Andy Kim",
@@ -3224,7 +3589,14 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "House Oversight Committee",
+          "thomas_id": "HSGO"
+        }
+      ]
     },
     "J000301": {
       "official_full": "Dusty Johnson",
@@ -3246,7 +3618,14 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "House Oversight Committee",
+          "thomas_id": "HSGO"
+        }
+      ]
     },
     "R000612": {
       "official_full": "John W. Rose",
@@ -3279,7 +3658,14 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "House Judiciary Committee",
+          "thomas_id": "HSJU"
+        }
+      ]
     },
     "F000468": {
       "official_full": "Lizzie Fletcher",
@@ -3312,7 +3698,14 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "House Judiciary Committee",
+          "thomas_id": "HSJU"
+        }
+      ]
     },
     "G000587": {
       "official_full": "Sylvia R. Garcia",
@@ -3334,7 +3727,14 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "House Judiciary Committee",
+          "thomas_id": "HSJU"
+        }
+      ]
     },
     "S001216": {
       "official_full": "Kim Schrier",
@@ -3387,7 +3787,14 @@
       "epstein_transparency_act": {
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "Senate Judiciary Committee",
+          "thomas_id": "SSJU"
+        }
+      ]
     },
     "G000592": {
       "official_full": "Jared F. Golden",
@@ -3421,7 +3828,14 @@
         "sponsored": false,
         "cosponsored": true,
         "cosponsored_date": "07/23/2025"
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "House Oversight Committee",
+          "thomas_id": "HSGO"
+        }
+      ]
     },
     "T000165": {
       "official_full": "Thomas P. Tiffany",
@@ -3432,7 +3846,14 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "House Judiciary Committee",
+          "thomas_id": "HSJU"
+        }
+      ]
     },
     "K000377": {
       "official_full": "Mark Kelly",
@@ -3463,7 +3884,14 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "House Judiciary Committee",
+          "thomas_id": "HSJU"
+        }
+      ]
     },
     "S000250": {
       "official_full": "Pete Sessions",
@@ -3474,7 +3902,14 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "House Oversight Committee",
+          "thomas_id": "HSGO"
+        }
+      ]
     },
     "V000129": {
       "official_full": "David G. Valadao",
@@ -3526,7 +3961,14 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "House Judiciary Committee",
+          "thomas_id": "HSJU"
+        }
+      ]
     },
     "O000019": {
       "official_full": "Jay Obernolte",
@@ -3570,7 +4012,14 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "House Oversight Committee",
+          "thomas_id": "HSGO"
+        }
+      ]
     },
     "C001039": {
       "official_full": "Kat Cammack",
@@ -3603,7 +4052,14 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "House Oversight Committee",
+          "thomas_id": "HSGO"
+        }
+      ]
     },
     "G000593": {
       "official_full": "Carlos A. Gimenez",
@@ -3768,7 +4224,14 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "House Judiciary Committee",
+          "thomas_id": "HSJU"
+        }
+      ]
     },
     "L000273": {
       "official_full": "Teresa Leger Fernandez",
@@ -3845,7 +4308,14 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "House Oversight Committee",
+          "thomas_id": "HSGO"
+        }
+      ]
     },
     "H001086": {
       "official_full": "Diana Harshbarger",
@@ -3867,7 +4337,14 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "House Oversight Committee",
+          "thomas_id": "HSGO"
+        }
+      ]
     },
     "P000048": {
       "official_full": "August Pfluger",
@@ -3900,7 +4377,14 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "House Judiciary Committee",
+          "thomas_id": "HSJU"
+        }
+      ]
     },
     "G000594": {
       "official_full": "Tony Gonzales",
@@ -3966,7 +4450,14 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "House Judiciary Committee",
+          "thomas_id": "HSJU"
+        }
+      ]
     },
     "P000145": {
       "official_full": "Alex Padilla",
@@ -3976,7 +4467,14 @@
       "epstein_transparency_act": {
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "Senate Judiciary Committee",
+          "thomas_id": "SSJU"
+        }
+      ]
     },
     "O000174": {
       "official_full": "Jon Ossoff",
@@ -4040,7 +4538,14 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "House Oversight Committee",
+          "thomas_id": "HSGO"
+        }
+      ]
     },
     "E000071": {
       "official_full": "Jake Ellzey",
@@ -4062,7 +4567,14 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "House Oversight Committee",
+          "thomas_id": "HSGO"
+        }
+      ]
     },
     "C001126": {
       "official_full": "Mike Carey",
@@ -4149,7 +4661,14 @@
       "epstein_transparency_act": {
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "Senate Judiciary Committee",
+          "thomas_id": "SSJU"
+        }
+      ]
     },
     "S001227": {
       "official_full": "Eric Schmitt",
@@ -4159,7 +4678,14 @@
       "epstein_transparency_act": {
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "Senate Judiciary Committee",
+          "thomas_id": "SSJU"
+        }
+      ]
     },
     "F000479": {
       "official_full": "John Fetterman",
@@ -4191,7 +4717,14 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "House Oversight Committee",
+          "thomas_id": "HSGO"
+        }
+      ]
     },
     "C001133": {
       "official_full": "Juan Ciscomani",
@@ -4213,7 +4746,14 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "House Judiciary Committee",
+          "thomas_id": "HSJU"
+        }
+      ]
     },
     "M001225": {
       "official_full": "Kevin Mullin",
@@ -4235,7 +4775,14 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "House Judiciary Committee",
+          "thomas_id": "HSJU"
+        }
+      ]
     },
     "G000598": {
       "official_full": "Robert Garcia",
@@ -4247,7 +4794,14 @@
         "sponsored": false,
         "cosponsored": true,
         "cosponsored_date": "08/22/2025"
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Ranking Member",
+          "committee": "House Oversight Committee",
+          "thomas_id": "HSGO"
+        }
+      ]
     },
     "P000620": {
       "official_full": "Brittany Pettersen",
@@ -4291,7 +4845,14 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "House Oversight Committee",
+          "thomas_id": "HSGO"
+        }
+      ]
     },
     "L000596": {
       "official_full": "Anna Paulina Luna",
@@ -4302,7 +4863,14 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "House Oversight Committee",
+          "thomas_id": "HSGO"
+        }
+      ]
     },
     "L000597": {
       "official_full": "Laurel M. Lee",
@@ -4313,7 +4881,14 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "House Judiciary Committee",
+          "thomas_id": "HSJU"
+        }
+      ]
     },
     "M001217": {
       "official_full": "Jared Moskowitz",
@@ -4324,7 +4899,14 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "House Judiciary Committee",
+          "thomas_id": "HSJU"
+        }
+      ]
     },
     "M001218": {
       "official_full": "Richard McCormick",
@@ -4511,7 +5093,14 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "House Oversight Committee",
+          "thomas_id": "HSGO"
+        }
+      ]
     },
     "E000235": {
       "official_full": "Mike Ezell",
@@ -4610,7 +5199,14 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "House Judiciary Committee",
+          "thomas_id": "HSJU"
+        }
+      ]
     },
     "L000599": {
       "official_full": "Michael Lawler",
@@ -4632,7 +5228,14 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "House Oversight Committee",
+          "thomas_id": "HSGO"
+        }
+      ]
     },
     "L000601": {
       "official_full": "Greg Landsman",
@@ -4709,7 +5312,14 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "House Oversight Committee",
+          "thomas_id": "HSGO"
+        }
+      ]
     },
     "D000530": {
       "official_full": "Christopher R. Deluzio",
@@ -4744,7 +5354,14 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "House Judiciary Committee",
+          "thomas_id": "HSJU"
+        }
+      ]
     },
     "O000175": {
       "official_full": "Andrew Ogles",
@@ -4810,7 +5427,19 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "House Judiciary Committee",
+          "thomas_id": "HSJU"
+        },
+        {
+          "title": "Member",
+          "committee": "House Oversight Committee",
+          "thomas_id": "HSGO"
+        }
+      ]
     },
     "C001131": {
       "official_full": "Greg Casar",
@@ -4821,7 +5450,14 @@
         "signed": "not_present",
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "House Oversight Committee",
+          "thomas_id": "HSGO"
+        }
+      ]
     },
     "H001095": {
       "official_full": "Wesley Hunt",
@@ -4832,7 +5468,14 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "House Judiciary Committee",
+          "thomas_id": "HSJU"
+        }
+      ]
     },
     "K000399": {
       "official_full": "Jennifer A. Kiggans",
@@ -4854,7 +5497,14 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "House Judiciary Committee",
+          "thomas_id": "HSJU"
+        }
+      ]
     },
     "G000600": {
       "official_full": "Marie Gluesenkamp Perez",
@@ -4887,7 +5537,14 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "House Judiciary Committee",
+          "thomas_id": "HSJU"
+        }
+      ]
     },
     "R000618": {
       "official_full": "Pete Ricketts",
@@ -5104,7 +5761,14 @@
         "sponsored": false,
         "cosponsored": true,
         "cosponsored_date": "07/17/2025"
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "House Oversight Committee",
+          "thomas_id": "HSGO"
+        }
+      ]
     },
     "H001098": {
       "official_full": "Abraham J. Hamadeh",
@@ -5126,7 +5790,14 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "House Oversight Committee",
+          "thomas_id": "HSGO"
+        }
+      ]
     },
     "G000605": {
       "official_full": "Adam Gray",
@@ -5203,7 +5874,14 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "House Oversight Committee",
+          "thomas_id": "HSGO"
+        }
+      ]
     },
     "H001100": {
       "official_full": "Jeff Hurd",
@@ -5269,7 +5947,14 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "House Oversight Committee",
+          "thomas_id": "HSGO"
+        }
+      ]
     },
     "S001229": {
       "official_full": "Jefferson Shreve",
@@ -5302,7 +5987,14 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "House Judiciary Committee",
+          "thomas_id": "HSJU"
+        }
+      ]
     },
     "O000176": {
       "official_full": "Johnny Olszewski, Jr.",
@@ -5381,7 +6073,14 @@
         "sponsored": false,
         "cosponsored": true,
         "cosponsored_date": "07/21/2025"
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "House Oversight Committee",
+          "thomas_id": "HSGO"
+        }
+      ]
     },
     "O000177": {
       "official_full": "Robert F. Onder, Jr.",
@@ -5392,7 +6091,14 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "House Judiciary Committee",
+          "thomas_id": "HSJU"
+        }
+      ]
     },
     "K000404": {
       "official_full": "Kimberlyn King-Hinds",
@@ -5435,7 +6141,14 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "House Judiciary Committee",
+          "thomas_id": "HSJU"
+        }
+      ]
     },
     "H001101": {
       "official_full": "Pat Harrigan",
@@ -5457,7 +6170,14 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "House Judiciary Committee",
+          "thomas_id": "HSJU"
+        }
+      ]
     },
     "M001236": {
       "official_full": "Tim Moore",
@@ -5655,7 +6375,19 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "House Judiciary Committee",
+          "thomas_id": "HSJU"
+        },
+        {
+          "title": "Member",
+          "committee": "House Oversight Committee",
+          "thomas_id": "HSGO"
+        }
+      ]
     },
     "J000310": {
       "official_full": "Julie Johnson",
@@ -5688,7 +6420,14 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "House Oversight Committee",
+          "thomas_id": "HSGO"
+        }
+      ]
     },
     "V000138": {
       "official_full": "Eugene Simon Vindman",
@@ -5710,7 +6449,14 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "House Oversight Committee",
+          "thomas_id": "HSGO"
+        }
+      ]
     },
     "B001322": {
       "official_full": "Michael Baumgartner",
@@ -5721,7 +6467,14 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "House Judiciary Committee",
+          "thomas_id": "HSJU"
+        }
+      ]
     },
     "R000621": {
       "official_full": "Emily Randall",
@@ -5732,7 +6485,14 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "House Oversight Committee",
+          "thomas_id": "HSGO"
+        }
+      ]
     },
     "M001235": {
       "official_full": "Riley M. Moore",
@@ -5773,7 +6533,14 @@
       "epstein_transparency_act": {
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "Senate Judiciary Committee",
+          "thomas_id": "SSJU"
+        }
+      ]
     },
     "P000622": {
       "official_full": "Jimmy Patronis",
@@ -5806,7 +6573,14 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": false
-      }
+      },
+      "committee_seat": [
+        {
+          "title": "Member",
+          "committee": "House Oversight Committee",
+          "thomas_id": "HSGO"
+        }
+      ]
     },
     "G000606": {
       "official_full": "Adelita S. Grijalva",
