@@ -1,26 +1,26 @@
 
 Cosponsor|Date Cosponsored
-Massie, Thomas [R-KY-4]*|07/15/2025
-Soto, Darren [D-FL-9]|07/16/2025
-Lynch, Stephen F. [D-MA-8]|07/16/2025
-Ansari, Yassamin [D-AZ-3]|07/17/2025
-McGovern, James P. [D-MA-2]|07/17/2025
-Thanedar, Shri [D-MI-13]|07/17/2025
-Johnson, Henry C. "Hank" [D-GA-4]|07/17/2025
-Omar, Ilhan [D-MN-5]|07/17/2025
-Sherman, Brad [D-CA-32]|07/17/2025
-Bell, Wesley [D-MO-1]|07/21/2025
-Olszewski, Johnny [D-MD-2]|07/21/2025
-Pelosi, Nancy [D-CA-11]|07/22/2025
-Deluzio, Christopher R. [D-PA-17]|07/22/2025
-Moulton, Seth [D-MA-6]|07/22/2025
-Norton, Eleanor Holmes [D-DC-At Large]|07/23/2025
-Mfume, Kweisi [D-MD-7]|07/23/2025
-Smith, Adam [D-WA-9]|07/23/2025
-Davis, Danny K. [D-IL-7]|07/23/2025
-Scanlon, Mary Gay [D-PA-5]|07/29/2025
-Figures, Shomari [D-AL-2]|07/29/2025
-Magaziner, Seth [D-RI-2]|08/08/2025
-Dexter, Maxine [D-OR-3]|08/22/2025
-Garcia, Robert [D-CA-42]|08/22/2025
-Harder, Josh [D-CA-9]|10/24/2025
+Massie, Thomas|[R-KY-4]*|07/15/2025
+Soto, Darren|[D-FL-9]|07/16/2025
+Lynch, Stephen F.|[D-MA-8]|07/16/2025
+Ansari, Yassamin|[D-AZ-3]|07/17/2025
+McGovern, James P.|[D-MA-2]|07/17/2025
+Thanedar, Shri|[D-MI-13]|07/17/2025
+Johnson, Henry C. "Hank"|[D-GA-4]|07/17/2025
+Omar, Ilhan|[D-MN-5]|07/17/2025
+Sherman, Brad|[D-CA-32]|07/17/2025
+Bell, Wesley|[D-MO-1]|07/21/2025
+Olszewski, Johnny|[D-MD-2]|07/21/2025
+Pelosi, Nancy|[D-CA-11]|07/22/2025
+Deluzio, Christopher R.|[D-PA-17]|07/22/2025
+Moulton, Seth|[D-MA-6]|07/22/2025
+Norton, Eleanor Holmes|[D-DC-At Large]|07/23/2025
+Mfume, Kweisi|[D-MD-7]|07/23/2025
+Smith, Adam|[D-WA-9]|07/23/2025
+Davis, Danny K.|[D-IL-7]|07/23/2025
+Scanlon, Mary Gay|[D-PA-5]|07/29/2025
+Figures, Shomari|[D-AL-2]|07/29/2025
+Magaziner, Seth|[D-RI-2]|08/08/2025
+Dexter, Maxine|[D-OR-3]|08/22/2025
+Garcia, Robert|[D-CA-42]|08/22/2025
+Harder, Josh|[D-CA-9]|10/24/2025
