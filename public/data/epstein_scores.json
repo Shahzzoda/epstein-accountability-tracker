@@ -12,7 +12,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "K000367": {
@@ -22,7 +26,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       },
       "committee_seat": [
         {
@@ -39,7 +47,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "W000802": {
@@ -49,7 +61,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       },
       "committee_seat": [
         {
@@ -66,7 +82,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "W000437": {
@@ -76,7 +96,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "C001035": {
@@ -86,7 +110,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "C001056": {
@@ -96,7 +124,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       },
       "committee_seat": [
         {
@@ -113,7 +145,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       },
       "committee_seat": [
         {
@@ -130,7 +166,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       },
       "committee_seat": [
         {
@@ -147,7 +187,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "M001176": {
@@ -157,7 +201,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "R000122": {
@@ -167,7 +215,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "R000584": {
@@ -177,7 +229,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "S001181": {
@@ -187,7 +243,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "W000805": {
@@ -197,7 +257,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "G000555": {
@@ -207,7 +271,11 @@
       "notes": "Mock Data: Strong advocate for transparency.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "C001088": {
@@ -217,7 +285,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       },
       "committee_seat": [
         {
@@ -235,7 +307,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "B001230": {
@@ -245,7 +321,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "B001267": {
@@ -255,7 +335,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "B001257": {
@@ -266,7 +350,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "B000490": {
@@ -277,7 +365,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 3rd, 2025"
+        }
       }
     },
     "B001243": {
@@ -287,7 +379,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       },
       "committee_seat": [
         {
@@ -304,7 +400,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       },
       "committee_seat": [
         {
@@ -321,7 +421,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "B001260": {
@@ -332,7 +436,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "C000059": {
@@ -343,7 +451,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "C001047": {
@@ -353,18 +465,26 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "C001072": {
-      "official_full": "André Carson",
+      "official_full": "Andr\u00e9 Carson",
       "score": 3.5,
       "status": "Unknown",
       "notes": "Voted Yea on Roll Call 289 (Epstein Transparency Measure)",
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "C001051": {
@@ -375,7 +495,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "C001075": {
@@ -385,7 +509,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "C001066": {
@@ -396,7 +524,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "C001080": {
@@ -407,7 +539,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "C001067": {
@@ -418,7 +554,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 3rd, 2025"
+        }
       }
     },
     "C001061": {
@@ -429,7 +569,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "C000537": {
@@ -440,7 +584,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 3rd, 2025"
+        }
       }
     },
     "C001068": {
@@ -451,7 +599,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       },
       "committee_seat": [
         {
@@ -469,7 +621,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "C001059": {
@@ -480,7 +636,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 3rd, 2025"
+        }
       }
     },
     "C001069": {
@@ -491,7 +651,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "C000880": {
@@ -501,7 +665,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "C001087": {
@@ -512,7 +680,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "C001063": {
@@ -523,7 +695,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 3rd, 2025"
+        }
       }
     },
     "D000096": {
@@ -535,7 +711,11 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": true,
-        "cosponsored_date": "07/23/2025"
+        "cosponsored_date": "07/23/2025",
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 3rd, 2025"
+        }
       }
     },
     "D000197": {
@@ -546,7 +726,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 3rd, 2025"
+        }
       }
     },
     "D000216": {
@@ -557,7 +741,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 3rd, 2025"
+        }
       }
     },
     "D000616": {
@@ -568,7 +756,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "D000600": {
@@ -579,7 +771,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "D000399": {
@@ -590,7 +786,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 3rd, 2025"
+        }
       }
     },
     "F000459": {
@@ -601,7 +801,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "F000450": {
@@ -612,7 +816,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       },
       "committee_seat": [
         {
@@ -630,7 +838,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 3rd, 2025"
+        }
       }
     },
     "G000565": {
@@ -641,7 +853,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       },
       "committee_seat": [
         {
@@ -658,7 +874,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       },
       "committee_seat": [
         {
@@ -676,7 +896,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "G000553": {
@@ -687,7 +911,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "G000568": {
@@ -698,7 +926,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "G000558": {
@@ -709,7 +941,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "H001052": {
@@ -720,7 +956,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "H001046": {
@@ -730,7 +970,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "H001047": {
@@ -741,7 +985,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 3rd, 2025"
+        }
       }
     },
     "H001042": {
@@ -751,7 +999,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       },
       "committee_seat": [
         {
@@ -768,7 +1020,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "H000874": {
@@ -779,7 +1035,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 3rd, 2025"
+        }
       }
     },
     "H001058": {
@@ -790,7 +1050,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "J000288": {
@@ -802,7 +1066,11 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": true,
-        "cosponsored_date": "07/17/2025"
+        "cosponsored_date": "07/17/2025",
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       },
       "committee_seat": [
         {
@@ -819,7 +1087,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "J000289": {
@@ -830,7 +1102,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       },
       "committee_seat": [
         {
@@ -853,7 +1129,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "K000375": {
@@ -864,7 +1144,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 3rd, 2025"
+        }
       }
     },
     "K000376": {
@@ -875,7 +1159,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "L000575": {
@@ -885,7 +1173,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "L000560": {
@@ -896,7 +1188,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 3rd, 2025"
+        }
       }
     },
     "L000557": {
@@ -907,7 +1203,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "L000566": {
@@ -918,7 +1218,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "L000577": {
@@ -928,7 +1232,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       },
       "committee_seat": [
         {
@@ -946,7 +1254,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       },
       "committee_seat": [
         {
@@ -964,17 +1276,25 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "L000570": {
-      "official_full": "Ben Ray Luján",
+      "official_full": "Ben Ray Luj\u00e1n",
       "score": 2.5,
       "status": "Unknown",
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "L000562": {
@@ -986,7 +1306,11 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": true,
-        "cosponsored_date": "07/16/2025"
+        "cosponsored_date": "07/16/2025",
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       },
       "committee_seat": [
         {
@@ -1003,7 +1327,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "M001163": {
@@ -1014,7 +1342,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "M001157": {
@@ -1025,7 +1357,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "M001177": {
@@ -1036,7 +1372,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       },
       "committee_seat": [
         {
@@ -1054,7 +1394,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 3rd, 2025"
+        }
       }
     },
     "M000312": {
@@ -1066,7 +1410,11 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": true,
-        "cosponsored_date": "07/17/2025"
+        "cosponsored_date": "07/17/2025",
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "M001137": {
@@ -1077,7 +1425,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "M001160": {
@@ -1088,7 +1440,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 3rd, 2025"
+        }
       }
     },
     "M000934": {
@@ -1098,7 +1454,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "M001153": {
@@ -1108,7 +1468,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "M001169": {
@@ -1118,7 +1482,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "M001111": {
@@ -1128,7 +1496,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "N000002": {
@@ -1139,7 +1511,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 3rd, 2025"
+        }
       },
       "committee_seat": [
         {
@@ -1157,7 +1533,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 3rd, 2025"
+        }
       }
     },
     "N000147": {
@@ -1168,7 +1548,11 @@
       "epstein_transparency_act": {
         "sponsored": false,
         "cosponsored": true,
-        "cosponsored_date": "07/23/2025"
+        "cosponsored_date": "07/23/2025",
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       },
       "committee_seat": [
         {
@@ -1186,7 +1570,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 3rd, 2025"
+        }
       }
     },
     "P000603": {
@@ -1196,7 +1584,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "P000197": {
@@ -1208,7 +1600,11 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": true,
-        "cosponsored_date": "07/22/2025"
+        "cosponsored_date": "07/22/2025",
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "P000595": {
@@ -1218,7 +1614,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "P000597": {
@@ -1229,7 +1629,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 3rd, 2025"
+        }
       }
     },
     "Q000023": {
@@ -1240,7 +1644,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "R000395": {
@@ -1251,7 +1659,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "R000575": {
@@ -1262,7 +1674,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "S001176": {
@@ -1273,7 +1689,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "S001145": {
@@ -1284,7 +1704,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "S001150": {
@@ -1294,7 +1718,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       },
       "committee_seat": [
         {
@@ -1311,7 +1739,11 @@
       "notes": "Mock Data: Voted against transparency measures.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "S001183": {
@@ -1322,7 +1754,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "S001189": {
@@ -1333,7 +1769,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "S001157": {
@@ -1344,7 +1784,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 3rd, 2025"
+        }
       }
     },
     "S000185": {
@@ -1355,7 +1799,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "S001184": {
@@ -1365,7 +1813,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "S001185": {
@@ -1376,7 +1828,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "S000344": {
@@ -1388,7 +1844,11 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": true,
-        "cosponsored_date": "07/17/2025"
+        "cosponsored_date": "07/17/2025",
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 3rd, 2025"
+        }
       }
     },
     "S001148": {
@@ -1399,7 +1859,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "S000510": {
@@ -1411,7 +1875,11 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": true,
-        "cosponsored_date": "07/23/2025"
+        "cosponsored_date": "07/23/2025",
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 3rd, 2025"
+        }
       }
     },
     "S001172": {
@@ -1422,7 +1890,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "S000522": {
@@ -1433,18 +1905,26 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "S001156": {
-      "official_full": "Linda T. Sánchez",
+      "official_full": "Linda T. S\u00e1nchez",
       "score": 3.5,
       "status": "Unknown",
       "notes": "Voted Yea on Roll Call 289 (Epstein Transparency Measure)",
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 3rd, 2025"
+        }
       }
     },
     "T000193": {
@@ -1455,7 +1935,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "T000460": {
@@ -1466,7 +1950,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 3rd, 2025"
+        }
       }
     },
     "T000467": {
@@ -1477,7 +1965,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "T000250": {
@@ -1487,7 +1979,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "T000469": {
@@ -1498,7 +1994,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "T000463": {
@@ -1509,7 +2009,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       },
       "committee_seat": [
         {
@@ -1526,18 +2030,26 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "V000081": {
-      "official_full": "Nydia M. Velázquez",
+      "official_full": "Nydia M. Vel\u00e1zquez",
       "score": 3.5,
       "status": "Unknown",
       "notes": "Voted Yea on Roll Call 289 (Epstein Transparency Measure)",
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 3rd, 2025"
+        }
       }
     },
     "W000798": {
@@ -1548,7 +2060,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "W000797": {
@@ -1559,7 +2075,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 3rd, 2025"
+        }
       }
     },
     "W000187": {
@@ -1570,7 +2090,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "W000806": {
@@ -1581,7 +2105,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "W000800": {
@@ -1591,7 +2119,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       },
       "committee_seat": [
         {
@@ -1609,7 +2141,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "W000808": {
@@ -1620,7 +2156,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "W000804": {
@@ -1631,7 +2171,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "W000809": {
@@ -1642,7 +2186,11 @@
       "epstein_transparency_act": {
         "signed": "not_present",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "W000779": {
@@ -1652,7 +2200,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "Y000064": {
@@ -1662,7 +2214,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "A000369": {
@@ -1673,7 +2229,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "B001278": {
@@ -1684,7 +2244,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 3rd, 2025"
+        }
       }
     },
     "D000617": {
@@ -1695,7 +2259,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "M001184": {
@@ -1707,7 +2275,11 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": true,
-        "cosponsored_date": "07/15/2025"
+        "cosponsored_date": "07/15/2025",
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       },
       "committee_seat": [
         {
@@ -1724,7 +2296,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "F000454": {
@@ -1735,7 +2311,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "T000468": {
@@ -1746,7 +2326,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "C001095": {
@@ -1756,7 +2340,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "H001068": {
@@ -1767,7 +2355,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 3rd, 2025"
+        }
       }
     },
     "B001287": {
@@ -1778,7 +2370,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 3rd, 2025"
+        }
       }
     },
     "S001193": {
@@ -1789,7 +2385,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 8th, 2025"
+        }
       },
       "committee_seat": [
         {
@@ -1807,7 +2407,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 3rd, 2025"
+        }
       }
     },
     "R000599": {
@@ -1818,7 +2422,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 3rd, 2025"
+        }
       }
     },
     "T000472": {
@@ -1829,7 +2437,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "V000130": {
@@ -1840,7 +2452,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 3rd, 2025"
+        }
       }
     },
     "P000608": {
@@ -1851,7 +2467,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 3rd, 2025"
+        }
       }
     },
     "F000462": {
@@ -1862,7 +2482,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "D000622": {
@@ -1872,7 +2496,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "B001282": {
@@ -1883,7 +2511,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "W000817": {
@@ -1893,7 +2525,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "K000383": {
@@ -1903,7 +2539,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "W000812": {
@@ -1914,7 +2554,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "D000618": {
@@ -1924,7 +2568,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "H001067": {
@@ -1935,7 +2583,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "C001096": {
@@ -1945,7 +2597,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "F000463": {
@@ -1955,7 +2611,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "M001188": {
@@ -1966,7 +2626,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "J000294": {
@@ -1977,7 +2641,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 3rd, 2025"
+        }
       }
     },
     "B001281": {
@@ -1988,7 +2656,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 3rd, 2025"
+        }
       }
     },
     "J000295": {
@@ -1999,7 +2671,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "M001190": {
@@ -2009,7 +2685,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "P000605": {
@@ -2020,7 +2700,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       },
       "committee_seat": [
         {
@@ -2037,7 +2721,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       },
       "committee_seat": [
         {
@@ -2055,7 +2743,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "C001091": {
@@ -2066,7 +2758,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 3rd, 2025"
+        }
       }
     },
     "W000816": {
@@ -2077,7 +2773,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "V000131": {
@@ -2088,7 +2788,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 3rd, 2025"
+        }
       }
     },
     "K000384": {
@@ -2098,7 +2802,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "P000607": {
@@ -2109,7 +2817,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 3rd, 2025"
+        }
       }
     },
     "K000385": {
@@ -2120,7 +2832,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 3rd, 2025"
+        }
       }
     },
     "S001195": {
@@ -2131,7 +2847,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "B001288": {
@@ -2141,7 +2861,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       },
       "committee_seat": [
         {
@@ -2159,7 +2883,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 3rd, 2025"
+        }
       }
     },
     "N000188": {
@@ -2170,7 +2898,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 3rd, 2025"
+        }
       }
     },
     "A000370": {
@@ -2181,7 +2913,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "P000609": {
@@ -2192,7 +2928,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       },
       "committee_seat": [
         {
@@ -2210,7 +2950,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "W000821": {
@@ -2221,7 +2965,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "G000574": {
@@ -2231,7 +2979,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "D000623": {
@@ -2242,7 +2994,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 3rd, 2025"
+        }
       }
     },
     "A000371": {
@@ -2253,7 +3009,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 3rd, 2025"
+        }
       }
     },
     "L000582": {
@@ -2264,7 +3024,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 3rd, 2025"
+        }
       },
       "committee_seat": [
         {
@@ -2282,7 +3046,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "C001103": {
@@ -2293,7 +3061,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "L000583": {
@@ -2304,7 +3076,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "A000372": {
@@ -2315,7 +3091,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "B001295": {
@@ -2326,7 +3106,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "M001196": {
@@ -2338,7 +3122,11 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": true,
-        "cosponsored_date": "07/22/2025"
+        "cosponsored_date": "07/22/2025",
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 3rd, 2025"
+        }
       }
     },
     "M001194": {
@@ -2349,7 +3137,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "D000624": {
@@ -2360,7 +3152,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "E000294": {
@@ -2371,7 +3167,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "R000603": {
@@ -2382,7 +3182,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "W000822": {
@@ -2393,7 +3197,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "S001196": {
@@ -2404,7 +3212,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "B001296": {
@@ -2415,7 +3227,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 3rd, 2025"
+        }
       }
     },
     "B001291": {
@@ -2426,7 +3242,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "B001292": {
@@ -2437,7 +3257,11 @@
       "epstein_transparency_act": {
         "signed": "not_present",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 3rd, 2025"
+        }
       }
     },
     "P000610": {
@@ -2447,7 +3271,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "N000189": {
@@ -2458,7 +3286,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "G000576": {
@@ -2469,7 +3301,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       },
       "committee_seat": [
         {
@@ -2491,7 +3327,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "S001198": {
@@ -2501,7 +3341,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "E000295": {
@@ -2511,7 +3355,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "T000476": {
@@ -2521,7 +3369,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       },
       "committee_seat": [
         {
@@ -2538,7 +3390,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "K000388": {
@@ -2549,7 +3405,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "L000585": {
@@ -2560,7 +3420,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "D000626": {
@@ -2571,7 +3435,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "C001108": {
@@ -2582,7 +3450,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       },
       "committee_seat": [
         {
@@ -2600,7 +3472,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "K000393": {
@@ -2610,7 +3486,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       },
       "committee_seat": [
         {
@@ -2627,7 +3507,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "C001113": {
@@ -2637,7 +3521,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "S001190": {
@@ -2648,7 +3536,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "B001302": {
@@ -2659,7 +3551,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       },
       "committee_seat": [
         {
@@ -2682,7 +3578,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": true,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       },
       "committee_seat": [
         {
@@ -2700,7 +3600,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "C001112": {
@@ -2711,18 +3615,26 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "B001300": {
-      "official_full": "Nanette Diaz Barragán",
+      "official_full": "Nanette Diaz Barrag\u00e1n",
       "score": 3.5,
       "status": "Unknown",
       "notes": "Voted Yea on Roll Call 289 (Epstein Transparency Measure)",
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "C001110": {
@@ -2733,7 +3645,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       },
       "committee_seat": [
         {
@@ -2750,7 +3666,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "D000628": {
@@ -2761,7 +3681,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "R000609": {
@@ -2772,7 +3696,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "S001200": {
@@ -2784,7 +3712,11 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": true,
-        "cosponsored_date": "07/16/2025"
+        "cosponsored_date": "07/16/2025",
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 3rd, 2025"
+        }
       }
     },
     "M001199": {
@@ -2795,7 +3727,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "K000391": {
@@ -2806,7 +3742,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       },
       "committee_seat": [
         {
@@ -2823,7 +3763,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "M001198": {
@@ -2833,7 +3777,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "H001077": {
@@ -2844,7 +3792,11 @@
       "epstein_transparency_act": {
         "signed": "no",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       },
       "committee_seat": [
         {
@@ -2862,7 +3814,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "R000606": {
@@ -2873,7 +3829,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       },
       "committee_seat": [
         {
@@ -2891,7 +3851,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "B001305": {
@@ -2901,7 +3865,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "B001298": {
@@ -2912,7 +3880,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "G000583": {
@@ -2923,7 +3895,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "R000608": {
@@ -2933,7 +3909,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "E000297": {
@@ -2944,7 +3924,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "F000466": {
@@ -2955,7 +3939,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "S001199": {
@@ -2966,7 +3954,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "K000392": {
@@ -2977,7 +3969,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "G000581": {
@@ -2988,7 +3984,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 3rd, 2025"
+        }
       }
     },
     "A000375": {
@@ -2999,7 +3999,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "J000298": {
@@ -3010,7 +4014,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       },
       "committee_seat": [
         {
@@ -3028,7 +4036,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "N000190": {
@@ -3039,7 +4051,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "G000585": {
@@ -3050,7 +4066,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 3rd, 2025"
+        }
       }
     },
     "C001114": {
@@ -3060,7 +4080,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "S001203": {
@@ -3070,7 +4094,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "H001079": {
@@ -3080,7 +4108,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "C001115": {
@@ -3091,7 +4123,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       },
       "committee_seat": [
         {
@@ -3109,7 +4145,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "H001082": {
@@ -3120,7 +4160,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "M001206": {
@@ -3131,7 +4175,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 3rd, 2025"
+        }
       }
     },
     "S001205": {
@@ -3143,7 +4191,11 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": true,
-        "cosponsored_date": "07/29/2025"
+        "cosponsored_date": "07/29/2025",
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       },
       "committee_seat": [
         {
@@ -3161,7 +4213,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 3rd, 2025"
+        }
       }
     },
     "H001066": {
@@ -3172,7 +4228,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 3rd, 2025"
+        }
       }
     },
     "S001211": {
@@ -3183,7 +4243,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "H001090": {
@@ -3195,7 +4259,11 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": true,
-        "cosponsored_date": "10/24/2025"
+        "cosponsored_date": "10/24/2025",
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 3rd, 2025"
+        }
       }
     },
     "L000593": {
@@ -3206,7 +4274,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 3rd, 2025"
+        }
       }
     },
     "N000191": {
@@ -3217,7 +4289,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       },
       "committee_seat": [
         {
@@ -3235,7 +4311,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "H001081": {
@@ -3246,7 +4326,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "S001214": {
@@ -3257,7 +4341,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "M001208": {
@@ -3268,7 +4356,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       },
       "committee_seat": [
         {
@@ -3286,18 +4378,26 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "G000586": {
-      "official_full": "Jesús G. \"Chuy\" García",
+      "official_full": "Jes\u00fas G. \"Chuy\" Garc\u00eda",
       "score": 2.5,
       "status": "Unknown",
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       },
       "committee_seat": [
         {
@@ -3315,7 +4415,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "U000040": {
@@ -3326,7 +4430,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "B001307": {
@@ -3337,7 +4445,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "D000629": {
@@ -3348,7 +4460,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 3rd, 2025"
+        }
       }
     },
     "T000482": {
@@ -3359,7 +4475,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "P000617": {
@@ -3370,7 +4490,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       },
       "committee_seat": [
         {
@@ -3387,7 +4511,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "S001215": {
@@ -3398,7 +4526,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "T000481": {
@@ -3409,7 +4541,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       },
       "committee_seat": [
         {
@@ -3427,7 +4563,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 3rd, 2025"
+        }
       }
     },
     "O000173": {
@@ -3439,7 +4579,11 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": true,
-        "cosponsored_date": "07/17/2025"
+        "cosponsored_date": "07/17/2025",
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "S001212": {
@@ -3450,7 +4594,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "G000591": {
@@ -3461,7 +4609,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "P000614": {
@@ -3472,7 +4624,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "V000133": {
@@ -3483,7 +4639,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       },
       "committee_seat": [
         {
@@ -3500,7 +4660,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "L000590": {
@@ -3511,7 +4675,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 3rd, 2025"
+        }
       }
     },
     "O000172": {
@@ -3522,7 +4690,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "D000631": {
@@ -3533,7 +4705,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 3rd, 2025"
+        }
       }
     },
     "H001085": {
@@ -3544,7 +4720,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "M001204": {
@@ -3555,7 +4735,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "J000302": {
@@ -3566,7 +4750,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "R000610": {
@@ -3577,7 +4765,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "T000480": {
@@ -3588,7 +4780,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       },
       "committee_seat": [
         {
@@ -3606,7 +4802,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "B001309": {
@@ -3617,7 +4817,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       },
       "committee_seat": [
         {
@@ -3635,7 +4839,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "C001120": {
@@ -3646,7 +4854,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "G000589": {
@@ -3657,7 +4869,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       },
       "committee_seat": [
         {
@@ -3675,7 +4891,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "E000299": {
@@ -3686,7 +4906,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "R000614": {
@@ -3697,7 +4921,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       },
       "committee_seat": [
         {
@@ -3715,7 +4943,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 3rd, 2025"
+        }
       }
     },
     "C001118": {
@@ -3726,7 +4958,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       },
       "committee_seat": [
         {
@@ -3744,7 +4980,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "S001213": {
@@ -3755,7 +4995,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "M001205": {
@@ -3766,7 +5010,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "S001217": {
@@ -3776,7 +5024,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "H001089": {
@@ -3786,7 +5038,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       },
       "committee_seat": [
         {
@@ -3804,7 +5060,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "M001210": {
@@ -3815,7 +5075,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "M000687": {
@@ -3827,7 +5091,11 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": true,
-        "cosponsored_date": "07/23/2025"
+        "cosponsored_date": "07/23/2025",
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       },
       "committee_seat": [
         {
@@ -3845,7 +5113,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       },
       "committee_seat": [
         {
@@ -3862,7 +5134,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "L000571": {
@@ -3872,7 +5148,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "I000056": {
@@ -3883,7 +5163,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       },
       "committee_seat": [
         {
@@ -3901,7 +5185,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       },
       "committee_seat": [
         {
@@ -3919,7 +5207,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "T000278": {
@@ -3929,7 +5221,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "H000273": {
@@ -3939,7 +5235,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "H000601": {
@@ -3949,7 +5249,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "M001212": {
@@ -3960,7 +5264,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       },
       "committee_seat": [
         {
@@ -3978,7 +5286,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "K000397": {
@@ -3989,7 +5301,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "J000305": {
@@ -4000,7 +5316,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "B000825": {
@@ -4011,7 +5331,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       },
       "committee_seat": [
         {
@@ -4029,7 +5353,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "F000472": {
@@ -4040,7 +5368,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "D000032": {
@@ -4051,7 +5383,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       },
       "committee_seat": [
         {
@@ -4069,7 +5405,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "S000168": {
@@ -4080,7 +5420,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "W000788": {
@@ -4091,7 +5435,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "C001116": {
@@ -4102,7 +5450,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "H001091": {
@@ -4113,7 +5465,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "M001215": {
@@ -4124,7 +5480,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "F000446": {
@@ -4135,7 +5495,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "M001211": {
@@ -4146,7 +5510,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "M001214": {
@@ -4157,7 +5525,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "S000929": {
@@ -4168,7 +5540,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "M000871": {
@@ -4179,7 +5555,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "A000148": {
@@ -4190,7 +5570,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 3rd, 2025"
+        }
       }
     },
     "M001136": {
@@ -4201,7 +5585,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "F000470": {
@@ -4212,7 +5600,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "R000305": {
@@ -4223,7 +5615,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       },
       "committee_seat": [
         {
@@ -4241,7 +5637,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 3rd, 2025"
+        }
       }
     },
     "G000597": {
@@ -4252,7 +5652,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "M000317": {
@@ -4263,7 +5667,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "T000486": {
@@ -4274,7 +5682,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 3rd, 2025"
+        }
       }
     },
     "B000740": {
@@ -4285,7 +5697,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "B000668": {
@@ -4296,7 +5712,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "M000194": {
@@ -4307,7 +5727,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       },
       "committee_seat": [
         {
@@ -4325,7 +5749,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "F000246": {
@@ -4336,7 +5764,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       },
       "committee_seat": [
         {
@@ -4354,7 +5786,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "J000304": {
@@ -4365,7 +5801,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "N000026": {
@@ -4376,7 +5816,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       },
       "committee_seat": [
         {
@@ -4394,7 +5838,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "V000134": {
@@ -4405,7 +5853,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "M001213": {
@@ -4416,7 +5868,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "O000086": {
@@ -4427,7 +5883,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "S001159": {
@@ -4438,7 +5898,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "F000471": {
@@ -4449,7 +5913,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       },
       "committee_seat": [
         {
@@ -4466,7 +5934,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       },
       "committee_seat": [
         {
@@ -4483,7 +5955,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "W000790": {
@@ -4493,7 +5969,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "T000478": {
@@ -4504,7 +5984,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "L000595": {
@@ -4515,7 +5999,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "C001125": {
@@ -4526,7 +6014,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "S001218": {
@@ -4537,7 +6029,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       },
       "committee_seat": [
         {
@@ -4555,7 +6051,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "B001313": {
@@ -4566,7 +6066,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       },
       "committee_seat": [
         {
@@ -4584,7 +6088,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "C001127": {
@@ -4595,7 +6103,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "F000474": {
@@ -4606,7 +6118,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "F000475": {
@@ -4617,7 +6133,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "R000579": {
@@ -4628,7 +6148,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "Y000067": {
@@ -4639,7 +6163,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "Z000018": {
@@ -4650,7 +6178,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "B001319": {
@@ -4660,7 +6192,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       },
       "committee_seat": [
         {
@@ -4677,7 +6213,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       },
       "committee_seat": [
         {
@@ -4694,7 +6234,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "S001220": {
@@ -4705,7 +6249,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "C001132": {
@@ -4716,7 +6264,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       },
       "committee_seat": [
         {
@@ -4734,7 +6286,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "K000401": {
@@ -4745,7 +6301,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       },
       "committee_seat": [
         {
@@ -4763,7 +6323,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 3rd, 2025"
+        }
       }
     },
     "K000400": {
@@ -4774,7 +6338,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 3rd, 2025"
+        }
       },
       "committee_seat": [
         {
@@ -4793,7 +6361,11 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": true,
-        "cosponsored_date": "08/22/2025"
+        "cosponsored_date": "08/22/2025",
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       },
       "committee_seat": [
         {
@@ -4811,7 +6383,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 3rd, 2025"
+        }
       }
     },
     "B001314": {
@@ -4822,7 +6398,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "M001216": {
@@ -4833,7 +6413,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "F000476": {
@@ -4844,7 +6428,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       },
       "committee_seat": [
         {
@@ -4862,7 +6450,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       },
       "committee_seat": [
         {
@@ -4880,7 +6472,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       },
       "committee_seat": [
         {
@@ -4898,7 +6494,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       },
       "committee_seat": [
         {
@@ -4916,7 +6516,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "C001129": {
@@ -4927,7 +6531,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "M001219": {
@@ -4937,7 +6545,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "T000487": {
@@ -4948,7 +6560,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "N000193": {
@@ -4959,7 +6575,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "J000309": {
@@ -4970,7 +6590,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "R000617": {
@@ -4981,7 +6605,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "B001315": {
@@ -4992,7 +6620,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "S001225": {
@@ -5003,7 +6635,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 3rd, 2025"
+        }
       }
     },
     "H001093": {
@@ -5014,7 +6650,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "M001220": {
@@ -5025,7 +6665,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "I000058": {
@@ -5036,7 +6680,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 3rd, 2025"
+        }
       }
     },
     "S001221": {
@@ -5047,7 +6695,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 3rd, 2025"
+        }
       }
     },
     "J000307": {
@@ -5058,7 +6710,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "T000488": {
@@ -5070,7 +6726,11 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": true,
-        "cosponsored_date": "07/17/2025"
+        "cosponsored_date": "07/17/2025",
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "A000379": {
@@ -5081,7 +6741,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "B001316": {
@@ -5092,7 +6756,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       },
       "committee_seat": [
         {
@@ -5110,7 +6778,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "D000230": {
@@ -5121,7 +6793,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "F000477": {
@@ -5132,7 +6808,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 3rd, 2025"
+        }
       }
     },
     "E000246": {
@@ -5143,7 +6823,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "K000398": {
@@ -5154,7 +6838,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "M001226": {
@@ -5165,7 +6853,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "V000136": {
@@ -5176,7 +6868,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "L000598": {
@@ -5187,7 +6883,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "G000599": {
@@ -5198,7 +6898,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 4th, 2025"
+        }
       },
       "committee_seat": [
         {
@@ -5216,7 +6920,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "L000600": {
@@ -5227,7 +6935,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       },
       "committee_seat": [
         {
@@ -5245,7 +6957,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "M001222": {
@@ -5256,7 +6972,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "S001223": {
@@ -5267,7 +6987,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "B001317": {
@@ -5278,7 +7002,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "H001094": {
@@ -5289,7 +7017,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 3rd, 2025"
+        }
       }
     },
     "S001226": {
@@ -5300,7 +7032,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "L000602": {
@@ -5311,7 +7047,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       },
       "committee_seat": [
         {
@@ -5330,7 +7070,11 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": true,
-        "cosponsored_date": "07/22/2025"
+        "cosponsored_date": "07/22/2025",
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 3rd, 2025"
+        }
       }
     },
     "M001223": {
@@ -5342,7 +7086,11 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": true,
-        "cosponsored_date": "08/08/2025"
+        "cosponsored_date": "08/08/2025",
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "F000478": {
@@ -5353,7 +7101,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       },
       "committee_seat": [
         {
@@ -5371,7 +7123,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "M001224": {
@@ -5382,7 +7138,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "S001224": {
@@ -5393,7 +7153,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "L000603": {
@@ -5404,7 +7168,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "D000594": {
@@ -5415,7 +7183,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "C001130": {
@@ -5426,7 +7198,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       },
       "committee_seat": [
         {
@@ -5449,7 +7225,11 @@
       "epstein_transparency_act": {
         "signed": "not_present",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       },
       "committee_seat": [
         {
@@ -5467,7 +7247,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       },
       "committee_seat": [
         {
@@ -5485,7 +7269,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "B001318": {
@@ -5496,7 +7284,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       },
       "committee_seat": [
         {
@@ -5514,7 +7306,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "V000135": {
@@ -5525,7 +7321,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "H001096": {
@@ -5536,7 +7336,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       },
       "committee_seat": [
         {
@@ -5553,7 +7357,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "M001227": {
@@ -5564,7 +7372,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "A000380": {
@@ -5575,7 +7387,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "M001228": {
@@ -5586,7 +7402,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "S001201": {
@@ -5597,7 +7417,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "K000402": {
@@ -5608,7 +7432,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 3rd, 2025"
+        }
       }
     },
     "F000480": {
@@ -5619,7 +7447,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "R000619": {
@@ -5630,7 +7462,11 @@
       "epstein_transparency_act": {
         "signed": "not_present",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "M001229": {
@@ -5641,7 +7477,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "W000829": {
@@ -5652,7 +7492,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "F000110": {
@@ -5663,7 +7507,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "S001188": {
@@ -5674,7 +7522,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "C001123": {
@@ -5685,7 +7537,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "A000382": {
@@ -5695,7 +7551,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "S001232": {
@@ -5705,7 +7565,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "M001242": {
@@ -5715,7 +7579,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "M001243": {
@@ -5725,7 +7593,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "B001323": {
@@ -5736,7 +7608,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "F000481": {
@@ -5748,7 +7624,11 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": true,
-        "cosponsored_date": "07/29/2025"
+        "cosponsored_date": "07/29/2025",
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "A000381": {
@@ -5760,7 +7640,11 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": true,
-        "cosponsored_date": "07/17/2025"
+        "cosponsored_date": "07/17/2025",
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       },
       "committee_seat": [
         {
@@ -5778,7 +7662,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "S001231": {
@@ -5789,7 +7677,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 3rd, 2025"
+        }
       },
       "committee_seat": [
         {
@@ -5807,7 +7699,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "L000607": {
@@ -5818,7 +7714,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 3rd, 2025"
+        }
       }
     },
     "W000830": {
@@ -5829,7 +7729,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "R000620": {
@@ -5840,7 +7744,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "F000483": {
@@ -5851,7 +7759,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "T000491": {
@@ -5862,7 +7774,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 3rd, 2025"
+        }
       }
     },
     "M001241": {
@@ -5873,7 +7789,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       },
       "committee_seat": [
         {
@@ -5891,7 +7811,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "C001137": {
@@ -5902,7 +7826,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "E000300": {
@@ -5913,7 +7841,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "M001238": {
@@ -5924,7 +7856,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "H001099": {
@@ -5935,7 +7871,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "J000311": {
@@ -5946,7 +7886,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       },
       "committee_seat": [
         {
@@ -5964,7 +7908,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "M001233": {
@@ -5975,7 +7923,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "S001228": {
@@ -5986,7 +7938,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       },
       "committee_seat": [
         {
@@ -6005,7 +7961,11 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": true,
-        "cosponsored_date": "07/21/2025"
+        "cosponsored_date": "07/21/2025",
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "E000301": {
@@ -6016,7 +7976,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "M001232": {
@@ -6027,7 +7991,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 3rd, 2025"
+        }
       }
     },
     "B001321": {
@@ -6038,7 +8006,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "M001237": {
@@ -6049,7 +8021,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "M001234": {
@@ -6060,7 +8036,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "B001324": {
@@ -6072,7 +8052,11 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": true,
-        "cosponsored_date": "07/21/2025"
+        "cosponsored_date": "07/21/2025",
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       },
       "committee_seat": [
         {
@@ -6090,7 +8074,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       },
       "committee_seat": [
         {
@@ -6107,7 +8095,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "D000634": {
@@ -6118,7 +8110,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "M001240": {
@@ -6129,7 +8125,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "H001102": {
@@ -6140,7 +8140,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       },
       "committee_seat": [
         {
@@ -6158,7 +8162,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "K000405": {
@@ -6169,7 +8177,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       },
       "committee_seat": [
         {
@@ -6187,7 +8199,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "F000482": {
@@ -6198,7 +8214,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "G000604": {
@@ -6209,7 +8229,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "C001136": {
@@ -6220,7 +8244,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "P000621": {
@@ -6231,7 +8259,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "G000602": {
@@ -6242,7 +8274,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "L000606": {
@@ -6253,7 +8289,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "R000622": {
@@ -6264,7 +8304,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 3rd, 2025"
+        }
       }
     },
     "M001231": {
@@ -6275,7 +8319,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "T000490": {
@@ -6286,7 +8334,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "D000635": {
@@ -6298,7 +8350,11 @@
         "signed": "yes",
         "sponsored": false,
         "cosponsored": true,
-        "cosponsored_date": "08/22/2025"
+        "cosponsored_date": "08/22/2025",
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "B001326": {
@@ -6309,7 +8365,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "M001230": {
@@ -6320,7 +8380,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "B001327": {
@@ -6331,17 +8395,25 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "H001103": {
-      "official_full": "Pablo José Hernández",
+      "official_full": "Pablo Jos\u00e9 Hern\u00e1ndez",
       "score": 2.5,
       "status": "Unknown",
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "B001325": {
@@ -6352,7 +8424,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "G000601": {
@@ -6363,7 +8439,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "G000603": {
@@ -6374,7 +8454,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       },
       "committee_seat": [
         {
@@ -6397,7 +8481,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "K000403": {
@@ -6408,7 +8496,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "M001239": {
@@ -6419,7 +8511,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       },
       "committee_seat": [
         {
@@ -6437,7 +8533,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       }
     },
     "S001230": {
@@ -6448,7 +8548,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       },
       "committee_seat": [
         {
@@ -6466,7 +8570,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       },
       "committee_seat": [
         {
@@ -6484,7 +8592,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 2nd, 2025"
+        }
       },
       "committee_seat": [
         {
@@ -6502,7 +8614,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "J000312": {
@@ -6512,7 +8628,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "H001104": {
@@ -6522,7 +8642,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "M001244": {
@@ -6532,7 +8656,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       },
       "committee_seat": [
         {
@@ -6550,7 +8678,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "F000484": {
@@ -6561,7 +8693,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "W000831": {
@@ -6572,7 +8708,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "September 10th, 2025"
+        }
       },
       "committee_seat": [
         {
@@ -6590,7 +8730,11 @@
       "epstein_transparency_act": {
         "signed": "yes",
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": true,
+          "date": "November 12th, 2025"
+        }
       }
     },
     "V000139": {
@@ -6600,7 +8744,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     },
     "M001245": {
@@ -6610,7 +8758,11 @@
       "notes": "We do not yet have specific data on this legislator's actions regarding the Epstein case. The default score of 2.5 indicates 'Unknown/Baseline'.",
       "epstein_transparency_act": {
         "sponsored": false,
-        "cosponsored": false
+        "cosponsored": false,
+        "discharge_petition": {
+          "signed": false,
+          "date": null
+        }
       }
     }
   }
