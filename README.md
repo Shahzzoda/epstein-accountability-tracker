@@ -43,14 +43,36 @@ This project relies on the excellent data and assets provided by the **[unitedst
 - **Legislator Data**: Sourced from [unitedstates/congress-legislators](https://github.com/unitedstates/congress-legislators).
 - **Legislator Images**: Sourced from [unitedstates/images](https://github.com/unitedstates/images).
 
-## Getting Started
+## How to Run (For Everyone)
 
-First, run the development server:
+You don't need to be a coder to run this! You just need a computer and about 5 minutes.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+### 1. Prerequisite
+Ensure you have **Node.js** installed.
+- [Download Node.js here](https://nodejs.org/) (Click the "LTS" version).
+- To check if you have it, open your Terminal (Mac) or Command Prompt (Windows) and type `node -v`. If it prints a number like `v20.x.x` or higher, you are good.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Get the Code
+- **Option A (Easier):** Click the green **Code** button on this page and select **Download ZIP**. Unzip the folder to your Desktop.
+- **Option B (Coders):** Run `git clone [repository-url]` in your terminal.
+
+### 3. Start the App
+1. Open your Terminal or Command Prompt.
+2. Type `cd` followed by a space, then drag the unzipped folder into the terminal window. It should look like `cd /Users/you/Desktop/rep-finder`. Press Enter.
+3. Type `npm install` and press Enter. Wait for it to finish (it might take a minute).
+4. Type `npm run dev` and press Enter.
+
+### 4. View it
+Open your web browser (Chrome, Safari, etc.) and go to:
+[http://localhost:3000](http://localhost:3000)
+
+## How to Contribute
+
+We need help verifying data!
+
+- **Found a mistake?**
+  - If you have a GitHub account, [open an Issue](https://github.com/your-repo/rep-finder/issues).
+  - If not, email us at `[maintainer-email]` (Subject: Data Correction).
+
+- **Want to add missing data?**
+  - Use the "Join the effort" link in the app footer to contact the team.

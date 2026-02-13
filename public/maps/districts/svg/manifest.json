@@ -1,0 +1,2678 @@
+{
+  "generatedAt": "2026-02-13T04:52:37.969Z",
+  "source": {
+    "service": "Census TIGERweb Legislative MapServer/0",
+    "vintage": "119th Congressional Districts (January 1, 2025)"
+  },
+  "image": {
+    "format": "svg",
+    "width": 1200,
+    "height": 675
+  },
+  "assets": {
+    "CA-28": {
+      "path": "/maps/districts/svg/CA-28.svg",
+      "state": "CA",
+      "district": "28",
+      "geoid": "0628"
+    },
+    "CA-10": {
+      "path": "/maps/districts/svg/CA-10.svg",
+      "state": "CA",
+      "district": "10",
+      "geoid": "0610"
+    },
+    "CA-2": {
+      "path": "/maps/districts/svg/CA-2.svg",
+      "state": "CA",
+      "district": "2",
+      "geoid": "0602"
+    },
+    "CA-49": {
+      "path": "/maps/districts/svg/CA-49.svg",
+      "state": "CA",
+      "district": "49",
+      "geoid": "0649"
+    },
+    "CA-16": {
+      "path": "/maps/districts/svg/CA-16.svg",
+      "state": "CA",
+      "district": "16",
+      "geoid": "0616"
+    },
+    "CA-12": {
+      "path": "/maps/districts/svg/CA-12.svg",
+      "state": "CA",
+      "district": "12",
+      "geoid": "0612"
+    },
+    "CA-39": {
+      "path": "/maps/districts/svg/CA-39.svg",
+      "state": "CA",
+      "district": "39",
+      "geoid": "0639"
+    },
+    "CA-9": {
+      "path": "/maps/districts/svg/CA-9.svg",
+      "state": "CA",
+      "district": "9",
+      "geoid": "0609"
+    },
+    "CA-33": {
+      "path": "/maps/districts/svg/CA-33.svg",
+      "state": "CA",
+      "district": "33",
+      "geoid": "0633"
+    },
+    "CA-8": {
+      "path": "/maps/districts/svg/CA-8.svg",
+      "state": "CA",
+      "district": "8",
+      "geoid": "0608"
+    },
+    "CA-32": {
+      "path": "/maps/districts/svg/CA-32.svg",
+      "state": "CA",
+      "district": "32",
+      "geoid": "0632"
+    },
+    "CA-23": {
+      "path": "/maps/districts/svg/CA-23.svg",
+      "state": "CA",
+      "district": "23",
+      "geoid": "0623"
+    },
+    "CA-31": {
+      "path": "/maps/districts/svg/CA-31.svg",
+      "state": "CA",
+      "district": "31",
+      "geoid": "0631"
+    },
+    "CA-44": {
+      "path": "/maps/districts/svg/CA-44.svg",
+      "state": "CA",
+      "district": "44",
+      "geoid": "0644"
+    },
+    "CA-50": {
+      "path": "/maps/districts/svg/CA-50.svg",
+      "state": "CA",
+      "district": "50",
+      "geoid": "0650"
+    },
+    "CA-27": {
+      "path": "/maps/districts/svg/CA-27.svg",
+      "state": "CA",
+      "district": "27",
+      "geoid": "0627"
+    },
+    "CA-13": {
+      "path": "/maps/districts/svg/CA-13.svg",
+      "state": "CA",
+      "district": "13",
+      "geoid": "0613"
+    },
+    "CA-1": {
+      "path": "/maps/districts/svg/CA-1.svg",
+      "state": "CA",
+      "district": "1",
+      "geoid": "0601"
+    },
+    "CA-30": {
+      "path": "/maps/districts/svg/CA-30.svg",
+      "state": "CA",
+      "district": "30",
+      "geoid": "0630"
+    },
+    "CA-41": {
+      "path": "/maps/districts/svg/CA-41.svg",
+      "state": "CA",
+      "district": "41",
+      "geoid": "0641"
+    },
+    "CA-6": {
+      "path": "/maps/districts/svg/CA-6.svg",
+      "state": "CA",
+      "district": "6",
+      "geoid": "0606"
+    },
+    "CA-36": {
+      "path": "/maps/districts/svg/CA-36.svg",
+      "state": "CA",
+      "district": "36",
+      "geoid": "0636"
+    },
+    "CA-35": {
+      "path": "/maps/districts/svg/CA-35.svg",
+      "state": "CA",
+      "district": "35",
+      "geoid": "0635"
+    },
+    "CA-5": {
+      "path": "/maps/districts/svg/CA-5.svg",
+      "state": "CA",
+      "district": "5",
+      "geoid": "0605"
+    },
+    "CA-24": {
+      "path": "/maps/districts/svg/CA-24.svg",
+      "state": "CA",
+      "district": "24",
+      "geoid": "0624"
+    },
+    "CA-45": {
+      "path": "/maps/districts/svg/CA-45.svg",
+      "state": "CA",
+      "district": "45",
+      "geoid": "0645"
+    },
+    "CA-34": {
+      "path": "/maps/districts/svg/CA-34.svg",
+      "state": "CA",
+      "district": "34",
+      "geoid": "0634"
+    },
+    "CA-38": {
+      "path": "/maps/districts/svg/CA-38.svg",
+      "state": "CA",
+      "district": "38",
+      "geoid": "0638"
+    },
+    "CA-18": {
+      "path": "/maps/districts/svg/CA-18.svg",
+      "state": "CA",
+      "district": "18",
+      "geoid": "0618"
+    },
+    "CA-48": {
+      "path": "/maps/districts/svg/CA-48.svg",
+      "state": "CA",
+      "district": "48",
+      "geoid": "0648"
+    },
+    "CA-25": {
+      "path": "/maps/districts/svg/CA-25.svg",
+      "state": "CA",
+      "district": "25",
+      "geoid": "0625"
+    },
+    "CA-42": {
+      "path": "/maps/districts/svg/CA-42.svg",
+      "state": "CA",
+      "district": "42",
+      "geoid": "0642"
+    },
+    "CA-15": {
+      "path": "/maps/districts/svg/CA-15.svg",
+      "state": "CA",
+      "district": "15",
+      "geoid": "0615"
+    },
+    "CA-4": {
+      "path": "/maps/districts/svg/CA-4.svg",
+      "state": "CA",
+      "district": "4",
+      "geoid": "0604"
+    },
+    "CA-29": {
+      "path": "/maps/districts/svg/CA-29.svg",
+      "state": "CA",
+      "district": "29",
+      "geoid": "0629"
+    },
+    "CA-40": {
+      "path": "/maps/districts/svg/CA-40.svg",
+      "state": "CA",
+      "district": "40",
+      "geoid": "0640"
+    },
+    "CA-22": {
+      "path": "/maps/districts/svg/CA-22.svg",
+      "state": "CA",
+      "district": "22",
+      "geoid": "0622"
+    },
+    "CA-21": {
+      "path": "/maps/districts/svg/CA-21.svg",
+      "state": "CA",
+      "district": "21",
+      "geoid": "0621"
+    },
+    "CA-11": {
+      "path": "/maps/districts/svg/CA-11.svg",
+      "state": "CA",
+      "district": "11",
+      "geoid": "0611"
+    },
+    "CA-43": {
+      "path": "/maps/districts/svg/CA-43.svg",
+      "state": "CA",
+      "district": "43",
+      "geoid": "0643"
+    },
+    "CA-19": {
+      "path": "/maps/districts/svg/CA-19.svg",
+      "state": "CA",
+      "district": "19",
+      "geoid": "0619"
+    },
+    "CA-37": {
+      "path": "/maps/districts/svg/CA-37.svg",
+      "state": "CA",
+      "district": "37",
+      "geoid": "0637"
+    },
+    "CA-52": {
+      "path": "/maps/districts/svg/CA-52.svg",
+      "state": "CA",
+      "district": "52",
+      "geoid": "0652"
+    },
+    "CA-17": {
+      "path": "/maps/districts/svg/CA-17.svg",
+      "state": "CA",
+      "district": "17",
+      "geoid": "0617"
+    },
+    "CA-14": {
+      "path": "/maps/districts/svg/CA-14.svg",
+      "state": "CA",
+      "district": "14",
+      "geoid": "0614"
+    },
+    "CA-47": {
+      "path": "/maps/districts/svg/CA-47.svg",
+      "state": "CA",
+      "district": "47",
+      "geoid": "0647"
+    },
+    "CA-20": {
+      "path": "/maps/districts/svg/CA-20.svg",
+      "state": "CA",
+      "district": "20",
+      "geoid": "0620"
+    },
+    "CA-51": {
+      "path": "/maps/districts/svg/CA-51.svg",
+      "state": "CA",
+      "district": "51",
+      "geoid": "0651"
+    },
+    "CA-46": {
+      "path": "/maps/districts/svg/CA-46.svg",
+      "state": "CA",
+      "district": "46",
+      "geoid": "0646"
+    },
+    "CA-7": {
+      "path": "/maps/districts/svg/CA-7.svg",
+      "state": "CA",
+      "district": "7",
+      "geoid": "0607"
+    },
+    "CA-26": {
+      "path": "/maps/districts/svg/CA-26.svg",
+      "state": "CA",
+      "district": "26",
+      "geoid": "0626"
+    },
+    "CA-3": {
+      "path": "/maps/districts/svg/CA-3.svg",
+      "state": "CA",
+      "district": "3",
+      "geoid": "0603"
+    },
+    "CO-3": {
+      "path": "/maps/districts/svg/CO-3.svg",
+      "state": "CO",
+      "district": "3",
+      "geoid": "0803"
+    },
+    "CO-8": {
+      "path": "/maps/districts/svg/CO-8.svg",
+      "state": "CO",
+      "district": "8",
+      "geoid": "0808"
+    },
+    "CO-6": {
+      "path": "/maps/districts/svg/CO-6.svg",
+      "state": "CO",
+      "district": "6",
+      "geoid": "0806"
+    },
+    "CO-4": {
+      "path": "/maps/districts/svg/CO-4.svg",
+      "state": "CO",
+      "district": "4",
+      "geoid": "0804"
+    },
+    "CO-5": {
+      "path": "/maps/districts/svg/CO-5.svg",
+      "state": "CO",
+      "district": "5",
+      "geoid": "0805"
+    },
+    "CO-1": {
+      "path": "/maps/districts/svg/CO-1.svg",
+      "state": "CO",
+      "district": "1",
+      "geoid": "0801"
+    },
+    "CO-2": {
+      "path": "/maps/districts/svg/CO-2.svg",
+      "state": "CO",
+      "district": "2",
+      "geoid": "0802"
+    },
+    "CO-7": {
+      "path": "/maps/districts/svg/CO-7.svg",
+      "state": "CO",
+      "district": "7",
+      "geoid": "0807"
+    },
+    "OK-3": {
+      "path": "/maps/districts/svg/OK-3.svg",
+      "state": "OK",
+      "district": "3",
+      "geoid": "4003"
+    },
+    "OK-1": {
+      "path": "/maps/districts/svg/OK-1.svg",
+      "state": "OK",
+      "district": "1",
+      "geoid": "4001"
+    },
+    "OK-5": {
+      "path": "/maps/districts/svg/OK-5.svg",
+      "state": "OK",
+      "district": "5",
+      "geoid": "4005"
+    },
+    "OK-4": {
+      "path": "/maps/districts/svg/OK-4.svg",
+      "state": "OK",
+      "district": "4",
+      "geoid": "4004"
+    },
+    "OK-2": {
+      "path": "/maps/districts/svg/OK-2.svg",
+      "state": "OK",
+      "district": "2",
+      "geoid": "4002"
+    },
+    "DE-0": {
+      "path": "/maps/districts/svg/DE-0.svg",
+      "state": "DE",
+      "district": "0",
+      "geoid": "1000"
+    },
+    "ME-1": {
+      "path": "/maps/districts/svg/ME-1.svg",
+      "state": "ME",
+      "district": "1",
+      "geoid": "2301"
+    },
+    "ME-2": {
+      "path": "/maps/districts/svg/ME-2.svg",
+      "state": "ME",
+      "district": "2",
+      "geoid": "2302"
+    },
+    "MD-3": {
+      "path": "/maps/districts/svg/MD-3.svg",
+      "state": "MD",
+      "district": "3",
+      "geoid": "2403"
+    },
+    "MD-1": {
+      "path": "/maps/districts/svg/MD-1.svg",
+      "state": "MD",
+      "district": "1",
+      "geoid": "2401"
+    },
+    "MD-8": {
+      "path": "/maps/districts/svg/MD-8.svg",
+      "state": "MD",
+      "district": "8",
+      "geoid": "2408"
+    },
+    "MD-5": {
+      "path": "/maps/districts/svg/MD-5.svg",
+      "state": "MD",
+      "district": "5",
+      "geoid": "2405"
+    },
+    "MD-6": {
+      "path": "/maps/districts/svg/MD-6.svg",
+      "state": "MD",
+      "district": "6",
+      "geoid": "2406"
+    },
+    "MD-4": {
+      "path": "/maps/districts/svg/MD-4.svg",
+      "state": "MD",
+      "district": "4",
+      "geoid": "2404"
+    },
+    "MD-2": {
+      "path": "/maps/districts/svg/MD-2.svg",
+      "state": "MD",
+      "district": "2",
+      "geoid": "2402"
+    },
+    "MD-7": {
+      "path": "/maps/districts/svg/MD-7.svg",
+      "state": "MD",
+      "district": "7",
+      "geoid": "2407"
+    },
+    "WA-2": {
+      "path": "/maps/districts/svg/WA-2.svg",
+      "state": "WA",
+      "district": "2",
+      "geoid": "5302"
+    },
+    "WA-5": {
+      "path": "/maps/districts/svg/WA-5.svg",
+      "state": "WA",
+      "district": "5",
+      "geoid": "5305"
+    },
+    "WA-1": {
+      "path": "/maps/districts/svg/WA-1.svg",
+      "state": "WA",
+      "district": "1",
+      "geoid": "5301"
+    },
+    "WA-3": {
+      "path": "/maps/districts/svg/WA-3.svg",
+      "state": "WA",
+      "district": "3",
+      "geoid": "5303"
+    },
+    "WA-8": {
+      "path": "/maps/districts/svg/WA-8.svg",
+      "state": "WA",
+      "district": "8",
+      "geoid": "5308"
+    },
+    "WA-6": {
+      "path": "/maps/districts/svg/WA-6.svg",
+      "state": "WA",
+      "district": "6",
+      "geoid": "5306"
+    },
+    "WA-4": {
+      "path": "/maps/districts/svg/WA-4.svg",
+      "state": "WA",
+      "district": "4",
+      "geoid": "5304"
+    },
+    "WA-10": {
+      "path": "/maps/districts/svg/WA-10.svg",
+      "state": "WA",
+      "district": "10",
+      "geoid": "5310"
+    },
+    "WA-7": {
+      "path": "/maps/districts/svg/WA-7.svg",
+      "state": "WA",
+      "district": "7",
+      "geoid": "5307"
+    },
+    "WA-9": {
+      "path": "/maps/districts/svg/WA-9.svg",
+      "state": "WA",
+      "district": "9",
+      "geoid": "5309"
+    },
+    "PA-3": {
+      "path": "/maps/districts/svg/PA-3.svg",
+      "state": "PA",
+      "district": "3",
+      "geoid": "4203"
+    },
+    "PA-5": {
+      "path": "/maps/districts/svg/PA-5.svg",
+      "state": "PA",
+      "district": "5",
+      "geoid": "4205"
+    },
+    "PA-6": {
+      "path": "/maps/districts/svg/PA-6.svg",
+      "state": "PA",
+      "district": "6",
+      "geoid": "4206"
+    },
+    "PA-17": {
+      "path": "/maps/districts/svg/PA-17.svg",
+      "state": "PA",
+      "district": "17",
+      "geoid": "4217"
+    },
+    "PA-15": {
+      "path": "/maps/districts/svg/PA-15.svg",
+      "state": "PA",
+      "district": "15",
+      "geoid": "4215"
+    },
+    "PA-4": {
+      "path": "/maps/districts/svg/PA-4.svg",
+      "state": "PA",
+      "district": "4",
+      "geoid": "4204"
+    },
+    "PA-10": {
+      "path": "/maps/districts/svg/PA-10.svg",
+      "state": "PA",
+      "district": "10",
+      "geoid": "4210"
+    },
+    "PA-7": {
+      "path": "/maps/districts/svg/PA-7.svg",
+      "state": "PA",
+      "district": "7",
+      "geoid": "4207"
+    },
+    "PA-11": {
+      "path": "/maps/districts/svg/PA-11.svg",
+      "state": "PA",
+      "district": "11",
+      "geoid": "4211"
+    },
+    "PA-12": {
+      "path": "/maps/districts/svg/PA-12.svg",
+      "state": "PA",
+      "district": "12",
+      "geoid": "4212"
+    },
+    "PA-9": {
+      "path": "/maps/districts/svg/PA-9.svg",
+      "state": "PA",
+      "district": "9",
+      "geoid": "4209"
+    },
+    "PA-8": {
+      "path": "/maps/districts/svg/PA-8.svg",
+      "state": "PA",
+      "district": "8",
+      "geoid": "4208"
+    },
+    "PA-14": {
+      "path": "/maps/districts/svg/PA-14.svg",
+      "state": "PA",
+      "district": "14",
+      "geoid": "4214"
+    },
+    "PA-1": {
+      "path": "/maps/districts/svg/PA-1.svg",
+      "state": "PA",
+      "district": "1",
+      "geoid": "4201"
+    },
+    "PA-13": {
+      "path": "/maps/districts/svg/PA-13.svg",
+      "state": "PA",
+      "district": "13",
+      "geoid": "4213"
+    },
+    "PA-16": {
+      "path": "/maps/districts/svg/PA-16.svg",
+      "state": "PA",
+      "district": "16",
+      "geoid": "4216"
+    },
+    "PA-2": {
+      "path": "/maps/districts/svg/PA-2.svg",
+      "state": "PA",
+      "district": "2",
+      "geoid": "4202"
+    },
+    "TX-26": {
+      "path": "/maps/districts/svg/TX-26.svg",
+      "state": "TX",
+      "district": "26",
+      "geoid": "4826"
+    },
+    "TX-19": {
+      "path": "/maps/districts/svg/TX-19.svg",
+      "state": "TX",
+      "district": "19",
+      "geoid": "4819"
+    },
+    "TX-13": {
+      "path": "/maps/districts/svg/TX-13.svg",
+      "state": "TX",
+      "district": "13",
+      "geoid": "4813"
+    },
+    "TX-20": {
+      "path": "/maps/districts/svg/TX-20.svg",
+      "state": "TX",
+      "district": "20",
+      "geoid": "4820"
+    },
+    "TX-1": {
+      "path": "/maps/districts/svg/TX-1.svg",
+      "state": "TX",
+      "district": "1",
+      "geoid": "4801"
+    },
+    "TX-8": {
+      "path": "/maps/districts/svg/TX-8.svg",
+      "state": "TX",
+      "district": "8",
+      "geoid": "4808"
+    },
+    "TX-31": {
+      "path": "/maps/districts/svg/TX-31.svg",
+      "state": "TX",
+      "district": "31",
+      "geoid": "4831"
+    },
+    "TX-27": {
+      "path": "/maps/districts/svg/TX-27.svg",
+      "state": "TX",
+      "district": "27",
+      "geoid": "4827"
+    },
+    "TX-14": {
+      "path": "/maps/districts/svg/TX-14.svg",
+      "state": "TX",
+      "district": "14",
+      "geoid": "4814"
+    },
+    "TX-33": {
+      "path": "/maps/districts/svg/TX-33.svg",
+      "state": "TX",
+      "district": "33",
+      "geoid": "4833"
+    },
+    "TX-18": {
+      "path": "/maps/districts/svg/TX-18.svg",
+      "state": "TX",
+      "district": "18",
+      "geoid": "4818"
+    },
+    "TX-16": {
+      "path": "/maps/districts/svg/TX-16.svg",
+      "state": "TX",
+      "district": "16",
+      "geoid": "4816"
+    },
+    "TX-30": {
+      "path": "/maps/districts/svg/TX-30.svg",
+      "state": "TX",
+      "district": "30",
+      "geoid": "4830"
+    },
+    "TX-35": {
+      "path": "/maps/districts/svg/TX-35.svg",
+      "state": "TX",
+      "district": "35",
+      "geoid": "4835"
+    },
+    "TX-12": {
+      "path": "/maps/districts/svg/TX-12.svg",
+      "state": "TX",
+      "district": "12",
+      "geoid": "4812"
+    },
+    "TX-24": {
+      "path": "/maps/districts/svg/TX-24.svg",
+      "state": "TX",
+      "district": "24",
+      "geoid": "4824"
+    },
+    "TX-38": {
+      "path": "/maps/districts/svg/TX-38.svg",
+      "state": "TX",
+      "district": "38",
+      "geoid": "4838"
+    },
+    "TX-17": {
+      "path": "/maps/districts/svg/TX-17.svg",
+      "state": "TX",
+      "district": "17",
+      "geoid": "4817"
+    },
+    "TX-25": {
+      "path": "/maps/districts/svg/TX-25.svg",
+      "state": "TX",
+      "district": "25",
+      "geoid": "4825"
+    },
+    "TX-15": {
+      "path": "/maps/districts/svg/TX-15.svg",
+      "state": "TX",
+      "district": "15",
+      "geoid": "4815"
+    },
+    "TX-29": {
+      "path": "/maps/districts/svg/TX-29.svg",
+      "state": "TX",
+      "district": "29",
+      "geoid": "4829"
+    },
+    "TX-10": {
+      "path": "/maps/districts/svg/TX-10.svg",
+      "state": "TX",
+      "district": "10",
+      "geoid": "4810"
+    },
+    "TX-2": {
+      "path": "/maps/districts/svg/TX-2.svg",
+      "state": "TX",
+      "district": "2",
+      "geoid": "4802"
+    },
+    "TX-22": {
+      "path": "/maps/districts/svg/TX-22.svg",
+      "state": "TX",
+      "district": "22",
+      "geoid": "4822"
+    },
+    "TX-21": {
+      "path": "/maps/districts/svg/TX-21.svg",
+      "state": "TX",
+      "district": "21",
+      "geoid": "4821"
+    },
+    "TX-23": {
+      "path": "/maps/districts/svg/TX-23.svg",
+      "state": "TX",
+      "district": "23",
+      "geoid": "4823"
+    },
+    "TX-7": {
+      "path": "/maps/districts/svg/TX-7.svg",
+      "state": "TX",
+      "district": "7",
+      "geoid": "4807"
+    },
+    "TX-37": {
+      "path": "/maps/districts/svg/TX-37.svg",
+      "state": "TX",
+      "district": "37",
+      "geoid": "4837"
+    },
+    "TX-6": {
+      "path": "/maps/districts/svg/TX-6.svg",
+      "state": "TX",
+      "district": "6",
+      "geoid": "4806"
+    },
+    "TX-11": {
+      "path": "/maps/districts/svg/TX-11.svg",
+      "state": "TX",
+      "district": "11",
+      "geoid": "4811"
+    },
+    "TX-5": {
+      "path": "/maps/districts/svg/TX-5.svg",
+      "state": "TX",
+      "district": "5",
+      "geoid": "4805"
+    },
+    "TX-28": {
+      "path": "/maps/districts/svg/TX-28.svg",
+      "state": "TX",
+      "district": "28",
+      "geoid": "4828"
+    },
+    "TX-4": {
+      "path": "/maps/districts/svg/TX-4.svg",
+      "state": "TX",
+      "district": "4",
+      "geoid": "4804"
+    },
+    "TX-32": {
+      "path": "/maps/districts/svg/TX-32.svg",
+      "state": "TX",
+      "district": "32",
+      "geoid": "4832"
+    },
+    "TX-36": {
+      "path": "/maps/districts/svg/TX-36.svg",
+      "state": "TX",
+      "district": "36",
+      "geoid": "4836"
+    },
+    "TX-34": {
+      "path": "/maps/districts/svg/TX-34.svg",
+      "state": "TX",
+      "district": "34",
+      "geoid": "4834"
+    },
+    "TX-9": {
+      "path": "/maps/districts/svg/TX-9.svg",
+      "state": "TX",
+      "district": "9",
+      "geoid": "4809"
+    },
+    "TX-3": {
+      "path": "/maps/districts/svg/TX-3.svg",
+      "state": "TX",
+      "district": "3",
+      "geoid": "4803"
+    },
+    "VA-4": {
+      "path": "/maps/districts/svg/VA-4.svg",
+      "state": "VA",
+      "district": "4",
+      "geoid": "5104"
+    },
+    "VA-3": {
+      "path": "/maps/districts/svg/VA-3.svg",
+      "state": "VA",
+      "district": "3",
+      "geoid": "5103"
+    },
+    "VA-9": {
+      "path": "/maps/districts/svg/VA-9.svg",
+      "state": "VA",
+      "district": "9",
+      "geoid": "5109"
+    },
+    "VA-1": {
+      "path": "/maps/districts/svg/VA-1.svg",
+      "state": "VA",
+      "district": "1",
+      "geoid": "5101"
+    },
+    "VA-8": {
+      "path": "/maps/districts/svg/VA-8.svg",
+      "state": "VA",
+      "district": "8",
+      "geoid": "5108"
+    },
+    "VA-5": {
+      "path": "/maps/districts/svg/VA-5.svg",
+      "state": "VA",
+      "district": "5",
+      "geoid": "5105"
+    },
+    "VA-6": {
+      "path": "/maps/districts/svg/VA-6.svg",
+      "state": "VA",
+      "district": "6",
+      "geoid": "5106"
+    },
+    "VA-10": {
+      "path": "/maps/districts/svg/VA-10.svg",
+      "state": "VA",
+      "district": "10",
+      "geoid": "5110"
+    },
+    "VA-2": {
+      "path": "/maps/districts/svg/VA-2.svg",
+      "state": "VA",
+      "district": "2",
+      "geoid": "5102"
+    },
+    "VA-7": {
+      "path": "/maps/districts/svg/VA-7.svg",
+      "state": "VA",
+      "district": "7",
+      "geoid": "5107"
+    },
+    "VA-11": {
+      "path": "/maps/districts/svg/VA-11.svg",
+      "state": "VA",
+      "district": "11",
+      "geoid": "5111"
+    },
+    "UT-3": {
+      "path": "/maps/districts/svg/UT-3.svg",
+      "state": "UT",
+      "district": "3",
+      "geoid": "4903"
+    },
+    "UT-1": {
+      "path": "/maps/districts/svg/UT-1.svg",
+      "state": "UT",
+      "district": "1",
+      "geoid": "4901"
+    },
+    "UT-4": {
+      "path": "/maps/districts/svg/UT-4.svg",
+      "state": "UT",
+      "district": "4",
+      "geoid": "4904"
+    },
+    "UT-2": {
+      "path": "/maps/districts/svg/UT-2.svg",
+      "state": "UT",
+      "district": "2",
+      "geoid": "4902"
+    },
+    "FL-11": {
+      "path": "/maps/districts/svg/FL-11.svg",
+      "state": "FL",
+      "district": "11",
+      "geoid": "1211"
+    },
+    "FL-27": {
+      "path": "/maps/districts/svg/FL-27.svg",
+      "state": "FL",
+      "district": "27",
+      "geoid": "1227"
+    },
+    "FL-23": {
+      "path": "/maps/districts/svg/FL-23.svg",
+      "state": "FL",
+      "district": "23",
+      "geoid": "1223"
+    },
+    "FL-13": {
+      "path": "/maps/districts/svg/FL-13.svg",
+      "state": "FL",
+      "district": "13",
+      "geoid": "1213"
+    },
+    "FL-20": {
+      "path": "/maps/districts/svg/FL-20.svg",
+      "state": "FL",
+      "district": "20",
+      "geoid": "1220"
+    },
+    "FL-3": {
+      "path": "/maps/districts/svg/FL-3.svg",
+      "state": "FL",
+      "district": "3",
+      "geoid": "1203"
+    },
+    "FL-9": {
+      "path": "/maps/districts/svg/FL-9.svg",
+      "state": "FL",
+      "district": "9",
+      "geoid": "1209"
+    },
+    "FL-1": {
+      "path": "/maps/districts/svg/FL-1.svg",
+      "state": "FL",
+      "district": "1",
+      "geoid": "1201"
+    },
+    "FL-8": {
+      "path": "/maps/districts/svg/FL-8.svg",
+      "state": "FL",
+      "district": "8",
+      "geoid": "1208"
+    },
+    "FL-16": {
+      "path": "/maps/districts/svg/FL-16.svg",
+      "state": "FL",
+      "district": "16",
+      "geoid": "1216"
+    },
+    "FL-5": {
+      "path": "/maps/districts/svg/FL-5.svg",
+      "state": "FL",
+      "district": "5",
+      "geoid": "1205"
+    },
+    "FL-12": {
+      "path": "/maps/districts/svg/FL-12.svg",
+      "state": "FL",
+      "district": "12",
+      "geoid": "1212"
+    },
+    "FL-24": {
+      "path": "/maps/districts/svg/FL-24.svg",
+      "state": "FL",
+      "district": "24",
+      "geoid": "1224"
+    },
+    "FL-6": {
+      "path": "/maps/districts/svg/FL-6.svg",
+      "state": "FL",
+      "district": "6",
+      "geoid": "1206"
+    },
+    "FL-17": {
+      "path": "/maps/districts/svg/FL-17.svg",
+      "state": "FL",
+      "district": "17",
+      "geoid": "1217"
+    },
+    "FL-18": {
+      "path": "/maps/districts/svg/FL-18.svg",
+      "state": "FL",
+      "district": "18",
+      "geoid": "1218"
+    },
+    "FL-25": {
+      "path": "/maps/districts/svg/FL-25.svg",
+      "state": "FL",
+      "district": "25",
+      "geoid": "1225"
+    },
+    "FL-15": {
+      "path": "/maps/districts/svg/FL-15.svg",
+      "state": "FL",
+      "district": "15",
+      "geoid": "1215"
+    },
+    "FL-28": {
+      "path": "/maps/districts/svg/FL-28.svg",
+      "state": "FL",
+      "district": "28",
+      "geoid": "1228"
+    },
+    "FL-2": {
+      "path": "/maps/districts/svg/FL-2.svg",
+      "state": "FL",
+      "district": "2",
+      "geoid": "1202"
+    },
+    "FL-10": {
+      "path": "/maps/districts/svg/FL-10.svg",
+      "state": "FL",
+      "district": "10",
+      "geoid": "1210"
+    },
+    "FL-7": {
+      "path": "/maps/districts/svg/FL-7.svg",
+      "state": "FL",
+      "district": "7",
+      "geoid": "1207"
+    },
+    "FL-22": {
+      "path": "/maps/districts/svg/FL-22.svg",
+      "state": "FL",
+      "district": "22",
+      "geoid": "1222"
+    },
+    "FL-19": {
+      "path": "/maps/districts/svg/FL-19.svg",
+      "state": "FL",
+      "district": "19",
+      "geoid": "1219"
+    },
+    "FL-26": {
+      "path": "/maps/districts/svg/FL-26.svg",
+      "state": "FL",
+      "district": "26",
+      "geoid": "1226"
+    },
+    "FL-4": {
+      "path": "/maps/districts/svg/FL-4.svg",
+      "state": "FL",
+      "district": "4",
+      "geoid": "1204"
+    },
+    "FL-14": {
+      "path": "/maps/districts/svg/FL-14.svg",
+      "state": "FL",
+      "district": "14",
+      "geoid": "1214"
+    },
+    "FL-21": {
+      "path": "/maps/districts/svg/FL-21.svg",
+      "state": "FL",
+      "district": "21",
+      "geoid": "1221"
+    },
+    "MO-3": {
+      "path": "/maps/districts/svg/MO-3.svg",
+      "state": "MO",
+      "district": "3",
+      "geoid": "2903"
+    },
+    "MO-1": {
+      "path": "/maps/districts/svg/MO-1.svg",
+      "state": "MO",
+      "district": "1",
+      "geoid": "2901"
+    },
+    "MO-5": {
+      "path": "/maps/districts/svg/MO-5.svg",
+      "state": "MO",
+      "district": "5",
+      "geoid": "2905"
+    },
+    "MO-6": {
+      "path": "/maps/districts/svg/MO-6.svg",
+      "state": "MO",
+      "district": "6",
+      "geoid": "2906"
+    },
+    "MO-4": {
+      "path": "/maps/districts/svg/MO-4.svg",
+      "state": "MO",
+      "district": "4",
+      "geoid": "2904"
+    },
+    "MO-2": {
+      "path": "/maps/districts/svg/MO-2.svg",
+      "state": "MO",
+      "district": "2",
+      "geoid": "2902"
+    },
+    "MO-7": {
+      "path": "/maps/districts/svg/MO-7.svg",
+      "state": "MO",
+      "district": "7",
+      "geoid": "2907"
+    },
+    "MO-8": {
+      "path": "/maps/districts/svg/MO-8.svg",
+      "state": "MO",
+      "district": "8",
+      "geoid": "2908"
+    },
+    "KS-1": {
+      "path": "/maps/districts/svg/KS-1.svg",
+      "state": "KS",
+      "district": "1",
+      "geoid": "2001"
+    },
+    "KS-4": {
+      "path": "/maps/districts/svg/KS-4.svg",
+      "state": "KS",
+      "district": "4",
+      "geoid": "2004"
+    },
+    "KS-2": {
+      "path": "/maps/districts/svg/KS-2.svg",
+      "state": "KS",
+      "district": "2",
+      "geoid": "2002"
+    },
+    "KS-3": {
+      "path": "/maps/districts/svg/KS-3.svg",
+      "state": "KS",
+      "district": "3",
+      "geoid": "2003"
+    },
+    "MS-3": {
+      "path": "/maps/districts/svg/MS-3.svg",
+      "state": "MS",
+      "district": "3",
+      "geoid": "2803"
+    },
+    "MS-1": {
+      "path": "/maps/districts/svg/MS-1.svg",
+      "state": "MS",
+      "district": "1",
+      "geoid": "2801"
+    },
+    "MS-4": {
+      "path": "/maps/districts/svg/MS-4.svg",
+      "state": "MS",
+      "district": "4",
+      "geoid": "2804"
+    },
+    "MS-2": {
+      "path": "/maps/districts/svg/MS-2.svg",
+      "state": "MS",
+      "district": "2",
+      "geoid": "2802"
+    },
+    "NH-1": {
+      "path": "/maps/districts/svg/NH-1.svg",
+      "state": "NH",
+      "district": "1",
+      "geoid": "3301"
+    },
+    "NH-2": {
+      "path": "/maps/districts/svg/NH-2.svg",
+      "state": "NH",
+      "district": "2",
+      "geoid": "3302"
+    },
+    "NH-0": {
+      "path": "/maps/districts/svg/NH-0.svg",
+      "state": "NH",
+      "district": "0",
+      "geoid": "33ZZ"
+    },
+    "AL-5": {
+      "path": "/maps/districts/svg/AL-5.svg",
+      "state": "AL",
+      "district": "5",
+      "geoid": "0105"
+    },
+    "AL-6": {
+      "path": "/maps/districts/svg/AL-6.svg",
+      "state": "AL",
+      "district": "6",
+      "geoid": "0106"
+    },
+    "AL-7": {
+      "path": "/maps/districts/svg/AL-7.svg",
+      "state": "AL",
+      "district": "7",
+      "geoid": "0107"
+    },
+    "AL-1": {
+      "path": "/maps/districts/svg/AL-1.svg",
+      "state": "AL",
+      "district": "1",
+      "geoid": "0101"
+    },
+    "AL-2": {
+      "path": "/maps/districts/svg/AL-2.svg",
+      "state": "AL",
+      "district": "2",
+      "geoid": "0102"
+    },
+    "AL-3": {
+      "path": "/maps/districts/svg/AL-3.svg",
+      "state": "AL",
+      "district": "3",
+      "geoid": "0103"
+    },
+    "AL-4": {
+      "path": "/maps/districts/svg/AL-4.svg",
+      "state": "AL",
+      "district": "4",
+      "geoid": "0104"
+    },
+    "PR-0": {
+      "path": "/maps/districts/svg/PR-0.svg",
+      "state": "PR",
+      "district": "0",
+      "geoid": "7298"
+    },
+    "OH-3": {
+      "path": "/maps/districts/svg/OH-3.svg",
+      "state": "OH",
+      "district": "3",
+      "geoid": "3903"
+    },
+    "OH-8": {
+      "path": "/maps/districts/svg/OH-8.svg",
+      "state": "OH",
+      "district": "8",
+      "geoid": "3908"
+    },
+    "OH-13": {
+      "path": "/maps/districts/svg/OH-13.svg",
+      "state": "OH",
+      "district": "13",
+      "geoid": "3913"
+    },
+    "OH-9": {
+      "path": "/maps/districts/svg/OH-9.svg",
+      "state": "OH",
+      "district": "9",
+      "geoid": "3909"
+    },
+    "OH-1": {
+      "path": "/maps/districts/svg/OH-1.svg",
+      "state": "OH",
+      "district": "1",
+      "geoid": "3901"
+    },
+    "OH-14": {
+      "path": "/maps/districts/svg/OH-14.svg",
+      "state": "OH",
+      "district": "14",
+      "geoid": "3914"
+    },
+    "OH-5": {
+      "path": "/maps/districts/svg/OH-5.svg",
+      "state": "OH",
+      "district": "5",
+      "geoid": "3905"
+    },
+    "OH-12": {
+      "path": "/maps/districts/svg/OH-12.svg",
+      "state": "OH",
+      "district": "12",
+      "geoid": "3912"
+    },
+    "OH-6": {
+      "path": "/maps/districts/svg/OH-6.svg",
+      "state": "OH",
+      "district": "6",
+      "geoid": "3906"
+    },
+    "OH-15": {
+      "path": "/maps/districts/svg/OH-15.svg",
+      "state": "OH",
+      "district": "15",
+      "geoid": "3915"
+    },
+    "OH-4": {
+      "path": "/maps/districts/svg/OH-4.svg",
+      "state": "OH",
+      "district": "4",
+      "geoid": "3904"
+    },
+    "OH-2": {
+      "path": "/maps/districts/svg/OH-2.svg",
+      "state": "OH",
+      "district": "2",
+      "geoid": "3902"
+    },
+    "OH-10": {
+      "path": "/maps/districts/svg/OH-10.svg",
+      "state": "OH",
+      "district": "10",
+      "geoid": "3910"
+    },
+    "OH-7": {
+      "path": "/maps/districts/svg/OH-7.svg",
+      "state": "OH",
+      "district": "7",
+      "geoid": "3907"
+    },
+    "OH-11": {
+      "path": "/maps/districts/svg/OH-11.svg",
+      "state": "OH",
+      "district": "11",
+      "geoid": "3911"
+    },
+    "NC-11": {
+      "path": "/maps/districts/svg/NC-11.svg",
+      "state": "NC",
+      "district": "11",
+      "geoid": "3711"
+    },
+    "NC-1": {
+      "path": "/maps/districts/svg/NC-1.svg",
+      "state": "NC",
+      "district": "1",
+      "geoid": "3701"
+    },
+    "NC-12": {
+      "path": "/maps/districts/svg/NC-12.svg",
+      "state": "NC",
+      "district": "12",
+      "geoid": "3712"
+    },
+    "NC-2": {
+      "path": "/maps/districts/svg/NC-2.svg",
+      "state": "NC",
+      "district": "2",
+      "geoid": "3702"
+    },
+    "NC-13": {
+      "path": "/maps/districts/svg/NC-13.svg",
+      "state": "NC",
+      "district": "13",
+      "geoid": "3713"
+    },
+    "NC-3": {
+      "path": "/maps/districts/svg/NC-3.svg",
+      "state": "NC",
+      "district": "3",
+      "geoid": "3703"
+    },
+    "NC-14": {
+      "path": "/maps/districts/svg/NC-14.svg",
+      "state": "NC",
+      "district": "14",
+      "geoid": "3714"
+    },
+    "NC-4": {
+      "path": "/maps/districts/svg/NC-4.svg",
+      "state": "NC",
+      "district": "4",
+      "geoid": "3704"
+    },
+    "NC-5": {
+      "path": "/maps/districts/svg/NC-5.svg",
+      "state": "NC",
+      "district": "5",
+      "geoid": "3705"
+    },
+    "NC-6": {
+      "path": "/maps/districts/svg/NC-6.svg",
+      "state": "NC",
+      "district": "6",
+      "geoid": "3706"
+    },
+    "NC-7": {
+      "path": "/maps/districts/svg/NC-7.svg",
+      "state": "NC",
+      "district": "7",
+      "geoid": "3707"
+    },
+    "NC-8": {
+      "path": "/maps/districts/svg/NC-8.svg",
+      "state": "NC",
+      "district": "8",
+      "geoid": "3708"
+    },
+    "NC-9": {
+      "path": "/maps/districts/svg/NC-9.svg",
+      "state": "NC",
+      "district": "9",
+      "geoid": "3709"
+    },
+    "NC-10": {
+      "path": "/maps/districts/svg/NC-10.svg",
+      "state": "NC",
+      "district": "10",
+      "geoid": "3710"
+    },
+    "SC-3": {
+      "path": "/maps/districts/svg/SC-3.svg",
+      "state": "SC",
+      "district": "3",
+      "geoid": "4503"
+    },
+    "SC-1": {
+      "path": "/maps/districts/svg/SC-1.svg",
+      "state": "SC",
+      "district": "1",
+      "geoid": "4501"
+    },
+    "SC-5": {
+      "path": "/maps/districts/svg/SC-5.svg",
+      "state": "SC",
+      "district": "5",
+      "geoid": "4505"
+    },
+    "SC-6": {
+      "path": "/maps/districts/svg/SC-6.svg",
+      "state": "SC",
+      "district": "6",
+      "geoid": "4506"
+    },
+    "SC-4": {
+      "path": "/maps/districts/svg/SC-4.svg",
+      "state": "SC",
+      "district": "4",
+      "geoid": "4504"
+    },
+    "SC-2": {
+      "path": "/maps/districts/svg/SC-2.svg",
+      "state": "SC",
+      "district": "2",
+      "geoid": "4502"
+    },
+    "SC-7": {
+      "path": "/maps/districts/svg/SC-7.svg",
+      "state": "SC",
+      "district": "7",
+      "geoid": "4507"
+    },
+    "NY-22": {
+      "path": "/maps/districts/svg/NY-22.svg",
+      "state": "NY",
+      "district": "22",
+      "geoid": "3622"
+    },
+    "NY-12": {
+      "path": "/maps/districts/svg/NY-12.svg",
+      "state": "NY",
+      "district": "12",
+      "geoid": "3612"
+    },
+    "NY-14": {
+      "path": "/maps/districts/svg/NY-14.svg",
+      "state": "NY",
+      "district": "14",
+      "geoid": "3614"
+    },
+    "NY-8": {
+      "path": "/maps/districts/svg/NY-8.svg",
+      "state": "NY",
+      "district": "8",
+      "geoid": "3608"
+    },
+    "NY-5": {
+      "path": "/maps/districts/svg/NY-5.svg",
+      "state": "NY",
+      "district": "5",
+      "geoid": "3605"
+    },
+    "NY-7": {
+      "path": "/maps/districts/svg/NY-7.svg",
+      "state": "NY",
+      "district": "7",
+      "geoid": "3607"
+    },
+    "NY-23": {
+      "path": "/maps/districts/svg/NY-23.svg",
+      "state": "NY",
+      "district": "23",
+      "geoid": "3623"
+    },
+    "NY-16": {
+      "path": "/maps/districts/svg/NY-16.svg",
+      "state": "NY",
+      "district": "16",
+      "geoid": "3616"
+    },
+    "NY-17": {
+      "path": "/maps/districts/svg/NY-17.svg",
+      "state": "NY",
+      "district": "17",
+      "geoid": "3617"
+    },
+    "NY-18": {
+      "path": "/maps/districts/svg/NY-18.svg",
+      "state": "NY",
+      "district": "18",
+      "geoid": "3618"
+    },
+    "NY-19": {
+      "path": "/maps/districts/svg/NY-19.svg",
+      "state": "NY",
+      "district": "19",
+      "geoid": "3619"
+    },
+    "NY-20": {
+      "path": "/maps/districts/svg/NY-20.svg",
+      "state": "NY",
+      "district": "20",
+      "geoid": "3620"
+    },
+    "NY-21": {
+      "path": "/maps/districts/svg/NY-21.svg",
+      "state": "NY",
+      "district": "21",
+      "geoid": "3621"
+    },
+    "NY-25": {
+      "path": "/maps/districts/svg/NY-25.svg",
+      "state": "NY",
+      "district": "25",
+      "geoid": "3625"
+    },
+    "NY-1": {
+      "path": "/maps/districts/svg/NY-1.svg",
+      "state": "NY",
+      "district": "1",
+      "geoid": "3601"
+    },
+    "NY-24": {
+      "path": "/maps/districts/svg/NY-24.svg",
+      "state": "NY",
+      "district": "24",
+      "geoid": "3624"
+    },
+    "NY-2": {
+      "path": "/maps/districts/svg/NY-2.svg",
+      "state": "NY",
+      "district": "2",
+      "geoid": "3602"
+    },
+    "NY-3": {
+      "path": "/maps/districts/svg/NY-3.svg",
+      "state": "NY",
+      "district": "3",
+      "geoid": "3603"
+    },
+    "NY-26": {
+      "path": "/maps/districts/svg/NY-26.svg",
+      "state": "NY",
+      "district": "26",
+      "geoid": "3626"
+    },
+    "NY-6": {
+      "path": "/maps/districts/svg/NY-6.svg",
+      "state": "NY",
+      "district": "6",
+      "geoid": "3606"
+    },
+    "NY-9": {
+      "path": "/maps/districts/svg/NY-9.svg",
+      "state": "NY",
+      "district": "9",
+      "geoid": "3609"
+    },
+    "NY-10": {
+      "path": "/maps/districts/svg/NY-10.svg",
+      "state": "NY",
+      "district": "10",
+      "geoid": "3610"
+    },
+    "NY-11": {
+      "path": "/maps/districts/svg/NY-11.svg",
+      "state": "NY",
+      "district": "11",
+      "geoid": "3611"
+    },
+    "NY-13": {
+      "path": "/maps/districts/svg/NY-13.svg",
+      "state": "NY",
+      "district": "13",
+      "geoid": "3613"
+    },
+    "NY-15": {
+      "path": "/maps/districts/svg/NY-15.svg",
+      "state": "NY",
+      "district": "15",
+      "geoid": "3615"
+    },
+    "NY-4": {
+      "path": "/maps/districts/svg/NY-4.svg",
+      "state": "NY",
+      "district": "4",
+      "geoid": "3604"
+    },
+    "WV-1": {
+      "path": "/maps/districts/svg/WV-1.svg",
+      "state": "WV",
+      "district": "1",
+      "geoid": "5401"
+    },
+    "WV-2": {
+      "path": "/maps/districts/svg/WV-2.svg",
+      "state": "WV",
+      "district": "2",
+      "geoid": "5402"
+    },
+    "VI-0": {
+      "path": "/maps/districts/svg/VI-0.svg",
+      "state": "VI",
+      "district": "0",
+      "geoid": "7898"
+    },
+    "GA-13": {
+      "path": "/maps/districts/svg/GA-13.svg",
+      "state": "GA",
+      "district": "13",
+      "geoid": "1313"
+    },
+    "GA-11": {
+      "path": "/maps/districts/svg/GA-11.svg",
+      "state": "GA",
+      "district": "11",
+      "geoid": "1311"
+    },
+    "GA-1": {
+      "path": "/maps/districts/svg/GA-1.svg",
+      "state": "GA",
+      "district": "1",
+      "geoid": "1301"
+    },
+    "GA-12": {
+      "path": "/maps/districts/svg/GA-12.svg",
+      "state": "GA",
+      "district": "12",
+      "geoid": "1312"
+    },
+    "GA-8": {
+      "path": "/maps/districts/svg/GA-8.svg",
+      "state": "GA",
+      "district": "8",
+      "geoid": "1308"
+    },
+    "GA-9": {
+      "path": "/maps/districts/svg/GA-9.svg",
+      "state": "GA",
+      "district": "9",
+      "geoid": "1309"
+    },
+    "GA-14": {
+      "path": "/maps/districts/svg/GA-14.svg",
+      "state": "GA",
+      "district": "14",
+      "geoid": "1314"
+    },
+    "GA-4": {
+      "path": "/maps/districts/svg/GA-4.svg",
+      "state": "GA",
+      "district": "4",
+      "geoid": "1304"
+    },
+    "GA-5": {
+      "path": "/maps/districts/svg/GA-5.svg",
+      "state": "GA",
+      "district": "5",
+      "geoid": "1305"
+    },
+    "GA-7": {
+      "path": "/maps/districts/svg/GA-7.svg",
+      "state": "GA",
+      "district": "7",
+      "geoid": "1307"
+    },
+    "GA-3": {
+      "path": "/maps/districts/svg/GA-3.svg",
+      "state": "GA",
+      "district": "3",
+      "geoid": "1303"
+    },
+    "GA-2": {
+      "path": "/maps/districts/svg/GA-2.svg",
+      "state": "GA",
+      "district": "2",
+      "geoid": "1302"
+    },
+    "GA-6": {
+      "path": "/maps/districts/svg/GA-6.svg",
+      "state": "GA",
+      "district": "6",
+      "geoid": "1306"
+    },
+    "GA-10": {
+      "path": "/maps/districts/svg/GA-10.svg",
+      "state": "GA",
+      "district": "10",
+      "geoid": "1310"
+    },
+    "CT-3": {
+      "path": "/maps/districts/svg/CT-3.svg",
+      "state": "CT",
+      "district": "3",
+      "geoid": "0903"
+    },
+    "CT-1": {
+      "path": "/maps/districts/svg/CT-1.svg",
+      "state": "CT",
+      "district": "1",
+      "geoid": "0901"
+    },
+    "CT-5": {
+      "path": "/maps/districts/svg/CT-5.svg",
+      "state": "CT",
+      "district": "5",
+      "geoid": "0905"
+    },
+    "CT-4": {
+      "path": "/maps/districts/svg/CT-4.svg",
+      "state": "CT",
+      "district": "4",
+      "geoid": "0904"
+    },
+    "CT-2": {
+      "path": "/maps/districts/svg/CT-2.svg",
+      "state": "CT",
+      "district": "2",
+      "geoid": "0902"
+    },
+    "CT-0": {
+      "path": "/maps/districts/svg/CT-0.svg",
+      "state": "CT",
+      "district": "0",
+      "geoid": "09ZZ"
+    },
+    "AR-3": {
+      "path": "/maps/districts/svg/AR-3.svg",
+      "state": "AR",
+      "district": "3",
+      "geoid": "0503"
+    },
+    "AR-1": {
+      "path": "/maps/districts/svg/AR-1.svg",
+      "state": "AR",
+      "district": "1",
+      "geoid": "0501"
+    },
+    "AR-4": {
+      "path": "/maps/districts/svg/AR-4.svg",
+      "state": "AR",
+      "district": "4",
+      "geoid": "0504"
+    },
+    "AR-2": {
+      "path": "/maps/districts/svg/AR-2.svg",
+      "state": "AR",
+      "district": "2",
+      "geoid": "0502"
+    },
+    "IA-3": {
+      "path": "/maps/districts/svg/IA-3.svg",
+      "state": "IA",
+      "district": "3",
+      "geoid": "1903"
+    },
+    "IA-1": {
+      "path": "/maps/districts/svg/IA-1.svg",
+      "state": "IA",
+      "district": "1",
+      "geoid": "1901"
+    },
+    "IA-4": {
+      "path": "/maps/districts/svg/IA-4.svg",
+      "state": "IA",
+      "district": "4",
+      "geoid": "1904"
+    },
+    "IA-2": {
+      "path": "/maps/districts/svg/IA-2.svg",
+      "state": "IA",
+      "district": "2",
+      "geoid": "1902"
+    },
+    "MA-3": {
+      "path": "/maps/districts/svg/MA-3.svg",
+      "state": "MA",
+      "district": "3",
+      "geoid": "2503"
+    },
+    "MA-9": {
+      "path": "/maps/districts/svg/MA-9.svg",
+      "state": "MA",
+      "district": "9",
+      "geoid": "2509"
+    },
+    "MA-1": {
+      "path": "/maps/districts/svg/MA-1.svg",
+      "state": "MA",
+      "district": "1",
+      "geoid": "2501"
+    },
+    "MA-8": {
+      "path": "/maps/districts/svg/MA-8.svg",
+      "state": "MA",
+      "district": "8",
+      "geoid": "2508"
+    },
+    "MA-5": {
+      "path": "/maps/districts/svg/MA-5.svg",
+      "state": "MA",
+      "district": "5",
+      "geoid": "2505"
+    },
+    "MA-6": {
+      "path": "/maps/districts/svg/MA-6.svg",
+      "state": "MA",
+      "district": "6",
+      "geoid": "2506"
+    },
+    "MA-4": {
+      "path": "/maps/districts/svg/MA-4.svg",
+      "state": "MA",
+      "district": "4",
+      "geoid": "2504"
+    },
+    "MA-2": {
+      "path": "/maps/districts/svg/MA-2.svg",
+      "state": "MA",
+      "district": "2",
+      "geoid": "2502"
+    },
+    "MA-7": {
+      "path": "/maps/districts/svg/MA-7.svg",
+      "state": "MA",
+      "district": "7",
+      "geoid": "2507"
+    },
+    "TN-3": {
+      "path": "/maps/districts/svg/TN-3.svg",
+      "state": "TN",
+      "district": "3",
+      "geoid": "4703"
+    },
+    "TN-9": {
+      "path": "/maps/districts/svg/TN-9.svg",
+      "state": "TN",
+      "district": "9",
+      "geoid": "4709"
+    },
+    "TN-1": {
+      "path": "/maps/districts/svg/TN-1.svg",
+      "state": "TN",
+      "district": "1",
+      "geoid": "4701"
+    },
+    "TN-8": {
+      "path": "/maps/districts/svg/TN-8.svg",
+      "state": "TN",
+      "district": "8",
+      "geoid": "4708"
+    },
+    "TN-5": {
+      "path": "/maps/districts/svg/TN-5.svg",
+      "state": "TN",
+      "district": "5",
+      "geoid": "4705"
+    },
+    "TN-6": {
+      "path": "/maps/districts/svg/TN-6.svg",
+      "state": "TN",
+      "district": "6",
+      "geoid": "4706"
+    },
+    "TN-4": {
+      "path": "/maps/districts/svg/TN-4.svg",
+      "state": "TN",
+      "district": "4",
+      "geoid": "4704"
+    },
+    "TN-2": {
+      "path": "/maps/districts/svg/TN-2.svg",
+      "state": "TN",
+      "district": "2",
+      "geoid": "4702"
+    },
+    "TN-7": {
+      "path": "/maps/districts/svg/TN-7.svg",
+      "state": "TN",
+      "district": "7",
+      "geoid": "4707"
+    },
+    "KY-4": {
+      "path": "/maps/districts/svg/KY-4.svg",
+      "state": "KY",
+      "district": "4",
+      "geoid": "2104"
+    },
+    "KY-2": {
+      "path": "/maps/districts/svg/KY-2.svg",
+      "state": "KY",
+      "district": "2",
+      "geoid": "2102"
+    },
+    "KY-3": {
+      "path": "/maps/districts/svg/KY-3.svg",
+      "state": "KY",
+      "district": "3",
+      "geoid": "2103"
+    },
+    "KY-1": {
+      "path": "/maps/districts/svg/KY-1.svg",
+      "state": "KY",
+      "district": "1",
+      "geoid": "2101"
+    },
+    "KY-5": {
+      "path": "/maps/districts/svg/KY-5.svg",
+      "state": "KY",
+      "district": "5",
+      "geoid": "2105"
+    },
+    "KY-6": {
+      "path": "/maps/districts/svg/KY-6.svg",
+      "state": "KY",
+      "district": "6",
+      "geoid": "2106"
+    },
+    "AK-0": {
+      "path": "/maps/districts/svg/AK-0.svg",
+      "state": "AK",
+      "district": "0",
+      "geoid": "0200"
+    },
+    "MN-3": {
+      "path": "/maps/districts/svg/MN-3.svg",
+      "state": "MN",
+      "district": "3",
+      "geoid": "2703"
+    },
+    "MN-1": {
+      "path": "/maps/districts/svg/MN-1.svg",
+      "state": "MN",
+      "district": "1",
+      "geoid": "2701"
+    },
+    "MN-8": {
+      "path": "/maps/districts/svg/MN-8.svg",
+      "state": "MN",
+      "district": "8",
+      "geoid": "2708"
+    },
+    "MN-5": {
+      "path": "/maps/districts/svg/MN-5.svg",
+      "state": "MN",
+      "district": "5",
+      "geoid": "2705"
+    },
+    "MN-4": {
+      "path": "/maps/districts/svg/MN-4.svg",
+      "state": "MN",
+      "district": "4",
+      "geoid": "2704"
+    },
+    "MN-2": {
+      "path": "/maps/districts/svg/MN-2.svg",
+      "state": "MN",
+      "district": "2",
+      "geoid": "2702"
+    },
+    "MN-7": {
+      "path": "/maps/districts/svg/MN-7.svg",
+      "state": "MN",
+      "district": "7",
+      "geoid": "2707"
+    },
+    "MN-6": {
+      "path": "/maps/districts/svg/MN-6.svg",
+      "state": "MN",
+      "district": "6",
+      "geoid": "2706"
+    },
+    "SD-0": {
+      "path": "/maps/districts/svg/SD-0.svg",
+      "state": "SD",
+      "district": "0",
+      "geoid": "4600"
+    },
+    "IN-4": {
+      "path": "/maps/districts/svg/IN-4.svg",
+      "state": "IN",
+      "district": "4",
+      "geoid": "1804"
+    },
+    "IN-3": {
+      "path": "/maps/districts/svg/IN-3.svg",
+      "state": "IN",
+      "district": "3",
+      "geoid": "1803"
+    },
+    "IN-9": {
+      "path": "/maps/districts/svg/IN-9.svg",
+      "state": "IN",
+      "district": "9",
+      "geoid": "1809"
+    },
+    "IN-1": {
+      "path": "/maps/districts/svg/IN-1.svg",
+      "state": "IN",
+      "district": "1",
+      "geoid": "1801"
+    },
+    "IN-5": {
+      "path": "/maps/districts/svg/IN-5.svg",
+      "state": "IN",
+      "district": "5",
+      "geoid": "1805"
+    },
+    "IN-2": {
+      "path": "/maps/districts/svg/IN-2.svg",
+      "state": "IN",
+      "district": "2",
+      "geoid": "1802"
+    },
+    "IN-8": {
+      "path": "/maps/districts/svg/IN-8.svg",
+      "state": "IN",
+      "district": "8",
+      "geoid": "1808"
+    },
+    "IN-6": {
+      "path": "/maps/districts/svg/IN-6.svg",
+      "state": "IN",
+      "district": "6",
+      "geoid": "1806"
+    },
+    "IN-7": {
+      "path": "/maps/districts/svg/IN-7.svg",
+      "state": "IN",
+      "district": "7",
+      "geoid": "1807"
+    },
+    "MT-1": {
+      "path": "/maps/districts/svg/MT-1.svg",
+      "state": "MT",
+      "district": "1",
+      "geoid": "3001"
+    },
+    "MT-2": {
+      "path": "/maps/districts/svg/MT-2.svg",
+      "state": "MT",
+      "district": "2",
+      "geoid": "3002"
+    },
+    "NJ-9": {
+      "path": "/maps/districts/svg/NJ-9.svg",
+      "state": "NJ",
+      "district": "9",
+      "geoid": "3409"
+    },
+    "NJ-3": {
+      "path": "/maps/districts/svg/NJ-3.svg",
+      "state": "NJ",
+      "district": "3",
+      "geoid": "3403"
+    },
+    "NJ-1": {
+      "path": "/maps/districts/svg/NJ-1.svg",
+      "state": "NJ",
+      "district": "1",
+      "geoid": "3401"
+    },
+    "NJ-8": {
+      "path": "/maps/districts/svg/NJ-8.svg",
+      "state": "NJ",
+      "district": "8",
+      "geoid": "3408"
+    },
+    "NJ-5": {
+      "path": "/maps/districts/svg/NJ-5.svg",
+      "state": "NJ",
+      "district": "5",
+      "geoid": "3405"
+    },
+    "NJ-12": {
+      "path": "/maps/districts/svg/NJ-12.svg",
+      "state": "NJ",
+      "district": "12",
+      "geoid": "3412"
+    },
+    "NJ-6": {
+      "path": "/maps/districts/svg/NJ-6.svg",
+      "state": "NJ",
+      "district": "6",
+      "geoid": "3406"
+    },
+    "NJ-4": {
+      "path": "/maps/districts/svg/NJ-4.svg",
+      "state": "NJ",
+      "district": "4",
+      "geoid": "3404"
+    },
+    "NJ-2": {
+      "path": "/maps/districts/svg/NJ-2.svg",
+      "state": "NJ",
+      "district": "2",
+      "geoid": "3402"
+    },
+    "NJ-10": {
+      "path": "/maps/districts/svg/NJ-10.svg",
+      "state": "NJ",
+      "district": "10",
+      "geoid": "3410"
+    },
+    "NJ-7": {
+      "path": "/maps/districts/svg/NJ-7.svg",
+      "state": "NJ",
+      "district": "7",
+      "geoid": "3407"
+    },
+    "NJ-11": {
+      "path": "/maps/districts/svg/NJ-11.svg",
+      "state": "NJ",
+      "district": "11",
+      "geoid": "3411"
+    },
+    "LA-1": {
+      "path": "/maps/districts/svg/LA-1.svg",
+      "state": "LA",
+      "district": "1",
+      "geoid": "2201"
+    },
+    "LA-2": {
+      "path": "/maps/districts/svg/LA-2.svg",
+      "state": "LA",
+      "district": "2",
+      "geoid": "2202"
+    },
+    "LA-3": {
+      "path": "/maps/districts/svg/LA-3.svg",
+      "state": "LA",
+      "district": "3",
+      "geoid": "2203"
+    },
+    "LA-4": {
+      "path": "/maps/districts/svg/LA-4.svg",
+      "state": "LA",
+      "district": "4",
+      "geoid": "2204"
+    },
+    "LA-5": {
+      "path": "/maps/districts/svg/LA-5.svg",
+      "state": "LA",
+      "district": "5",
+      "geoid": "2205"
+    },
+    "LA-6": {
+      "path": "/maps/districts/svg/LA-6.svg",
+      "state": "LA",
+      "district": "6",
+      "geoid": "2206"
+    },
+    "WY-0": {
+      "path": "/maps/districts/svg/WY-0.svg",
+      "state": "WY",
+      "district": "0",
+      "geoid": "5600"
+    },
+    "VT-0": {
+      "path": "/maps/districts/svg/VT-0.svg",
+      "state": "VT",
+      "district": "0",
+      "geoid": "5000"
+    },
+    "IL-13": {
+      "path": "/maps/districts/svg/IL-13.svg",
+      "state": "IL",
+      "district": "13",
+      "geoid": "1713"
+    },
+    "IL-3": {
+      "path": "/maps/districts/svg/IL-3.svg",
+      "state": "IL",
+      "district": "3",
+      "geoid": "1703"
+    },
+    "IL-9": {
+      "path": "/maps/districts/svg/IL-9.svg",
+      "state": "IL",
+      "district": "9",
+      "geoid": "1709"
+    },
+    "IL-1": {
+      "path": "/maps/districts/svg/IL-1.svg",
+      "state": "IL",
+      "district": "1",
+      "geoid": "1701"
+    },
+    "IL-8": {
+      "path": "/maps/districts/svg/IL-8.svg",
+      "state": "IL",
+      "district": "8",
+      "geoid": "1708"
+    },
+    "IL-14": {
+      "path": "/maps/districts/svg/IL-14.svg",
+      "state": "IL",
+      "district": "14",
+      "geoid": "1714"
+    },
+    "IL-16": {
+      "path": "/maps/districts/svg/IL-16.svg",
+      "state": "IL",
+      "district": "16",
+      "geoid": "1716"
+    },
+    "IL-5": {
+      "path": "/maps/districts/svg/IL-5.svg",
+      "state": "IL",
+      "district": "5",
+      "geoid": "1705"
+    },
+    "IL-12": {
+      "path": "/maps/districts/svg/IL-12.svg",
+      "state": "IL",
+      "district": "12",
+      "geoid": "1712"
+    },
+    "IL-6": {
+      "path": "/maps/districts/svg/IL-6.svg",
+      "state": "IL",
+      "district": "6",
+      "geoid": "1706"
+    },
+    "IL-17": {
+      "path": "/maps/districts/svg/IL-17.svg",
+      "state": "IL",
+      "district": "17",
+      "geoid": "1717"
+    },
+    "IL-15": {
+      "path": "/maps/districts/svg/IL-15.svg",
+      "state": "IL",
+      "district": "15",
+      "geoid": "1715"
+    },
+    "IL-4": {
+      "path": "/maps/districts/svg/IL-4.svg",
+      "state": "IL",
+      "district": "4",
+      "geoid": "1704"
+    },
+    "IL-2": {
+      "path": "/maps/districts/svg/IL-2.svg",
+      "state": "IL",
+      "district": "2",
+      "geoid": "1702"
+    },
+    "IL-10": {
+      "path": "/maps/districts/svg/IL-10.svg",
+      "state": "IL",
+      "district": "10",
+      "geoid": "1710"
+    },
+    "IL-7": {
+      "path": "/maps/districts/svg/IL-7.svg",
+      "state": "IL",
+      "district": "7",
+      "geoid": "1707"
+    },
+    "IL-0": {
+      "path": "/maps/districts/svg/IL-0.svg",
+      "state": "IL",
+      "district": "0",
+      "geoid": "17ZZ"
+    },
+    "IL-11": {
+      "path": "/maps/districts/svg/IL-11.svg",
+      "state": "IL",
+      "district": "11",
+      "geoid": "1711"
+    },
+    "ID-1": {
+      "path": "/maps/districts/svg/ID-1.svg",
+      "state": "ID",
+      "district": "1",
+      "geoid": "1601"
+    },
+    "ID-2": {
+      "path": "/maps/districts/svg/ID-2.svg",
+      "state": "ID",
+      "district": "2",
+      "geoid": "1602"
+    },
+    "AS-0": {
+      "path": "/maps/districts/svg/AS-0.svg",
+      "state": "AS",
+      "district": "0",
+      "geoid": "6098"
+    },
+    "GU-0": {
+      "path": "/maps/districts/svg/GU-0.svg",
+      "state": "GU",
+      "district": "0",
+      "geoid": "6698"
+    },
+    "ND-0": {
+      "path": "/maps/districts/svg/ND-0.svg",
+      "state": "ND",
+      "district": "0",
+      "geoid": "3800"
+    },
+    "MI-13": {
+      "path": "/maps/districts/svg/MI-13.svg",
+      "state": "MI",
+      "district": "13",
+      "geoid": "2613"
+    },
+    "MI-3": {
+      "path": "/maps/districts/svg/MI-3.svg",
+      "state": "MI",
+      "district": "3",
+      "geoid": "2603"
+    },
+    "MI-9": {
+      "path": "/maps/districts/svg/MI-9.svg",
+      "state": "MI",
+      "district": "9",
+      "geoid": "2609"
+    },
+    "MI-1": {
+      "path": "/maps/districts/svg/MI-1.svg",
+      "state": "MI",
+      "district": "1",
+      "geoid": "2601"
+    },
+    "MI-8": {
+      "path": "/maps/districts/svg/MI-8.svg",
+      "state": "MI",
+      "district": "8",
+      "geoid": "2608"
+    },
+    "MI-5": {
+      "path": "/maps/districts/svg/MI-5.svg",
+      "state": "MI",
+      "district": "5",
+      "geoid": "2605"
+    },
+    "MI-12": {
+      "path": "/maps/districts/svg/MI-12.svg",
+      "state": "MI",
+      "district": "12",
+      "geoid": "2612"
+    },
+    "MI-6": {
+      "path": "/maps/districts/svg/MI-6.svg",
+      "state": "MI",
+      "district": "6",
+      "geoid": "2606"
+    },
+    "MI-4": {
+      "path": "/maps/districts/svg/MI-4.svg",
+      "state": "MI",
+      "district": "4",
+      "geoid": "2604"
+    },
+    "MI-2": {
+      "path": "/maps/districts/svg/MI-2.svg",
+      "state": "MI",
+      "district": "2",
+      "geoid": "2602"
+    },
+    "MI-10": {
+      "path": "/maps/districts/svg/MI-10.svg",
+      "state": "MI",
+      "district": "10",
+      "geoid": "2610"
+    },
+    "MI-7": {
+      "path": "/maps/districts/svg/MI-7.svg",
+      "state": "MI",
+      "district": "7",
+      "geoid": "2607"
+    },
+    "MI-11": {
+      "path": "/maps/districts/svg/MI-11.svg",
+      "state": "MI",
+      "district": "11",
+      "geoid": "2611"
+    },
+    "WI-3": {
+      "path": "/maps/districts/svg/WI-3.svg",
+      "state": "WI",
+      "district": "3",
+      "geoid": "5503"
+    },
+    "WI-1": {
+      "path": "/maps/districts/svg/WI-1.svg",
+      "state": "WI",
+      "district": "1",
+      "geoid": "5501"
+    },
+    "WI-8": {
+      "path": "/maps/districts/svg/WI-8.svg",
+      "state": "WI",
+      "district": "8",
+      "geoid": "5508"
+    },
+    "WI-5": {
+      "path": "/maps/districts/svg/WI-5.svg",
+      "state": "WI",
+      "district": "5",
+      "geoid": "5505"
+    },
+    "WI-6": {
+      "path": "/maps/districts/svg/WI-6.svg",
+      "state": "WI",
+      "district": "6",
+      "geoid": "5506"
+    },
+    "WI-4": {
+      "path": "/maps/districts/svg/WI-4.svg",
+      "state": "WI",
+      "district": "4",
+      "geoid": "5504"
+    },
+    "WI-2": {
+      "path": "/maps/districts/svg/WI-2.svg",
+      "state": "WI",
+      "district": "2",
+      "geoid": "5502"
+    },
+    "WI-7": {
+      "path": "/maps/districts/svg/WI-7.svg",
+      "state": "WI",
+      "district": "7",
+      "geoid": "5507"
+    },
+    "NV-3": {
+      "path": "/maps/districts/svg/NV-3.svg",
+      "state": "NV",
+      "district": "3",
+      "geoid": "3203"
+    },
+    "NV-1": {
+      "path": "/maps/districts/svg/NV-1.svg",
+      "state": "NV",
+      "district": "1",
+      "geoid": "3201"
+    },
+    "NV-4": {
+      "path": "/maps/districts/svg/NV-4.svg",
+      "state": "NV",
+      "district": "4",
+      "geoid": "3204"
+    },
+    "NV-2": {
+      "path": "/maps/districts/svg/NV-2.svg",
+      "state": "NV",
+      "district": "2",
+      "geoid": "3202"
+    },
+    "MP-0": {
+      "path": "/maps/districts/svg/MP-0.svg",
+      "state": "MP",
+      "district": "0",
+      "geoid": "6998"
+    },
+    "HI-2": {
+      "path": "/maps/districts/svg/HI-2.svg",
+      "state": "HI",
+      "district": "2",
+      "geoid": "1502"
+    },
+    "HI-1": {
+      "path": "/maps/districts/svg/HI-1.svg",
+      "state": "HI",
+      "district": "1",
+      "geoid": "1501"
+    },
+    "OR-3": {
+      "path": "/maps/districts/svg/OR-3.svg",
+      "state": "OR",
+      "district": "3",
+      "geoid": "4103"
+    },
+    "OR-1": {
+      "path": "/maps/districts/svg/OR-1.svg",
+      "state": "OR",
+      "district": "1",
+      "geoid": "4101"
+    },
+    "OR-5": {
+      "path": "/maps/districts/svg/OR-5.svg",
+      "state": "OR",
+      "district": "5",
+      "geoid": "4105"
+    },
+    "OR-6": {
+      "path": "/maps/districts/svg/OR-6.svg",
+      "state": "OR",
+      "district": "6",
+      "geoid": "4106"
+    },
+    "OR-4": {
+      "path": "/maps/districts/svg/OR-4.svg",
+      "state": "OR",
+      "district": "4",
+      "geoid": "4104"
+    },
+    "OR-2": {
+      "path": "/maps/districts/svg/OR-2.svg",
+      "state": "OR",
+      "district": "2",
+      "geoid": "4102"
+    },
+    "NE-3": {
+      "path": "/maps/districts/svg/NE-3.svg",
+      "state": "NE",
+      "district": "3",
+      "geoid": "3103"
+    },
+    "NE-1": {
+      "path": "/maps/districts/svg/NE-1.svg",
+      "state": "NE",
+      "district": "1",
+      "geoid": "3101"
+    },
+    "NE-2": {
+      "path": "/maps/districts/svg/NE-2.svg",
+      "state": "NE",
+      "district": "2",
+      "geoid": "3102"
+    },
+    "RI-1": {
+      "path": "/maps/districts/svg/RI-1.svg",
+      "state": "RI",
+      "district": "1",
+      "geoid": "4401"
+    },
+    "RI-2": {
+      "path": "/maps/districts/svg/RI-2.svg",
+      "state": "RI",
+      "district": "2",
+      "geoid": "4402"
+    },
+    "DC-0": {
+      "path": "/maps/districts/svg/DC-0.svg",
+      "state": "DC",
+      "district": "0",
+      "geoid": "1198"
+    },
+    "AZ-3": {
+      "path": "/maps/districts/svg/AZ-3.svg",
+      "state": "AZ",
+      "district": "3",
+      "geoid": "0403"
+    },
+    "AZ-9": {
+      "path": "/maps/districts/svg/AZ-9.svg",
+      "state": "AZ",
+      "district": "9",
+      "geoid": "0409"
+    },
+    "AZ-1": {
+      "path": "/maps/districts/svg/AZ-1.svg",
+      "state": "AZ",
+      "district": "1",
+      "geoid": "0401"
+    },
+    "AZ-8": {
+      "path": "/maps/districts/svg/AZ-8.svg",
+      "state": "AZ",
+      "district": "8",
+      "geoid": "0408"
+    },
+    "AZ-5": {
+      "path": "/maps/districts/svg/AZ-5.svg",
+      "state": "AZ",
+      "district": "5",
+      "geoid": "0405"
+    },
+    "AZ-6": {
+      "path": "/maps/districts/svg/AZ-6.svg",
+      "state": "AZ",
+      "district": "6",
+      "geoid": "0406"
+    },
+    "AZ-4": {
+      "path": "/maps/districts/svg/AZ-4.svg",
+      "state": "AZ",
+      "district": "4",
+      "geoid": "0404"
+    },
+    "AZ-2": {
+      "path": "/maps/districts/svg/AZ-2.svg",
+      "state": "AZ",
+      "district": "2",
+      "geoid": "0402"
+    },
+    "AZ-7": {
+      "path": "/maps/districts/svg/AZ-7.svg",
+      "state": "AZ",
+      "district": "7",
+      "geoid": "0407"
+    },
+    "NM-3": {
+      "path": "/maps/districts/svg/NM-3.svg",
+      "state": "NM",
+      "district": "3",
+      "geoid": "3503"
+    },
+    "NM-1": {
+      "path": "/maps/districts/svg/NM-1.svg",
+      "state": "NM",
+      "district": "1",
+      "geoid": "3501"
+    },
+    "NM-2": {
+      "path": "/maps/districts/svg/NM-2.svg",
+      "state": "NM",
+      "district": "2",
+      "geoid": "3502"
+    }
+  }
+}

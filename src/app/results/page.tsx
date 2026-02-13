@@ -1,7 +1,8 @@
 'use client';
 
-import { useRouter, useSearchParams } from 'next/navigation';
+import { useSearchParams } from 'next/navigation';
 import { useEffect, useState, Suspense } from 'react';
+import Image from 'next/image';
 import RepCard from '../../components/RepCard';
 
 const fipsToState: Record<string, string> = {
@@ -53,7 +54,6 @@ interface ScoreFile {
 }
 
 function ResultsContent() {
-    const router = useRouter();
     const searchParams = useSearchParams();
     const district = searchParams.get('district');
     const stateFips = searchParams.get('stateFips');
@@ -64,6 +64,9 @@ function ResultsContent() {
     const [error, setError] = useState('');
 
     const stateAbbr = stateFips ? fipsToState[stateFips] : null;
+    const districtNumber = Number.parseInt(district || '', 10);
+    const normalizedDistrict = Number.isFinite(districtNumber) ? String(districtNumber) : null;
+    const districtMapPath = stateAbbr && normalizedDistrict ? `/maps/districts/svg/${stateAbbr}-${normalizedDistrict}.svg` : null;
 
     useEffect(() => {
         if (!stateAbbr) {
@@ -107,52 +110,56 @@ function ResultsContent() {
     }, [stateAbbr, district]);
 
     return (
-        <div className="mx-auto w-full max-w-6xl space-y-8">
-            <header className="fade-up border-b border-[var(--border)] pb-6">
-                <h1 className="mt-2 text-3xl leading-tight text-slate-900 sm:text-4xl">{stateAbbr}-{district} Snapshot: Your lawmakers on the record</h1>
-                <p className="mt-2 max-w-3xl text-sm leading-relaxed text-[var(--ink-soft)] sm:text-base">
-                    Each District has two senators and one house representative. These are the leaders that represent you in Congress. These profiles show what each member did in public records tied to Epstein-file disclosure.
-                </p>
+        <div className="space-y-8">
+            <header className="fade-up relative -mx-6 min-h-[50vh] overflow-hidden">
+                {districtMapPath ? (
+                    <div aria-hidden="true" className="pointer-events-none absolute inset-y-0 right-0 w-[56%] opacity-35">
+                        <Image src={districtMapPath} alt="" fill className="object-contain object-right" sizes="56vw" />
+                    </div>
+                ) : null}
+
+                <div className="relative mx-auto flex min-h-[50vh] w-full max-w-6xl items-center px-6 py-8 sm:px-8 sm:py-10">
+                    <div className="max-w-3xl">
+                        <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--brand-blue)]">District Snapshot</p>
+                        <h1 className="mt-2 text-3xl leading-tight text-slate-900 sm:text-4xl">{stateAbbr}-{district} Snapshot: Your lawmakers on the record</h1>
+                        <p className="mt-3 text-sm leading-relaxed text-[var(--ink-soft)] sm:text-base">
+                            Each District has two senators and one house representative. These are the leaders that represent you in Congress. These profiles show what each member did in public records tied to Epstein-file disclosure.
+                        </p>
+                    </div>
+                </div>
             </header>
 
-            {loading ? (
-                <div className="flex justify-center p-12">
-                    <div className="h-12 w-12 animate-spin rounded-full border-b-2 border-[var(--brand-blue)]" />
-                </div>
-            ) : error ? (
-                <div className="rounded-lg border border-red-200 bg-red-50 p-4 text-center text-red-700">
-                    <p>Error: {error}</p>
-                </div>
-            ) : legislators.length === 0 ? (
-                <div className="p-12 text-center text-slate-500">
-                    <p>No representatives found regarding this location.</p>
-                </div>
-            ) : (
-                <div className="flex flex-col">
-                    {legislators.map((leg) => {
-                        const bioguideId = leg.id.bioguide;
-                        const score = scores?.scores?.[bioguideId] || scores?.default;
-                        return (
-                            <RepCard
-                                key={bioguideId}
-                                legislator={leg}
-                                scoreData={score}
-                                districtLabel={`${stateAbbr}-${district}`}
-                                stateFips={stateFips || ''}
-                                district={district || ''}
-                            />
-                        );
-                    })}
-                </div>
-            )}
-
-            <div className="text-center">
-                <button
-                    onClick={() => router.push('/')}
-                    className="font-semibold text-[var(--brand-blue)] hover:underline"
-                >
-                    &larr; Check another district
-                </button>
+            <div className="mx-auto w-full max-w-6xl space-y-8">
+                {loading ? (
+                    <div className="flex justify-center p-12">
+                        <div className="h-12 w-12 animate-spin rounded-full border-b-2 border-[var(--brand-blue)]" />
+                    </div>
+                ) : error ? (
+                    <div className="rounded-lg border border-red-200 bg-red-50 p-4 text-center text-red-700">
+                        <p>Error: {error}</p>
+                    </div>
+                ) : legislators.length === 0 ? (
+                    <div className="p-12 text-center text-slate-500">
+                        <p>No representatives found regarding this location.</p>
+                    </div>
+                ) : (
+                    <div className="flex flex-col">
+                        {legislators.map((leg) => {
+                            const bioguideId = leg.id.bioguide;
+                            const score = scores?.scores?.[bioguideId] || scores?.default;
+                            return (
+                                <RepCard
+                                    key={bioguideId}
+                                    legislator={leg}
+                                    scoreData={score}
+                                    districtLabel={`${stateAbbr}-${district}`}
+                                    stateFips={stateFips || ''}
+                                    district={district || ''}
+                                />
+                            );
+                        })}
+                    </div>
+                )}
             </div>
         </div>
     );
