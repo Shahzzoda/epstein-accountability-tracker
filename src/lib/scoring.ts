@@ -28,6 +28,7 @@ export interface RawScoreEntry {
   epstein_transparency_act?: EpsteinTransparencyActions;
   committee_seat?: { title: string; committee: string; thomas_id?: string }[];
   social?: SocialMedia;
+  public_pressure_score?: number;
 }
 
 export interface CalculatedScore {
@@ -54,38 +55,55 @@ export function calculateEpsteinScore(entry?: RawScoreEntry): CalculatedScore {
   const cosponsored = Boolean(actions?.cosponsored);
   const sponsored = Boolean(actions?.sponsored);
 
-  let score = 1.0;
+  let score = 0;
   const reasons: string[] = [];
 
+  const activeAdvocacy = (entry?.public_pressure_score ?? 0) >= 3.0;
+
   if (voteYes) {
-    score += 1.7;
+    score += 2.0;
     reasons.push("supportive recorded vote");
   }
+
   if (signedPetition) {
-    score += 1.2;
+    score += 1.0;
     reasons.push("signed discharge petition");
   }
+
   if (cosponsored) {
-    score += 0.8;
+    score += 1.0;
     reasons.push("cosponsored disclosure bill");
   }
+
   if (sponsored) {
-    score += 1.3;
+    score += 1.5;
     reasons.push("sponsored disclosure bill");
   }
+
+  if (activeAdvocacy) {
+    score += 1.0;
+    reasons.push("active public advocacy");
+  }
+
   if (voteNo) {
-    score -= 0.8;
+    score -= 1.0;
     reasons.push("recorded non-supportive vote");
+  }
+
+  // Cap at 3.0 if no active advocacy or legislative sponsorship
+  if (!activeAdvocacy && !cosponsored && !sponsored) {
+    score = Math.min(3.0, score);
   }
 
   score = Math.max(0, Math.min(5, score));
   score = roundOne(score);
 
   let status = "Minimal";
-  if (score >= 4.2) status = "Leading";
-  else if (score >= 3.2) status = "Supportive";
-  else if (score >= 2.2) status = "Limited";
-  else if (score < 1) status = "Opposed";
+  if (score > 4.0) status = "Leading";
+  else if (score > 3.0) status = "Supportive";
+  else if (score > 2.0) status = "Minimal";
+  else if (score > 1.0) status = "Limited";
+  else status = "Opposed";
 
   const summary =
     reasons.length > 0

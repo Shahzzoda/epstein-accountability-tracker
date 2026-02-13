@@ -52,7 +52,7 @@ export default function RepCard({ legislator, scoreData, districtLabel, stateFip
     const status = calculated.status;
     const summary = calculated.summary;
 
-    const scoreColor = score >= 4 ? 'text-emerald-700' : score >= 3 ? 'text-emerald-600' : score > 2 ? 'text-amber-700' : 'text-rose-700';
+    const scoreColor = score > 3.0 ? 'text-emerald-700' : score > 2.0 ? 'text-amber-700' : 'text-rose-700';
 
     return (
         <article className="border-b border-[var(--border)] py-6">
@@ -68,7 +68,9 @@ export default function RepCard({ legislator, scoreData, districtLabel, stateFip
                 </div>
 
                 <div className="min-w-0">
-                    <h2 className="truncate text-xl text-slate-900">{legislator.name.official_full}</h2>
+                    <Link href={`/report/${legislator.id.bioguide}`} className="hover:underline">
+                        <h2 className="truncate text-xl text-slate-900">{legislator.name.official_full}</h2>
+                    </Link>
                     <p className="text-sm uppercase tracking-wide text-slate-500">
                         {isSenator ? `United States Senator (${currentTerm.state})` : `U.S. Representative (${currentTerm.state}-${currentTerm.district})`} · {currentTerm.party}
                     </p>

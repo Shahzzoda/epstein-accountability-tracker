@@ -61,6 +61,7 @@ interface ScoreEntry {
   score?: number;
   status?: string;
   summary?: string;
+  public_pressure_score?: number;
   epstein_transparency_act?: {
     sponsored?: boolean;
     cosponsored?: boolean;
@@ -242,7 +243,7 @@ export default async function ReportPage({
   const calculated = calculateEpsteinScore(score);
   const currentTerm = legislator.terms[legislator.terms.length - 1];
   const eta = score.epstein_transparency_act;
-  const scoreColor = calculated.score >= 4 ? 'text-emerald-700' : calculated.score >= 3 ? 'text-emerald-600' : calculated.score > 2 ? 'text-amber-700' : 'text-rose-700';
+  const scoreColor = calculated.score > 3.0 ? 'text-emerald-700' : calculated.score > 2.0 ? 'text-amber-700' : 'text-rose-700';
 
   // Sort committees by priority: Chair > Ranking > Vice > Member
   const displayCommittees = (score.committee_seat || [])
@@ -258,27 +259,33 @@ export default async function ReportPage({
 
   const actionRows = [
     {
+      label: 'Public advocacy',
+      isPositive: (score.public_pressure_score ?? 0) >= 3.0,
+      context: 'This office needs to create visible public pressure around the case. Public pressure raises the cost of delay and helps force DOJ follow-through.',
+      hidden: score.public_pressure_score === undefined
+    },
+    {
       label: 'Sponsored release legislation',
       isPositive: Boolean(eta?.sponsored),
-      context: 'Sponsoring disclosure legislation matters because it sets the public accountability agenda in law.',
+      context: 'Leading by introducing the bill is the strongest early signal that they are willing to drive accountability in law.',
       hidden: !eta?.sponsored
     },
     {
       label: 'Cosponsored release legislation',
       isPositive: Boolean(eta?.cosponsored),
-      context: 'Cosponsoring helps build enough support to move disclosure bills through Congress.',
+      context: 'Formally backing the bill as a cosponsor helps build the coalition needed to move disclosure legislation.',
       hidden: false
     },
     {
       label: 'Signed discharge petition',
       isPositive: Boolean(eta?.discharge_petition && eta?.discharge_petition !== 'NOT_APPLICABLE' && eta?.discharge_petition.signed),
-      context: 'A discharge petition can force a public vote when leadership does not schedule one.',
+      context: 'Signing the petition can force a House vote when leadership blocks floor action.',
       hidden: eta?.discharge_petition === 'NOT_APPLICABLE'
     },
     {
       label: 'Recorded vote support',
       isPositive: eta?.signed === 'yes' || eta?.signed === true,
-      context: 'Recorded votes create a clear public record of where this office stands on full release.',
+      context: 'Their final vote (or Senate passage support) is an on-the-record position on Epstein-file disclosure.',
       hidden: false
     }
   ]
@@ -396,17 +403,25 @@ export default async function ReportPage({
           </div>
         </header>
 
-        <section className="space-y-1">
-          <h2 className="text-2xl font-semibold leading-tight text-slate-900 sm:text-3xl">Executive Summary</h2>
-          <p className="text-sm text-slate-700">
-            In tracked public records for {stateSummary.state}, {stateSummary.supportiveActions} of {stateSummary.possibleActions} possible pro-disclosure actions are recorded across {stateSummary.lawmakers} lawmakers (average score {stateSummary.averageScore.toFixed(1)}/5).
-          </p>
+        <section className="space-y-3">
+
+          {score.summary ? (
+            <p className="text-base leading-relaxed text-slate-800">
+              {score.summary}
+            </p>
+          ) : (
+            <p className="text-sm italic text-slate-500">
+              We do not yet have an independent summary for {legislator.name.official_full}'s actions regarding the Epstein case.
+            </p>
+          )}
+
+
         </section>
 
         <section className="space-y-2 pb-2">
-          <h2 className="text-2xl font-semibold leading-tight text-slate-900 sm:text-3xl">How are they doing?</h2>
+          <h2 className="text-2xl font-semibold leading-tight text-slate-900 sm:text-3xl">How Are They Doing On Accountability?</h2>
           <p className="text-sm text-slate-700">
-            DOJ transparency on full file release.
+            We check concrete actions tied to Epstein-file disclosure and DOJ accountability, and explain why each action helps or hurts public oversight.
           </p>
           <div className="mt-3 space-y-2">
             {actionRows.map((row) => (
