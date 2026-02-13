@@ -34,7 +34,7 @@ interface Legislator {
 interface ScoreEntry {
     score: number;
     status: string;
-    notes?: string;
+    summary?: string;
     epstein_transparency_act?: {
         sponsored?: boolean;
         cosponsored?: boolean;
@@ -43,7 +43,7 @@ interface ScoreEntry {
         discharge_petition?: {
             signed?: boolean;
             date?: string | null;
-        };
+        } | "NOT_APPLICABLE";
     };
 }
 

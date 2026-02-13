@@ -1,12 +1,12 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { readFile, stat } from 'node:fs/promises';
 import path from 'node:path';
 import { createHash } from 'node:crypto';
 import ShareButton from '@/components/ShareButton';
 import ReportContactCard from '@/components/ReportContactCard';
+import LegislatorAvatar from '@/components/LegislatorAvatar';
 import { calculateEpsteinScore } from '@/lib/scoring';
 
 interface Term {
@@ -28,17 +28,46 @@ interface Legislator {
   terms: Term[];
 }
 
+interface CommitteeMember {
+  name: string;
+  party: string;
+  rank: number;
+  title?: string;
+  bioguide: string;
+}
+
+interface CommitteeInfo {
+  type: string;
+  name: string;
+  url: string;
+  thomas_id: string;
+  house_committee_id?: string;
+  senate_committee_id?: string;
+  jurisdiction?: string;
+}
+
+interface CommitteeMembershipData {
+  [key: string]: CommitteeMember[];
+}
+
+interface CommitteeSeat {
+  title: string;
+  committee: string;
+  thomas_id: string;
+}
+
 interface ScoreEntry {
   score?: number;
   status?: string;
-  notes?: string;
+  summary?: string;
   epstein_transparency_act?: {
     sponsored?: boolean;
     cosponsored?: boolean;
     cosponsored_date?: string | null;
     signed?: 'yes' | 'no' | boolean | string;
-    discharge_petition?: { signed?: boolean; date?: string | null };
+    discharge_petition?: { signed?: boolean; date?: string | null } | "NOT_APPLICABLE";
   };
+  committee_seat?: CommitteeSeat[];
 }
 
 interface ScoreFile {
@@ -92,7 +121,7 @@ function countSupportiveActions(entry: ScoreEntry): number {
   let total = 0;
   if (eta.sponsored) total += 1;
   if (eta.cosponsored) total += 1;
-  if (eta.discharge_petition?.signed) total += 1;
+  if (eta.discharge_petition && eta.discharge_petition !== "NOT_APPLICABLE" && eta.discharge_petition.signed) total += 1;
   if (eta.signed === 'yes' || eta.signed === true) total += 1;
   return total;
 }
@@ -207,30 +236,48 @@ export default async function ReportPage({
   const currentTerm = legislator.terms[legislator.terms.length - 1];
   const eta = score.epstein_transparency_act;
   const scoreColor = calculated.score >= 4 ? 'text-emerald-700' : calculated.score >= 3 ? 'text-emerald-600' : calculated.score > 2 ? 'text-amber-700' : 'text-rose-700';
-  const imageUrl = `https://raw.githubusercontent.com/unitedstates/images/master/congress/225x275/${legislator.id.bioguide}.jpg`;
+
+  // Sort committees by priority: Chair > Ranking > Vice > Member
+  const displayCommittees = (score.committee_seat || [])
+    .sort((a, b) => {
+      const getPriority = (t: string) => {
+        if (t.includes('Chair') || t.includes('Chairman')) return 0;
+        if (t.includes('Ranking')) return 1;
+        if (t.includes('Vice')) return 2;
+        return 3;
+      };
+      return getPriority(a.title) - getPriority(b.title);
+    });
 
   const actionRows = [
     {
       label: 'Sponsored release legislation',
       isPositive: Boolean(eta?.sponsored),
-      context: 'Sponsoring disclosure legislation matters because it sets the public accountability agenda in law.'
+      context: 'Sponsoring disclosure legislation matters because it sets the public accountability agenda in law.',
+      hidden: !eta?.sponsored
     },
     {
       label: 'Cosponsored release legislation',
       isPositive: Boolean(eta?.cosponsored),
-      context: 'Cosponsoring helps build enough support to move disclosure bills through Congress.'
+      context: 'Cosponsoring helps build enough support to move disclosure bills through Congress.',
+      hidden: false
     },
     {
       label: 'Signed discharge petition',
-      isPositive: Boolean(eta?.discharge_petition?.signed),
-      context: 'A discharge petition can force a public vote when leadership does not schedule one.'
+      isPositive: Boolean(eta?.discharge_petition && eta?.discharge_petition !== 'NOT_APPLICABLE' && eta?.discharge_petition.signed),
+      context: 'A discharge petition can force a public vote when leadership does not schedule one.',
+      hidden: eta?.discharge_petition === 'NOT_APPLICABLE'
     },
     {
       label: 'Recorded vote support',
       isPositive: eta?.signed === 'yes' || eta?.signed === true,
-      context: 'Recorded votes create a clear public record of where this office stands on full release.'
+      context: 'Recorded votes create a clear public record of where this office stands on full release.',
+      hidden: false
     }
-  ];
+  ]
+    .filter(row => !row.hidden)
+    .sort((a, b) => (a.isPositive === b.isPositive ? 0 : a.isPositive ? -1 : 1));
+
   const supportiveCount = actionRows.filter((row) => row.isPositive).length;
   const isSupportiveProfile = supportiveCount >= 3;
   const isMixedProfile = supportiveCount > 0 && supportiveCount < 3;
@@ -254,8 +301,8 @@ export default async function ReportPage({
         <header className="flex items-center justify-between gap-4">
           <div className="flex items-center gap-3">
             <div className="h-12 w-12 overflow-hidden rounded-full border border-[var(--border)] bg-slate-100">
-              <Image
-                src={imageUrl}
+              <LegislatorAvatar
+                bioguide={legislator.id.bioguide}
                 alt={legislator.name.official_full}
                 width={48}
                 height={48}
@@ -267,6 +314,18 @@ export default async function ReportPage({
               <p className="text-sm text-slate-700">
                 {currentTerm.type === 'sen' ? `United States Senator (${currentTerm.state})` : `U.S. Representative (${currentTerm.state}-${currentTerm.district})`} · {currentTerm.party}
               </p>
+
+              {/* Committee Badges */}
+              {displayCommittees.length > 0 && (
+                <div className="mt-1 flex flex-wrap gap-2">
+                  {displayCommittees.map((c, i) => (
+                    <div key={i} className="inline-flex items-center rounded-full bg-blue-50 px-3 py-1 text-xs font-semibold text-blue-700 ring-1 ring-inset ring-blue-700/10">
+                      {c.title && c.title !== 'Member' && <span className="mr-1 opacity-75">{c.title} of</span>}
+                      {c.committee}
+                    </div>
+                  ))}
+                </div>
+              )}
             </div>
           </div>
           <div className="text-right">

@@ -3,23 +3,25 @@ export interface EpsteinTransparencyActions {
   cosponsored?: boolean;
   cosponsored_date?: string | null;
   signed?: "yes" | "no" | boolean | string;
-  discharge_petition?: {
+  discharge_petition?:
+  | {
     signed?: boolean;
     date?: string | null;
-  };
+  }
+  | "NOT_APPLICABLE";
 }
 
 export interface RawScoreEntry {
   score?: number;
   status?: string;
-  notes?: string;
+  summary?: string;
   epstein_transparency_act?: EpsteinTransparencyActions;
 }
 
 export interface CalculatedScore {
   score: number;
   status: string;
-  notes: string;
+  summary: string;
 }
 
 function roundOne(value: number) {
@@ -30,7 +32,13 @@ export function calculateEpsteinScore(entry?: RawScoreEntry): CalculatedScore {
   const actions = entry?.epstein_transparency_act;
   const voteYes = actions?.signed === "yes" || actions?.signed === true;
   const voteNo = actions?.signed === "no" || actions?.signed === false;
-  const signedPetition = Boolean(actions?.discharge_petition?.signed);
+
+  // Handle discharge petition safely
+  let signedPetition = false;
+  if (actions?.discharge_petition && actions.discharge_petition !== "NOT_APPLICABLE") {
+    signedPetition = Boolean(actions.discharge_petition.signed);
+  }
+
   const cosponsored = Boolean(actions?.cosponsored);
   const sponsored = Boolean(actions?.sponsored);
 
@@ -67,10 +75,10 @@ export function calculateEpsteinScore(entry?: RawScoreEntry): CalculatedScore {
   else if (score >= 2.2) status = "Limited";
   else if (score < 1) status = "Opposed";
 
-  const notes =
+  const summary =
     reasons.length > 0
       ? `Calculated from tracked action set: ${reasons.join(", ")}.`
       : "Calculated from tracked action set: no pro-disclosure action is recorded in this dataset for this lawmaker.";
 
-  return { score, status, notes };
+  return { score, status, summary };
 }
