@@ -55,6 +55,13 @@ interface ReportData {
   legislator: Legislator;
   score: ScoreEntry;
   version: DataVersionInfo;
+  stateSummary: {
+    state: string;
+    lawmakers: number;
+    averageScore: number;
+    supportiveActions: number;
+    possibleActions: number;
+  };
 }
 
 function ArrowSignal({ up }: { up: boolean }) {
@@ -78,6 +85,18 @@ function formatUtcDate(date: Date) {
   return `${formatted} UTC`;
 }
 
+function countSupportiveActions(entry: ScoreEntry): number {
+  const eta = entry.epstein_transparency_act;
+  if (!eta) return 0;
+
+  let total = 0;
+  if (eta.sponsored) total += 1;
+  if (eta.cosponsored) total += 1;
+  if (eta.discharge_petition?.signed) total += 1;
+  if (eta.signed === 'yes' || eta.signed === true) total += 1;
+  return total;
+}
+
 async function getReportData(bioguide: string): Promise<ReportData | null> {
   const legislatorPath = path.join(process.cwd(), 'public', 'data/current_legislators.json');
   const scorePath = path.join(process.cwd(), 'public', 'data/epstein_scores.json');
@@ -97,6 +116,15 @@ async function getReportData(bioguide: string): Promise<ReportData | null> {
 
   const score = scoreFile.scores?.[bioguide] || scoreFile.default;
   if (!score) return null;
+  const currentTerm = legislator.terms[legislator.terms.length - 1];
+  const sameState = legislators.filter((entry) => {
+    const term = entry.terms[entry.terms.length - 1];
+    return term.state === currentTerm.state && (term.type === 'sen' || term.type === 'rep');
+  });
+  const scoredEntries = sameState.map((entry) => scoreFile.scores?.[entry.id.bioguide] || scoreFile.default).filter(Boolean) as ScoreEntry[];
+  const scoreTotal = scoredEntries.reduce((sum, entry) => sum + calculateEpsteinScore(entry).score, 0);
+  const supportiveActions = scoredEntries.reduce((sum, entry) => sum + countSupportiveActions(entry), 0);
+  const averageScore = scoredEntries.length ? scoreTotal / scoredEntries.length : 0;
 
   const datasetHash = createHash('sha256').update(legislatorRaw).update(scoreRaw).digest('hex').slice(0, 12);
   const newestMtime = Math.max(legislatorStat.mtimeMs, scoreStat.mtimeMs);
@@ -104,6 +132,13 @@ async function getReportData(bioguide: string): Promise<ReportData | null> {
   return {
     legislator,
     score,
+    stateSummary: {
+      state: currentTerm.state,
+      lawmakers: scoredEntries.length,
+      averageScore,
+      supportiveActions,
+      possibleActions: scoredEntries.length * 4
+    },
     version: {
       asOf: formatUtcDate(new Date(newestMtime)),
       datasetHash
@@ -117,14 +152,14 @@ export async function generateMetadata({ params }: { params: Promise<{ bioguide:
 
   if (!reportData) {
     return {
-      title: 'Official Profile Report | Epstein Files Tracker',
+      title: 'Official Profile Report | Public Record: Epstein-Related Exploitation',
       description: 'Open an official profile report and review tracked public-record actions linked to Epstein files.'
     };
   }
 
   const currentTerm = reportData.legislator.terms[reportData.legislator.terms.length - 1];
   const calculated = calculateEpsteinScore(reportData.score);
-  const title = `${reportData.legislator.name.official_full} Report | Epstein Files Tracker`;
+  const title = `${reportData.legislator.name.official_full} Report | Public Record: Epstein-Related Exploitation`;
   const description = `${reportData.legislator.name.official_full} (${currentTerm.party}) score: ${calculated.score.toFixed(1)}/5, based on tracked public-record actions. Not an allegation of criminal conduct.`;
 
   return {
@@ -139,7 +174,7 @@ export async function generateMetadata({ params }: { params: Promise<{ bioguide:
           url: '/og-report.svg',
           width: 1200,
           height: 630,
-          alt: 'Epstein Files Tracker share image'
+          alt: 'Public Record: Epstein-Related Exploitation share image'
         }
       ]
     },
@@ -167,7 +202,7 @@ export default async function ReportPage({
     notFound();
   }
 
-  const { legislator, score } = reportData;
+  const { legislator, score, stateSummary } = reportData;
   const calculated = calculateEpsteinScore(score);
   const currentTerm = legislator.terms[legislator.terms.length - 1];
   const eta = score.epstein_transparency_act;
@@ -243,7 +278,15 @@ export default async function ReportPage({
           </div>
         </header>
 
+        <section className="space-y-1">
+          <h2 className="text-2xl font-semibold leading-tight text-slate-900 sm:text-3xl">Executive Summary</h2>
+          <p className="text-sm text-slate-700">
+            In tracked public records for {stateSummary.state}, {stateSummary.supportiveActions} of {stateSummary.possibleActions} possible pro-disclosure actions are recorded across {stateSummary.lawmakers} lawmakers (average score {stateSummary.averageScore.toFixed(1)}/5).
+          </p>
+        </section>
+
         <section className="space-y-2 pb-2">
+          <h2 className="text-2xl font-semibold leading-tight text-slate-900 sm:text-3xl">Actions Scored</h2>
           <p className="text-sm text-slate-700">
             DOJ transparency on full file release.
           </p>

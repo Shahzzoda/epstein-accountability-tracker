@@ -1,20 +1,71 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="900" viewBox="0 0 900 900" fill="none">
-  <rect width="900" height="900" fill="#F4F7FA"/>
-  <rect x="110" y="130" width="560" height="660" rx="18" fill="#FFFFFF" stroke="#C8D5E3"/>
-  <rect x="170" y="220" width="430" height="20" rx="10" fill="#1E467A"/>
-  <rect x="170" y="272" width="380" height="14" rx="7" fill="#A9BACB"/>
-  <rect x="170" y="307" width="400" height="14" rx="7" fill="#A9BACB"/>
-  <rect x="170" y="342" width="335" height="14" rx="7" fill="#A9BACB"/>
-  <rect x="170" y="410" width="430" height="20" rx="10" fill="#1E467A"/>
-  <rect x="170" y="462" width="400" height="14" rx="7" fill="#A9BACB"/>
-  <rect x="170" y="497" width="370" height="14" rx="7" fill="#A9BACB"/>
-  <rect x="170" y="532" width="350" height="14" rx="7" fill="#A9BACB"/>
-  <rect x="515" y="90" width="280" height="360" rx="18" fill="#FFFFFF" stroke="#C8D5E3"/>
-  <rect x="555" y="170" width="180" height="16" rx="8" fill="#A22F2A"/>
-  <rect x="555" y="215" width="145" height="12" rx="6" fill="#BFCAD6"/>
-  <rect x="555" y="245" width="160" height="12" rx="6" fill="#BFCAD6"/>
-  <rect x="555" y="275" width="120" height="12" rx="6" fill="#BFCAD6"/>
-  <circle cx="706" cy="630" r="122" fill="#123A6F" opacity="0.1"/>
-  <circle cx="706" cy="630" r="94" fill="#123A6F" opacity="0.18"/>
-  <circle cx="706" cy="630" r="44" fill="#123A6F"/>
+  <defs>
+    <linearGradient id="bg" x1="90" y1="70" x2="820" y2="860" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8FBFF"/>
+      <stop offset="1" stop-color="#E7EFF7"/>
+    </linearGradient>
+    <linearGradient id="paper" x1="140" y1="120" x2="760" y2="790" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#F4F8FC"/>
+    </linearGradient>
+    <filter id="shadow" x="94" y="96" width="712" height="720" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dy="10"/>
+      <feGaussianBlur stdDeviation="10"/>
+      <feComposite in2="hardAlpha" operator="out"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.09 0 0 0 0 0.2 0 0 0 0 0.34 0 0 0 0.16 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_4"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_4" result="shape"/>
+    </filter>
+    <pattern id="textRows" width="8" height="28" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="#B8C6D6"/>
+    </pattern>
+  </defs>
+
+  <rect width="900" height="900" fill="url(#bg)"/>
+
+  <g filter="url(#shadow)">
+    <rect x="120" y="116" width="660" height="680" rx="22" fill="url(#paper)" stroke="#C4D2E1"/>
+  </g>
+
+  <!-- profile head -->
+  <circle cx="450" cy="240" r="62" fill="#8D9CB0"/>
+  <path d="M344 376C344 311 390 274 450 274C510 274 556 311 556 376V390H344V376Z" fill="#98A8BC"/>
+
+  <!-- heading -->
+  <rect x="292" y="420" width="316" height="26" rx="13" fill="#1F477A"/>
+  <rect x="328" y="458" width="244" height="14" rx="7" fill="#AFC0D2"/>
+
+  <!-- wrapped text left -->
+  <g opacity="0.92">
+    <rect x="170" y="514" width="210" height="10" rx="5" fill="#B7C6D6"/>
+    <rect x="170" y="536" width="230" height="10" rx="5" fill="#B7C6D6"/>
+    <rect x="170" y="558" width="194" height="10" rx="5" fill="#B7C6D6"/>
+    <rect x="170" y="580" width="220" height="10" rx="5" fill="#B7C6D6"/>
+    <rect x="170" y="602" width="188" height="10" rx="5" fill="#B7C6D6"/>
+    <rect x="170" y="624" width="236" height="10" rx="5" fill="#B7C6D6"/>
+  </g>
+
+  <!-- wrapped text right -->
+  <g opacity="0.92">
+    <rect x="520" y="514" width="210" height="10" rx="5" fill="#B7C6D6"/>
+    <rect x="500" y="536" width="230" height="10" rx="5" fill="#B7C6D6"/>
+    <rect x="536" y="558" width="194" height="10" rx="5" fill="#B7C6D6"/>
+    <rect x="510" y="580" width="220" height="10" rx="5" fill="#B7C6D6"/>
+    <rect x="542" y="602" width="188" height="10" rx="5" fill="#B7C6D6"/>
+    <rect x="494" y="624" width="236" height="10" rx="5" fill="#B7C6D6"/>
+  </g>
+
+  <!-- lower text block -->
+  <rect x="196" y="684" width="508" height="10" rx="5" fill="#BDCADA"/>
+  <rect x="196" y="706" width="468" height="10" rx="5" fill="#BDCADA"/>
+  <rect x="196" y="728" width="434" height="10" rx="5" fill="#BDCADA"/>
+
+  <!-- stamped outlined F -->
+  <g transform="rotate(-12 678 228)">
+    <circle cx="678" cy="228" r="114" fill="none" stroke="#9D2722" stroke-width="14" opacity="0.95"/>
+    <circle cx="678" cy="228" r="92" fill="none" stroke="#9D2722" stroke-width="6" opacity="0.9" stroke-dasharray="10 10"/>
+    <text x="678" y="274" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="150" font-weight="700" fill="none" stroke="#9D2722" stroke-width="7" opacity="0.96">F</text>
+  </g>
 </svg>

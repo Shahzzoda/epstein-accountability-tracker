@@ -54,17 +54,13 @@ export default function Home() {
       <section className="mx-auto grid w-full max-w-6xl items-start gap-8 py-10 lg:grid-cols-[1.2fr_0.8fr] lg:py-14">
         <div className="fade-up space-y-5">
           <h1 className="text-4xl leading-tight sm:text-5xl lg:text-6xl">
-            Who pushed for <span className="text-[var(--brand-blue)]">full disclosure.</span>
-            <span className="block text-slate-900">Who did not act.</span>
+            Accountability for the Epstein case: <span className="text-[var(--brand-blue)]">Find your rep.</span> Verify the record.
           </h1>
           <p className="max-w-3xl text-base leading-relaxed text-slate-800 sm:text-lg">
             We track public-record actions on Epstein files by lawmaker, including recorded votes, bill sponsorships, cosponsorships, and discharge petition signatures, and we link every claim to a source from the House Clerk, Congress.gov, and discharge petition records so people can verify the record, check their district, and share what they find.
           </p>
 
           <div id="find-lawmakers" className="max-w-xl space-y-3 pt-1">
-            <p className="text-sm leading-relaxed text-slate-700">
-              Use location once to identify your House district, then review your Representative and both Senators.
-            </p>
             <button
               onClick={handleFindReps}
               disabled={loading}
@@ -75,15 +71,6 @@ export default function Home() {
             {error && (
               <p className="rounded-md border border-red-200 bg-red-50 p-2 text-sm text-red-700">{error}</p>
             )}
-            <div className="flex flex-wrap items-center gap-3 pt-1">
-              <Link href="/report/C000127" className="text-sm font-semibold text-[var(--brand-blue)] hover:underline">
-                View an example profile
-              </Link>
-              <span className="text-slate-400">•</span>
-              <Link href="/epstein-files" className="text-sm font-semibold text-[var(--brand-blue)] hover:underline">
-                Sources & Method
-              </Link>
-            </div>
             <p className="pt-1 text-sm leading-relaxed text-slate-700">
               Location is used only to map your district for this session. We do not store precise coordinates.
             </p>
@@ -92,12 +79,7 @@ export default function Home() {
 
         <div className="fade-up space-y-4 lg:pt-3">
           <div className="rounded-xl border border-[var(--border)] bg-white p-5 shadow-sm">
-            <p className="text-xs font-semibold uppercase tracking-[0.12em] text-slate-500">Example report preview</p>
-            <div className="mt-2 flex items-center justify-between">
-              <h2 className="text-xl text-slate-900">Transparency score</h2>
-              <p className="text-3xl font-black text-rose-700">F</p>
-            </div>
-            <div className="mt-4 space-y-3">
+            <div className="space-y-3">
               <div className="overflow-hidden rounded-lg border border-[var(--border)] bg-slate-50">
                 <Image
                   src="/transparency-docs.svg"
@@ -108,16 +90,18 @@ export default function Home() {
                 />
               </div>
               <div className="flex items-center justify-between pt-1">
-                <p className="text-xs text-slate-600">Source-linked entries in each row</p>
-                <Link href="/report/C000127" className="text-xs font-semibold text-[var(--brand-blue)] hover:underline">
-                  View record
-                </Link>
+                <div className="flex items-center gap-2 text-xs font-semibold text-[var(--brand-blue)]">
+                  <Link href="/report/C000127" className="hover:underline">
+                    View an example profile
+                  </Link>
+                  <span className="text-slate-400">•</span>
+                  <Link href="/epstein-files" className="hover:underline">
+                    Sources &amp; Method
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
-          <p className="text-sm leading-relaxed text-slate-700">
-            Every claim links to a primary source. <Link href="/epstein-files" className="font-semibold text-[var(--brand-blue)] hover:underline">Read Sources & Method</Link>.
-          </p>
         </div>
       </section>
     </main>
