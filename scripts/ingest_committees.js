@@ -2,6 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 const COMMITTEES_PATH = path.join(__dirname, '../public/data/committee_membership_current.json');
+const LEGISLATORS_PATH = path.join(__dirname, '../public/data/legislators/current_legislators.json');
 const SCORES_PATH = path.join(__dirname, '../public/data/epstein_scores.json');
 
 const TARGET_COMMITTEES = {

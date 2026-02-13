@@ -3,7 +3,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 
 export const metadata: Metadata = {
-  title: "Public Record: Epstein-Related Exploitation | Check Your Lawmakers",
+  title: "Accountability Record: Epstein-Related Exploitation | Check Your Lawmakers",
   description: "Find your members of Congress and see their recorded actions on Epstein-file disclosure.",
 };
 

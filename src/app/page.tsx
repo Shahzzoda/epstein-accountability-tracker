@@ -91,7 +91,7 @@ export default function Home() {
               </div>
               <div className="flex items-center justify-between pt-1">
                 <div className="flex items-center gap-2 text-xs font-semibold text-[var(--brand-blue)]">
-                  <Link href="/report/C000127" className="hover:underline">
+                  <Link href="/report/R000606" className="hover:underline">
                     View an example profile
                   </Link>
                   <span className="text-slate-400">•</span>

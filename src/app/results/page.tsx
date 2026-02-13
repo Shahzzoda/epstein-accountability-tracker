@@ -74,7 +74,7 @@ function ResultsContent() {
         const fetchData = async () => {
             try {
                 const [legRes, scoreRes] = await Promise.all([
-                    fetch('/data/current_legislators.json'),
+                    fetch('/data/legislators/current_legislators.json'),
                     fetch('/data/epstein_scores.json')
                 ]);
 

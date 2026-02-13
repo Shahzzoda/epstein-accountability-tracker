@@ -28,7 +28,7 @@ export default function EpsteinFilesPage() {
             <h2 className="text-xl text-slate-900">Exactly what we ingest</h2>
             <ul className="mt-3 space-y-2 text-sm text-slate-700">
               <li><span className="font-semibold">Action log:</span> lawmaker-level disclosure actions from <code>/data/epstein_scores.json</code>.</li>
-              <li><span className="font-semibold">Identity + office info:</span> current term, district, office, contact data from <code>/data/current_legislators.json</code>.</li>
+              <li><span className="font-semibold">Identity + office info:</span> current term, district, office, contact data from <code>/data/legislators/current_legislators.json</code>.</li>
               <li><span className="font-semibold">No hidden inputs:</span> no unnamed sources, no rumor feeds, no private datasets.</li>
             </ul>
           </article>
@@ -73,7 +73,7 @@ export default function EpsteinFilesPage() {
             <div className="rounded-lg border border-[var(--border)] bg-white p-4 text-xs text-slate-700">
               <p className="font-semibold text-slate-900">Input fields</p>
               <pre className="mt-2 overflow-x-auto whitespace-pre-wrap">
-{`official_full: "Jane Doe"
+                {`official_full: "Jane Doe"
 party: "R"
 epstein_transparency_act.signed: "yes"
 epstein_transparency_act.cosponsored: true
@@ -83,7 +83,7 @@ epstein_transparency_act.discharge_petition.signed: false`}
             <div className="rounded-lg border border-[var(--border)] bg-white p-4 text-xs text-slate-700">
               <p className="font-semibold text-slate-900">Output calculation</p>
               <pre className="mt-2 overflow-x-auto whitespace-pre-wrap">
-{`base 1.0
+                {`base 1.0
 + vote support 1.7
 + cosponsor 0.8
 = 3.5 final score

@@ -16,9 +16,9 @@ export default function Header() {
         <header className="sticky top-0 z-20 border-b border-[var(--border)]/90 bg-white/92 backdrop-blur">
             <div className="mx-auto flex h-14 max-w-6xl items-center justify-between px-4 sm:px-5 md:px-6 lg:px-8 xl:px-0">
                 <Link href="/" className="inline-flex items-center">
-                    <span className="whitespace-nowrap text-base font-semibold leading-tight text-[var(--ink)] xl:hidden">Public Record</span>
+                    <span className="whitespace-nowrap text-base font-semibold leading-tight text-[var(--ink)] xl:hidden">Accountability - Epstein Files</span>
                     <span className="hidden whitespace-nowrap text-base font-semibold leading-tight text-[var(--ink)] xl:inline xl:text-lg">
-                        Public Record: Epstein-Related Exploitation
+                        Accountability Record: Epstein-Related Exploitation
                     </span>
                 </Link>
 

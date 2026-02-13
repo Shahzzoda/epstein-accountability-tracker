@@ -11,11 +11,23 @@ export interface EpsteinTransparencyActions {
   | "NOT_APPLICABLE";
 }
 
+export interface SocialMedia {
+  twitter?: string;
+  facebook?: string;
+  youtube?: string;
+  youtube_id?: string;
+  instagram?: string;
+  instagram_id?: number | string;
+  twitter_id?: string | number;
+}
+
 export interface RawScoreEntry {
   score?: number;
   status?: string;
   summary?: string;
   epstein_transparency_act?: EpsteinTransparencyActions;
+  committee_seat?: { title: string; committee: string; thomas_id?: string }[];
+  social?: SocialMedia;
 }
 
 export interface CalculatedScore {

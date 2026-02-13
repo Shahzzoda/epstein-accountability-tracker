@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const LEGISLATORS_PATH = path.join(__dirname, '../public/data/current_legislators.json');
+const LEGISLATORS_PATH = path.join(__dirname, '../public/data/legislators/current_legislators.json');
 const SCORES_PATH = path.join(__dirname, '../public/data/epstein_scores.json');
 const COSPONSORS_PATH = path.join(__dirname, '../public/data/eft_act/senate_cosponsors.txt');
 
