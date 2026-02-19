@@ -1,8 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { readFile, stat } from 'node:fs/promises';
-import path from 'node:path';
 import { createHash } from 'node:crypto';
 import ShareButton from '@/components/ShareButton';
 import ReportContactCard from '@/components/ReportContactCard';
@@ -134,15 +132,28 @@ function countSupportiveActions(entry: ScoreEntry): number {
   return total;
 }
 
-async function getReportData(bioguide: string): Promise<ReportData | null> {
-  const legislatorPath = path.join(process.cwd(), 'public', 'data/legislators/current_legislators.json');
-  const scorePath = path.join(process.cwd(), 'public', 'data/epstein_scores.json');
+function getPublicBaseUrl(): string {
+  const fromEnv = process.env.NEXT_PUBLIC_SITE_URL?.trim();
+  if (fromEnv) {
+    return fromEnv.replace(/\/+$/, '');
+  }
+  return 'https://rep-finder.shahzoda01.workers.dev';
+}
 
-  const [legislatorRaw, scoreRaw, legislatorStat, scoreStat] = await Promise.all([
-    readFile(legislatorPath, 'utf8'),
-    readFile(scorePath, 'utf8'),
-    stat(legislatorPath),
-    stat(scorePath)
+async function getReportData(bioguide: string): Promise<ReportData | null> {
+  const baseUrl = getPublicBaseUrl();
+  const [legislatorRes, scoreRes] = await Promise.all([
+    fetch(`${baseUrl}/data/legislators/current_legislators.json`, { cache: 'force-cache' }),
+    fetch(`${baseUrl}/data/epstein_scores.json`, { cache: 'force-cache' })
+  ]);
+
+  if (!legislatorRes.ok || !scoreRes.ok) {
+    throw new Error('Failed to load report datasets');
+  }
+
+  const [legislatorRaw, scoreRaw] = await Promise.all([
+    legislatorRes.text(),
+    scoreRes.text()
   ]);
 
   const legislators = JSON.parse(legislatorRaw) as Legislator[];
@@ -164,7 +175,13 @@ async function getReportData(bioguide: string): Promise<ReportData | null> {
   const averageScore = scoredEntries.length ? scoreTotal / scoredEntries.length : 0;
 
   const datasetHash = createHash('sha256').update(legislatorRaw).update(scoreRaw).digest('hex').slice(0, 12);
-  const newestMtime = Math.max(legislatorStat.mtimeMs, scoreStat.mtimeMs);
+  const legislatorLastModified = Date.parse(legislatorRes.headers.get('last-modified') || '');
+  const scoreLastModified = Date.parse(scoreRes.headers.get('last-modified') || '');
+  const newestMtime = Math.max(
+    Number.isNaN(legislatorLastModified) ? 0 : legislatorLastModified,
+    Number.isNaN(scoreLastModified) ? 0 : scoreLastModified,
+    Date.now()
+  );
 
   return {
     legislator,

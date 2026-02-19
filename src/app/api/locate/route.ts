@@ -1,5 +1,4 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { readFile } from 'node:fs/promises';
 
 export async function GET(request: NextRequest) {
     const searchParams = request.nextUrl.searchParams;
@@ -18,11 +17,6 @@ export async function GET(request: NextRequest) {
         if (!response.ok) {
             throw new Error('Failed to fetch from Census Geocoder');
         }
-
-        // This line was added based on the instruction's "Code Edit" snippet.
-        // The original instruction implied an update, but the line did not exist.
-        // The path has been updated as requested.
-        const file = await readFile(process.cwd() + '/public/data/legislators/current_legislators.json', 'utf8');
 
         const data = await response.json();
         console.log('Census Geocoder Response:', JSON.stringify(data, null, 2));

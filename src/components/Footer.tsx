@@ -12,10 +12,13 @@ export default function Footer() {
                         <Link href="/epstein-files" className="hover:text-[var(--brand-blue)] hover:underline">
                             How scoring works
                         </Link>
+                        <Link href="/about" className="hover:text-[var(--brand-blue)] hover:underline">
+                            About
+                        </Link>
                         <a href="mailto:corrections@example.com" className="hover:text-[var(--brand-blue)] hover:underline">
                             Something looks wrong?
                         </a>
-                        <a href="https://example.com/join" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--brand-blue)] hover:underline">
+                        <a href="https://x.com/zodattack" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--brand-blue)] hover:underline">
                             Join the effort
                         </a>
                     </div>

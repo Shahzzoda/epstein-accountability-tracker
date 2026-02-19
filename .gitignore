@@ -42,3 +42,6 @@ next-env.d.ts
 
 # OpenNext
 .open-next
+
+# Custom
+public/maps/districts/png/

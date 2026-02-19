@@ -10,9 +10,10 @@
     "maps:districts": "node scripts/generate_district_maps.js",
     "maps:districts:png": "node scripts/generate_district_maps.js",
     "maps:districts:svg": "node scripts/generate_district_maps_svg.js",
-    "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
-    "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
-    "upload": "opennextjs-cloudflare build && opennextjs-cloudflare upload",
+    "cf:assetsignore": "node scripts/write_assetsignore.js",
+    "preview": "opennextjs-cloudflare build && npm run cf:assetsignore && opennextjs-cloudflare preview",
+    "deploy": "opennextjs-cloudflare build && npm run cf:assetsignore && opennextjs-cloudflare deploy",
+    "upload": "opennextjs-cloudflare build && npm run cf:assetsignore && opennextjs-cloudflare upload",
     "cf-typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts"
   },
   "dependencies": {
