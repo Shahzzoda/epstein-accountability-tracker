@@ -25,6 +25,12 @@ export default function Home() {
         const { latitude, longitude } = position.coords;
 
         try {
+          localStorage.setItem('userCoords', JSON.stringify({ lat: latitude, lon: longitude }));
+        } catch {
+          // localStorage may be unavailable in some contexts
+        }
+
+        try {
           const response = await fetch(`/api/locate?lat=${latitude}&lon=${longitude}`);
           if (!response.ok) {
             const errData = await response.json();

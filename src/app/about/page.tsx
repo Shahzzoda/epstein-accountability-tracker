@@ -10,12 +10,28 @@ export default function AboutPage() {
 
                 <section className="space-y-4 text-base leading-relaxed text-slate-700">
                     <p>
-                        **Rep Finder** is a citizen-led transparency initiative. Its goal is to provide a clear,
-                        accessible record of how elected officials have acted regarding the disclosure of the Epstein files.
+                        <strong>Rep Finder</strong> exists for one reason: accountability should not be optional.
+                        Power without scrutiny becomes secrecy, and secrecy protects systems that hurt people.
+                        This project gives constituents a direct, public way to ask a simple question of every lawmaker:
+                        What did you do when transparency was on the table?
                     </p>
                     <p>
-                        We believe that transparency is accountability. By tracking votes, sponsorships, and public advocacy,
-                        we aim to give constituents the information they need to understand where their representatives stand.
+                        The Epstein story did not appear overnight. It has been publicly reported in phases since
+                        <strong> 1996</strong>, with years of allegations, investigations, civil filings, plea deals,
+                        witness reporting, media coverage, and official records accumulating into a long public trail.
+                        By the time the broader public focus intensified in the late 2010s and early 2020s,
+                        the core question was no longer whether there was a record. The question was whether leaders
+                        would confront it in daylight.
+                    </p>
+                    <p>
+                        Rep Finder tracks that daylight: recorded votes, bill sponsorships and cosponsorships,
+                        petition signatures, and other verifiable public actions tied to disclosure.
+                        This is not about rumor. It is about receipts.
+                    </p>
+                    <p>
+                        Accountability is not revenge. Accountability is civic maintenance.
+                        It is how a democracy remembers what happened, who acted, and who looked away.
+                        If constituents stop asking, institutions stop answering.
                     </p>
                 </section>
 

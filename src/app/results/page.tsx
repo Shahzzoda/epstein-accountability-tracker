@@ -162,7 +162,7 @@ function ResultsContent() {
                     </div>
                 )}
 
-                <RepsLeaderboard />
+                {/* <RepsLeaderboard /> Removed as per user request */}
             </div>
         </div>
     );

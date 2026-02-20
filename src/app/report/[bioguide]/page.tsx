@@ -6,6 +6,7 @@ import ShareButton from '@/components/ShareButton';
 import ReportContactCard from '@/components/ReportContactCard';
 import LegislatorAvatar from '@/components/LegislatorAvatar';
 import SocialLinks from '@/components/SocialLinks';
+import VoterActionCard from '@/components/VoterActionCard';
 import { calculateEpsteinScore } from '@/lib/scoring';
 
 interface Term {
@@ -60,6 +61,11 @@ interface ScoreEntry {
   status?: string;
   summary?: string;
   public_pressure_score?: number;
+  election?: {
+    up_for_election_2026?: boolean;
+    next_election_year?: number | null;
+    current_term_end?: string | null;
+  };
   epstein_transparency_act?: {
     sponsored?: boolean;
     cosponsored?: boolean;
@@ -261,6 +267,9 @@ export default async function ReportPage({
   const currentTerm = legislator.terms[legislator.terms.length - 1];
   const eta = score.epstein_transparency_act;
   const scoreColor = calculated.score > 3.0 ? 'text-emerald-700' : calculated.score > 2.0 ? 'text-amber-700' : 'text-rose-700';
+  const termEndYear = Number.parseInt((currentTerm.end || '').slice(0, 4), 10);
+  const derivedUpForElection2026 = Number.isFinite(termEndYear) ? termEndYear === 2027 : false;
+  const upForElection2026 = score.election?.up_for_election_2026 ?? derivedUpForElection2026;
 
   // Sort committees by priority: Chair > Ranking > Vice > Member
   const displayCommittees = (score.committee_seat || [])
@@ -320,7 +329,7 @@ export default async function ReportPage({
     <main className="startup-shell min-h-screen px-4 py-4 sm:px-6 sm:py-5">
       <article className="mx-auto w-full max-w-[960px] space-y-6">
         <div className="flex items-center justify-between border-b border-[var(--border)] pb-2">
-          <Link href={backHref} className="text-sm font-semibold text-[var(--brand-blue)] hover:underline">
+          <Link href="/" className="text-sm font-semibold text-[var(--brand-blue)] hover:underline">
             &larr; Back
           </Link>
           <ShareButton
@@ -345,6 +354,10 @@ export default async function ReportPage({
               <div className="flex flex-wrap items-center gap-2 text-sm text-slate-700">
                 <p>
                   {currentTerm.type === 'sen' ? `United States Senator (${currentTerm.state})` : `U.S. Representative (${currentTerm.state}-${currentTerm.district})`} · {currentTerm.party}
+                </p>
+                <span>·</span>
+                <p className={upForElection2026 ? 'font-semibold text-[var(--brand-gold)]' : 'font-semibold text-slate-500'}>
+                  Up for election in 2026: {upForElection2026 ? 'Yes' : 'No'}
                 </p>
                 {score.social && (
                   <>
@@ -428,7 +441,7 @@ export default async function ReportPage({
             </p>
           ) : (
             <p className="text-sm italic text-slate-500">
-              We do not yet have an independent summary for {legislator.name.official_full}'s actions regarding the Epstein case.
+              We do not yet have an independent summary for {legislator.name.official_full}&rsquo;s actions regarding the Epstein case.
             </p>
           )}
 
@@ -470,6 +483,10 @@ export default async function ReportPage({
           contactForm={currentTerm.contact_form}
           templateMode={templateMode}
         />
+
+        {upForElection2026 && (
+          <VoterActionCard stateCode={currentTerm.state} />
+        )}
 
         <footer className="border-t border-[var(--border)] pt-4 text-center">
           <Link href="/epstein-files" className="text-xs font-semibold text-[var(--brand-blue)] hover:underline">
