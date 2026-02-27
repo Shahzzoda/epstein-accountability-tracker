@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
-import Image from 'next/image';
+import InteractiveMap from '@/components/InteractiveMap';
 
 export default function Home() {
   const router = useRouter();
@@ -56,58 +56,60 @@ export default function Home() {
   };
 
   return (
-    <main className="startup-shell min-h-screen p-6 text-[var(--ink)]">
-      <section className="mx-auto grid w-full max-w-6xl items-start gap-8 py-10 lg:grid-cols-[1.2fr_0.8fr] lg:py-14">
-        <div className="fade-up space-y-5">
-          <h1 className="text-4xl leading-tight sm:text-5xl lg:text-6xl">
-            Accountability for the Epstein case: <span className="text-[var(--brand-blue)]">Find your rep.</span> Verify the record.
-          </h1>
-          <p className="max-w-3xl text-base leading-relaxed text-slate-800 sm:text-lg">
-            We track public-record actions on Epstein files by lawmaker, including recorded votes, bill sponsorships, cosponsorships, and discharge petition signatures, and we link every claim to a source from the House Clerk, Congress.gov, and discharge petition records so people can verify the record, check their district, and share what they find.
-          </p>
+    <main className="startup-shell h-screen overflow-hidden text-[var(--ink)]">
+      <section className="mx-auto h-full w-full max-w-none">
+        <div className="fade-up civic-stage relative h-full">
+          <div className="map-zone h-full">
+            <InteractiveMap />
+          </div>
 
-          <div id="find-lawmakers" className="max-w-xl space-y-3 pt-1">
+          <section
+            className="pointer-events-none absolute left-1/2 top-4 z-20 w-[min(760px,92vw)] -translate-x-1/2 space-y-2 text-center text-slate-900 [text-shadow:0_1px_10px_rgba(255,255,255,0.9)]"
+          >
+            <h1 className="text-3xl leading-tight sm:text-4xl lg:text-5xl">
+              How&apos;s your district doing to push for Epstein Investigation?
+            </h1>
+            <p className="mx-auto max-w-2xl text-sm leading-relaxed sm:text-base">
+              Click anywhere on the map to open the district record. Every profile links to sources. Start with an{' '}
+              <Link href="/report/R000606" className="pointer-events-auto font-semibold text-[var(--brand-blue)] hover:underline">
+                example
+              </Link>{' '}
+              or review{' '}
+              <Link href="/epstein-files" className="pointer-events-auto font-semibold text-[var(--brand-blue)] hover:underline">
+                methods
+              </Link>
+              .
+            </p>
+          </section>
+
+          <section
+            id="find-lawmakers"
+            className="absolute bottom-5 left-1/2 z-20 flex w-[min(760px,92vw)] -translate-x-1/2 flex-col items-center gap-2 text-center text-slate-900 [text-shadow:0_1px_10px_rgba(255,255,255,0.9)]"
+          >
             <button
               onClick={handleFindReps}
               disabled={loading}
-              className="rounded-lg bg-[var(--brand-blue)] px-6 py-3.5 text-sm font-semibold text-white transition hover:bg-[#0d2f59] disabled:cursor-not-allowed disabled:opacity-50"
+              className="pointer-events-auto inline-flex items-center gap-2 rounded-md bg-[var(--brand-blue)] px-7 py-3 text-sm font-semibold text-white transition hover:bg-[#0d2f59] disabled:cursor-not-allowed disabled:opacity-60"
             >
-              {loading ? 'Locating your district...' : 'Find my lawmakers'}
+              <svg
+                aria-hidden="true"
+                viewBox="0 0 24 24"
+                className="h-4 w-4"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path d="M12 21s-6-5.2-6-10a6 6 0 1 1 12 0c0 4.8-6 10-6 10z" />
+                <circle cx="12" cy="11" r="2.2" />
+              </svg>
+              {loading ? 'Locating your district...' : 'Use my location'}
             </button>
             {error && (
-              <p className="rounded-md border border-red-200 bg-red-50 p-2 text-sm text-red-700">{error}</p>
+              <p className="text-sm font-semibold text-red-700">{error}</p>
             )}
-            <p className="pt-1 text-sm leading-relaxed text-slate-700">
-              Location is used only to map your district for this session. We do not store precise coordinates.
-            </p>
-          </div>
-        </div>
-
-        <div className="fade-up space-y-4 lg:pt-3">
-          <div className="rounded-xl border border-[var(--border)] bg-white p-5 shadow-sm">
-            <div className="space-y-3">
-              <div className="overflow-hidden rounded-lg border border-[var(--border)] bg-slate-50">
-                <Image
-                  src="/transparency-docs.svg"
-                  alt="Transparency records preview"
-                  width={900}
-                  height={900}
-                  className="h-auto w-full object-cover"
-                />
-              </div>
-              <div className="flex items-center justify-between pt-1">
-                <div className="flex items-center gap-2 text-xs font-semibold text-[var(--brand-blue)]">
-                  <Link href="/report/R000606" className="hover:underline">
-                    View an example profile
-                  </Link>
-                  <span className="text-slate-400">•</span>
-                  <Link href="/epstein-files" className="hover:underline">
-                    Sources &amp; Method
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
+          </section>
         </div>
       </section>
     </main>

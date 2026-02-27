@@ -41,6 +41,16 @@ h3 {
     linear-gradient(180deg, #f7f8fa 0%, #f1f4f7 100%);
 }
 
+.civic-stage {
+  position: relative;
+  align-items: stretch;
+}
+
+.map-zone {
+  min-width: 0;
+  height: 100%;
+}
+
 .section-card {
   background: var(--surface);
   border: 1px solid var(--border);
