@@ -1,8 +1,9 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import { ComposableMap, Geographies, Geography, ZoomableGroup } from "react-simple-maps";
 import { useRouter } from "next/navigation";
+import { calculateEpsteinScore, type RawScoreEntry } from "@/lib/scoring";
 
 const geoUrl = "/maps/congressional-districts.json";
 
@@ -10,7 +11,21 @@ type DistrictGeo = {
   properties: {
     STATEFP?: string;
     CD118FP?: string;
+    GEOID?: string;
   };
+};
+
+type Legislator = {
+  id: { bioguide?: string };
+  terms?: Array<{
+    type?: string;
+    state?: string;
+    district?: number;
+  }>;
+};
+
+type ScoreFile = {
+  scores?: Record<string, RawScoreEntry>;
 };
 
 const FIPS_TO_STATE: Record<string, string> = {
@@ -22,10 +37,107 @@ const FIPS_TO_STATE: Record<string, string> = {
   "45": "SC", "46": "SD", "47": "TN", "48": "TX", "49": "UT", "50": "VT", "51": "VA", "53": "WA",
   "54": "WV", "55": "WI", "56": "WY", "60": "AS", "66": "GU", "69": "MP", "72": "PR", "78": "VI"
 };
+const STATE_TO_FIPS: Record<string, string> = Object.fromEntries(
+  Object.entries(FIPS_TO_STATE).map(([fips, state]) => [state, fips])
+);
 
 export default function InteractiveMap() {
   const router = useRouter();
   const [tooltipContent, setTooltipContent] = useState("");
+  const [districtScores, setDistrictScores] = useState<Record<string, number>>({});
+
+  useEffect(() => {
+    let active = true;
+
+    const loadDistrictScores = async () => {
+      try {
+        const [legislatorRes, scoreRes] = await Promise.all([
+          fetch("/data/legislators/current_legislators.json"),
+          fetch("/data/epstein_scores.json")
+        ]);
+
+        if (!legislatorRes.ok || !scoreRes.ok) return;
+
+        const [legislators, scoreFile] = (await Promise.all([
+          legislatorRes.json(),
+          scoreRes.json()
+        ])) as [Legislator[], ScoreFile];
+
+        const scoreMap = scoreFile.scores ?? {};
+        const nextDistrictScores: Record<string, number> = {};
+
+        for (const legislator of legislators) {
+          const currentTerm = legislator.terms?.at(-1);
+          if (!currentTerm || currentTerm.type !== "rep" || !currentTerm.state) continue;
+
+          const stateFips = STATE_TO_FIPS[currentTerm.state];
+          if (!stateFips) continue;
+
+          const districtNum = currentTerm.district ?? 0;
+          const districtCode = districtNum === 0 ? "00" : String(districtNum).padStart(2, "0");
+          const geoid = `${stateFips}${districtCode}`;
+
+          const bioguide = legislator.id.bioguide;
+          if (!bioguide) continue;
+
+          const calculated = calculateEpsteinScore(scoreMap[bioguide]);
+          nextDistrictScores[geoid] = calculated.score;
+        }
+
+        if (active) setDistrictScores(nextDistrictScores);
+      } catch {
+        // If score data fails to load, keep neutral map styles.
+      }
+    };
+
+    void loadDistrictScores();
+
+    return () => {
+      active = false;
+    };
+  }, []);
+
+  const colorScale = useMemo(
+    () => ({
+      low: { r: 200, g: 48, b: 48 }, // muted signal red
+      mid: { r: 214, g: 128, b: 40 }, // muted signal orange
+      high: { r: 34, g: 139, b: 84 }, // muted signal green
+      neutral: { r: 194, g: 203, b: 214 },
+      dark: { r: 15, g: 23, b: 42 }
+    }),
+    []
+  );
+
+  const mix = (a: { r: number; g: number; b: number }, b: { r: number; g: number; b: number }, weight: number) => {
+    const w = Math.max(0, Math.min(1, weight));
+    return {
+      r: Math.round(a.r + (b.r - a.r) * w),
+      g: Math.round(a.g + (b.g - a.g) * w),
+      b: Math.round(a.b + (b.b - a.b) * w)
+    };
+  };
+
+  const toCss = (color: { r: number; g: number; b: number }) => `rgb(${color.r}, ${color.g}, ${color.b})`;
+
+  const scoreToVividRgb = (score?: number) => {
+    if (typeof score !== "number") return null;
+    const normalized = Math.max(0, Math.min(1, score / 5));
+    if (normalized <= 0.5) {
+      return mix(colorScale.low, colorScale.mid, normalized / 0.5);
+    }
+    return mix(colorScale.mid, colorScale.high, (normalized - 0.5) / 0.5);
+  };
+
+  const scoreToVividColor = (score?: number) => {
+    const vivid = scoreToVividRgb(score);
+    return vivid ? toCss(vivid) : "#d7dde5";
+  };
+
+  const scoreToPressedColor = (score?: number) => {
+    const vivid = scoreToVividRgb(score);
+    if (!vivid) return "#b8c2cf";
+    return toCss(mix(vivid, colorScale.dark, 0.24));
+  };
 
   const handleDistrictClick = (geo: DistrictGeo) => {
     const stateFips = geo.properties.STATEFP;
@@ -69,21 +181,21 @@ export default function InteractiveMap() {
                   onMouseLeave={() => setTooltipContent("")}
                   style={{
                     default: {
-                      fill: "#d7dde5",
+                      fill: scoreToVividColor(districtScores[geo.properties?.GEOID ?? ""]),
                       outline: "none",
                       stroke: "#f7fafc",
                       strokeWidth: 0.55,
                       transition: "all 230ms ease"
                     },
                     hover: {
-                      fill: "#b43f35",
+                      fill: scoreToVividColor(districtScores[geo.properties?.GEOID ?? ""]),
                       outline: "none",
                       cursor: "pointer",
                       stroke: "#fff",
-                      strokeWidth: 1
+                      strokeWidth: 1.1
                     },
                     pressed: {
-                      fill: "#8f2720",
+                      fill: scoreToPressedColor(districtScores[geo.properties?.GEOID ?? ""]),
                       outline: "none"
                     }
                   }}
@@ -100,8 +212,17 @@ export default function InteractiveMap() {
         </div>
       )}
 
-      <div className="pointer-events-none absolute bottom-3 right-3 text-[11px] font-medium text-slate-700/90 [text-shadow:0_1px_10px_rgba(255,255,255,0.85)]">
-        Pinch to zoom. Drag to pan.
+      <div className="pointer-events-none absolute bottom-3 right-3 z-40 rounded-full border border-slate-300/90 bg-white/75 px-3 py-2 text-[10px] font-semibold tracking-[0.08em] text-slate-700 backdrop-blur-[2px]">
+        <div className="mb-1 flex items-center justify-between gap-3 uppercase">
+          <span>Lower score</span>
+          <span>Higher score</span>
+        </div>
+        <div
+          className="h-2 w-44 rounded-full border border-white/60"
+          style={{
+            background: "linear-gradient(90deg, rgb(200, 48, 48) 0%, rgb(214, 128, 40) 50%, rgb(34, 139, 84) 100%)"
+          }}
+        />
       </div>
     </div>
   );

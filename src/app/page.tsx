@@ -56,7 +56,7 @@ export default function Home() {
   };
 
   return (
-    <main className="startup-shell h-screen overflow-hidden text-[var(--ink)]">
+    <main className="startup-shell h-[calc(100dvh-3.5rem)] overflow-hidden text-[var(--ink)]">
       <section className="mx-auto h-full w-full max-w-none">
         <div className="fade-up civic-stage relative h-full">
           <div className="map-zone h-full">
@@ -64,12 +64,12 @@ export default function Home() {
           </div>
 
           <section
-            className="pointer-events-none absolute left-1/2 top-4 z-20 w-[min(760px,92vw)] -translate-x-1/2 space-y-2 text-center text-slate-900 [text-shadow:0_1px_10px_rgba(255,255,255,0.9)]"
+            className="pointer-events-none absolute left-1/2 top-2 z-20 w-[min(760px,92vw)] -translate-x-1/2 space-y-1.5 text-center text-slate-900 [text-shadow:0_1px_10px_rgba(255,255,255,0.9)] sm:top-4 sm:space-y-2"
           >
-            <h1 className="text-3xl leading-tight sm:text-4xl lg:text-5xl">
+            <h1 className="text-2xl leading-tight sm:text-4xl lg:text-5xl">
               How&apos;s your district doing to push for Epstein Investigation?
             </h1>
-            <p className="mx-auto max-w-2xl text-sm leading-relaxed sm:text-base">
+            <p className="mx-auto max-w-2xl text-xs leading-relaxed sm:text-base">
               Click anywhere on the map to open the district record. Every profile links to sources. Start with an{' '}
               <Link href="/report/R000606" className="pointer-events-auto font-semibold text-[var(--brand-blue)] hover:underline">
                 example
@@ -84,12 +84,12 @@ export default function Home() {
 
           <section
             id="find-lawmakers"
-            className="absolute bottom-5 left-1/2 z-20 flex w-[min(760px,92vw)] -translate-x-1/2 flex-col items-center gap-2 text-center text-slate-900 [text-shadow:0_1px_10px_rgba(255,255,255,0.9)]"
+            className="absolute bottom-2 left-1/2 z-20 flex w-[min(760px,92vw)] -translate-x-1/2 flex-col items-center gap-1.5 text-center text-slate-900 [text-shadow:0_1px_10px_rgba(255,255,255,0.9)] sm:bottom-5 sm:gap-2"
           >
             <button
               onClick={handleFindReps}
               disabled={loading}
-              className="pointer-events-auto inline-flex items-center gap-2 rounded-md bg-[var(--brand-blue)] px-7 py-3 text-sm font-semibold text-white transition hover:bg-[#0d2f59] disabled:cursor-not-allowed disabled:opacity-60"
+              className="pointer-events-auto inline-flex items-center gap-2 rounded-md bg-[var(--brand-blue)] px-6 py-2.5 text-sm font-semibold text-white transition hover:bg-[#0d2f59] disabled:cursor-not-allowed disabled:opacity-60 sm:px-7 sm:py-3"
             >
               <svg
                 aria-hidden="true"
