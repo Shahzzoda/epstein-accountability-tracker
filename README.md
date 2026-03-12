@@ -7,20 +7,6 @@
 
 We’re building a public record of what Congress required, what DOJ/FBI have released, what they’re withholding, and which elected officials pushed for disclosure versus slowed it down. Then we tie it to your Rep and Senators with a simple scorecard and sources.
 
-## Pages
-
-### 1. Landing Page (`/`)
-- **Mission**: Explain the transparency initiative.
-- **Action**: "Find my representatives" button to locate the user's district.
-- **Backend API**: Send coordinates to our internal API route `/api/locate`.
-
-### 2. Results Page (`/results`)
-- **Filtering**: Filters a static dataset of legislators based on the user's State and Congressional District.
-- **Display**: Shows cards for:
-    - **Senators** (2 per state)
-    - **Representative** (1 per district)
-- **Details**: Each card includes the legislator's photo, party, tenure, office address, phone number, and website.
-
 ## Approach & Architecture
 
 ### Tech Stack
