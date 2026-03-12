@@ -52,7 +52,7 @@ export default function RepCard({ legislator, scoreData, districtLabel, stateFip
     const status = calculated.status;
     const summary = calculated.summary;
 
-    const scoreColor = score > 3.0 ? 'text-emerald-700' : score > 2.0 ? 'text-amber-700' : 'text-rose-700';
+    const scoreColor = score > 3.0 ? 'text-emerald-700' : score > 2.0 ? 'text-orange-700' : 'text-rose-700';
 
     return (
         <article className="border-b border-[var(--border)] py-6">

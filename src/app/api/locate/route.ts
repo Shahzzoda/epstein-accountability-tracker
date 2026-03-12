@@ -4,15 +4,21 @@ export async function GET(request: NextRequest) {
     const searchParams = request.nextUrl.searchParams;
     const lat = searchParams.get('lat');
     const lon = searchParams.get('lon');
+    const address = searchParams.get('address');
 
-    if (!lat || !lon) {
-        return NextResponse.json({ error: 'Latitude and Longitude are required' }, { status: 400 });
+    if ((!lat || !lon) && !address) {
+        return NextResponse.json({ error: 'Either Latitude/Longitude or Address is required' }, { status: 400 });
     }
 
     try {
-        const response = await fetch(
-            `https://geocoding.geo.census.gov/geocoder/geographies/coordinates?x=${lon}&y=${lat}&benchmark=Public_AR_Current&vintage=Current_Current&format=json`
-        );
+        let url = '';
+        if (address) {
+            url = `https://geocoding.geo.census.gov/geocoder/geographies/onelineaddress?address=${encodeURIComponent(address)}&benchmark=Public_AR_Current&vintage=Current_Current&format=json`;
+        } else {
+            url = `https://geocoding.geo.census.gov/geocoder/geographies/coordinates?x=${lon}&y=${lat}&benchmark=Public_AR_Current&vintage=Current_Current&format=json`;
+        }
+
+        const response = await fetch(url);
 
         if (!response.ok) {
             throw new Error('Failed to fetch from Census Geocoder');
@@ -21,7 +27,15 @@ export async function GET(request: NextRequest) {
         const data = await response.json();
         console.log('Census Geocoder Response:', JSON.stringify(data, null, 2));
 
-        const geographies = data.result?.geographies;
+        let geographies;
+        if (address) {
+            if (!data.result?.addressMatches || data.result.addressMatches.length === 0) {
+                return NextResponse.json({ error: 'Could not find that address' }, { status: 404 });
+            }
+            geographies = data.result.addressMatches[0].geographies;
+        } else {
+            geographies = data.result?.geographies;
+        }
 
         // The key changes based on the congress (e.g. "119th Congressional Districts")
         // Find the key that contains "Congressional Districts"

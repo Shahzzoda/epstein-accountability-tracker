@@ -219,7 +219,7 @@ export default function RepsLeaderboard() {
             </thead>
             <tbody>
               {sortedRows.map((row) => {
-                const scoreColor = row.points > 3.0 ? 'text-emerald-700' : row.points > 2.0 ? 'text-amber-700' : 'text-rose-700';
+                const scoreColor = row.points > 3.0 ? 'text-emerald-700' : row.points > 2.0 ? 'text-orange-700' : 'text-rose-700';
                 return (
                 <tr
                   key={row.bioguide}

@@ -99,10 +99,12 @@ export default function InteractiveMap() {
 
   const colorScale = useMemo(
     () => ({
-      low: { r: 200, g: 48, b: 48 }, // muted signal red
-      mid: { r: 214, g: 128, b: 40 }, // muted signal orange
-      high: { r: 34, g: 139, b: 84 }, // muted signal green
+      low: { r: 250, g: 233, b: 192 }, // brighter pale gold
+      midLow: { r: 140, g: 74, b: 0 }, // darker but still saturated bronze
+      midHigh: { r: 245, g: 255, b: 236 }, // very light green
+      high: { r: 0, g: 96, b: 36 }, // richer green
       neutral: { r: 194, g: 203, b: 214 },
+      light: { r: 255, g: 255, b: 255 },
       dark: { r: 15, g: 23, b: 42 }
     }),
     []
@@ -119,13 +121,23 @@ export default function InteractiveMap() {
 
   const toCss = (color: { r: number; g: number; b: number }) => `rgb(${color.r}, ${color.g}, ${color.b})`;
 
-  const scoreToVividRgb = (score?: number) => {
+  const curveScore = (score?: number) => {
     if (typeof score !== "number") return null;
     const normalized = Math.max(0, Math.min(1, score / 5));
+    const contrast = 1.45;
+    const curved = 1 / (1 + Math.exp(-contrast * 6 * (normalized - 0.5)));
+    const min = 1 / (1 + Math.exp(contrast * 3));
+    const max = 1 / (1 + Math.exp(-contrast * 3));
+    return (curved - min) / (max - min);
+  };
+
+  const scoreToVividRgb = (score?: number) => {
+    const normalized = curveScore(score);
+    if (typeof normalized !== "number") return null;
     if (normalized <= 0.5) {
-      return mix(colorScale.low, colorScale.mid, normalized / 0.5);
+      return mix(colorScale.low, colorScale.midLow, normalized / 0.5);
     }
-    return mix(colorScale.mid, colorScale.high, (normalized - 0.5) / 0.5);
+    return mix(colorScale.midHigh, colorScale.high, (normalized - 0.5) / 0.5);
   };
 
   const scoreToVividColor = (score?: number) => {
@@ -137,6 +149,12 @@ export default function InteractiveMap() {
     const vivid = scoreToVividRgb(score);
     if (!vivid) return "#b8c2cf";
     return toCss(mix(vivid, colorScale.dark, 0.24));
+  };
+
+  const scoreToHoverColor = (score?: number) => {
+    const vivid = scoreToVividRgb(score);
+    if (!vivid) return "#cbd5e1";
+    return toCss(mix(vivid, colorScale.light, 0.14));
   };
 
   const handleDistrictClick = (geo: DistrictGeo) => {
@@ -185,14 +203,15 @@ export default function InteractiveMap() {
                       outline: "none",
                       stroke: "#f7fafc",
                       strokeWidth: 0.55,
-                      transition: "all 230ms ease"
+                      transition: "fill 180ms ease"
                     },
                     hover: {
-                      fill: scoreToVividColor(districtScores[geo.properties?.GEOID ?? ""]),
+                      fill: scoreToHoverColor(districtScores[geo.properties?.GEOID ?? ""]),
                       outline: "none",
                       cursor: "pointer",
-                      stroke: "#fff",
-                      strokeWidth: 1.1
+                      stroke: "#f7fafc",
+                      strokeWidth: 0.55,
+                      transition: "fill 180ms ease"
                     },
                     pressed: {
                       fill: scoreToPressedColor(districtScores[geo.properties?.GEOID ?? ""]),
@@ -207,20 +226,20 @@ export default function InteractiveMap() {
       </ComposableMap>
 
       {tooltipContent && (
-        <div className="pointer-events-none absolute left-1/2 top-4 z-50 -translate-x-1/2 bg-slate-900/70 px-4 py-1 text-sm font-semibold tracking-[0.12em] text-white uppercase">
+        <div className="pointer-events-none absolute left-1/2 top-44 z-50 -translate-x-1/2 rounded-full bg-slate-900/72 px-4 py-1 text-sm font-semibold tracking-[0.12em] text-white uppercase sm:top-48">
           {tooltipContent}
         </div>
       )}
 
       <div className="pointer-events-none absolute bottom-3 right-3 z-40 rounded-full border border-slate-300/90 bg-white/75 px-3 py-2 text-[10px] font-semibold tracking-[0.08em] text-slate-700 backdrop-blur-[2px]">
         <div className="mb-1 flex items-center justify-between gap-3 uppercase">
-          <span>Lower score</span>
-          <span>Higher score</span>
+          <span>Blocking</span>
+          <span>Leading</span>
         </div>
         <div
           className="h-2 w-44 rounded-full border border-white/60"
           style={{
-            background: "linear-gradient(90deg, rgb(200, 48, 48) 0%, rgb(214, 128, 40) 50%, rgb(34, 139, 84) 100%)"
+            background: "linear-gradient(90deg, rgb(140, 74, 0) 0%, rgb(250, 233, 192) 49%, rgb(245, 255, 236) 51%, rgb(0, 96, 36) 100%)"
           }}
         />
       </div>

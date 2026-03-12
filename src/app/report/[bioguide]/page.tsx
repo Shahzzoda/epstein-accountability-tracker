@@ -28,28 +28,6 @@ interface Legislator {
   terms: Term[];
 }
 
-interface CommitteeMember {
-  name: string;
-  party: string;
-  rank: number;
-  title?: string;
-  bioguide: string;
-}
-
-interface CommitteeInfo {
-  type: string;
-  name: string;
-  url: string;
-  thomas_id: string;
-  house_committee_id?: string;
-  senate_committee_id?: string;
-  jurisdiction?: string;
-}
-
-interface CommitteeMembershipData {
-  [key: string]: CommitteeMember[];
-}
-
 interface CommitteeSeat {
   title: string;
   committee: string;
@@ -136,6 +114,10 @@ function countSupportiveActions(entry: ScoreEntry): number {
   if (eta.discharge_petition && eta.discharge_petition !== "NOT_APPLICABLE" && eta.discharge_petition.signed) total += 1;
   if (eta.signed === 'yes' || eta.signed === true) total += 1;
   return total;
+}
+
+function hasRelevantOversightSeat(seats: CommitteeSeat[] = []) {
+  return seats.some((seat) => /(judiciary|oversight|governmental affairs|government reform|homeland security|intelligence|ethics|investigations)/i.test(seat.committee));
 }
 
 function getPublicBaseUrl(): string {
@@ -248,28 +230,26 @@ export async function generateMetadata({ params }: { params: Promise<{ bioguide:
 }
 
 export default async function ReportPage({
-  params,
-  searchParams
+  params
 }: {
   params: Promise<{ bioguide: string }>;
-  searchParams: Promise<{ district?: string; stateFips?: string }>;
 }) {
   const { bioguide } = await params;
-  const { district, stateFips } = await searchParams;
   const reportData = await getReportData(bioguide);
 
   if (!reportData) {
     notFound();
   }
 
-  const { legislator, score, stateSummary } = reportData;
+  const { legislator, score } = reportData;
   const calculated = calculateEpsteinScore(score);
   const currentTerm = legislator.terms[legislator.terms.length - 1];
   const eta = score.epstein_transparency_act;
-  const scoreColor = calculated.score > 3.0 ? 'text-emerald-700' : calculated.score > 2.0 ? 'text-amber-700' : 'text-rose-700';
+  const scoreColor = calculated.score > 3.0 ? 'text-emerald-700' : calculated.score > 2.0 ? 'text-orange-700' : 'text-rose-700';
   const termEndYear = Number.parseInt((currentTerm.end || '').slice(0, 4), 10);
   const derivedUpForElection2026 = Number.isFinite(termEndYear) ? termEndYear === 2027 : false;
   const upForElection2026 = score.election?.up_for_election_2026 ?? derivedUpForElection2026;
+  const hasOversightSeat = hasRelevantOversightSeat(score.committee_seat || []);
 
   // Sort committees by priority: Chair > Ranking > Vice > Member
   const displayCommittees = (score.committee_seat || [])
@@ -286,9 +266,15 @@ export default async function ReportPage({
   const actionRows = [
     {
       label: 'Public advocacy',
-      isPositive: (score.public_pressure_score ?? 0) >= 3.0,
+      isPositive: (score.public_pressure_score ?? 0) >= 2.4,
       context: 'This office needs to create visible public pressure around the case. Public pressure raises the cost of delay and helps force DOJ follow-through.',
       hidden: score.public_pressure_score === undefined
+    },
+    {
+      label: 'Oversight committee leverage',
+      isPositive: hasOversightSeat && ((score.public_pressure_score ?? 0) >= 2.4 || Boolean(eta?.sponsored) || Boolean(eta?.cosponsored) || Boolean(eta?.discharge_petition && eta?.discharge_petition !== 'NOT_APPLICABLE' && eta?.discharge_petition.signed)),
+      context: 'Members on Judiciary, Oversight, Intelligence, Homeland Security, and related committees have extra institutional capacity to force disclosure.',
+      hidden: !hasOversightSeat
     },
     {
       label: 'Sponsored release legislation',
@@ -322,8 +308,6 @@ export default async function ReportPage({
   const isSupportiveProfile = supportiveCount >= 3;
   const isMixedProfile = supportiveCount > 0 && supportiveCount < 3;
   const templateMode = isSupportiveProfile ? 'supportive' : isMixedProfile ? 'mixed' : 'not_recorded';
-
-  const backHref = district && stateFips ? `/results?district=${district}&stateFips=${stateFips}` : '/results';
 
   return (
     <main className="startup-shell min-h-screen px-4 py-4 sm:px-6 sm:py-5">
