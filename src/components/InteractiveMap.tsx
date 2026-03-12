@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useEffect, useMemo, useRef, useState } from "react";
 import { ComposableMap, Geographies, Geography, ZoomableGroup } from "react-simple-maps";
 import { useRouter } from "next/navigation";
 import { calculateEpsteinScore, type RawScoreEntry } from "@/lib/scoring";
@@ -43,8 +43,12 @@ const STATE_TO_FIPS: Record<string, string> = Object.fromEntries(
 
 export default function InteractiveMap() {
   const router = useRouter();
+  const containerRef = useRef<HTMLDivElement | null>(null);
+  const pinchZoomRef = useRef(1);
   const [tooltipContent, setTooltipContent] = useState("");
   const [districtScores, setDistrictScores] = useState<Record<string, number>>({});
+  const [mapCenter, setMapCenter] = useState<[number, number]>([0, 0]);
+  const [mapZoom, setMapZoom] = useState(1);
 
   useEffect(() => {
     let active = true;
@@ -96,6 +100,41 @@ export default function InteractiveMap() {
       active = false;
     };
   }, []);
+
+  useEffect(() => {
+    const element = containerRef.current;
+    if (!element) return;
+
+    // Safari trackpad pinch uses gesture events instead of wheel+ctrlKey.
+    const handleGestureStart = (event: Event) => {
+      const gestureEvent = event as Event & { scale?: number; preventDefault: () => void };
+      gestureEvent.preventDefault();
+      pinchZoomRef.current = mapZoom;
+    };
+
+    const handleGestureChange = (event: Event) => {
+      const gestureEvent = event as Event & { scale?: number; preventDefault: () => void };
+      gestureEvent.preventDefault();
+      if (typeof gestureEvent.scale !== "number") return;
+      const nextZoom = Math.max(1, Math.min(5, pinchZoomRef.current * gestureEvent.scale));
+      setMapZoom(nextZoom);
+    };
+
+    const handleGestureEnd = (event: Event) => {
+      const gestureEvent = event as Event & { preventDefault: () => void };
+      gestureEvent.preventDefault();
+    };
+
+    element.addEventListener("gesturestart", handleGestureStart as EventListener, { passive: false });
+    element.addEventListener("gesturechange", handleGestureChange as EventListener, { passive: false });
+    element.addEventListener("gestureend", handleGestureEnd as EventListener, { passive: false });
+
+    return () => {
+      element.removeEventListener("gesturestart", handleGestureStart as EventListener);
+      element.removeEventListener("gesturechange", handleGestureChange as EventListener);
+      element.removeEventListener("gestureend", handleGestureEnd as EventListener);
+    };
+  }, [mapZoom]);
 
   const colorScale = useMemo(
     () => ({
@@ -177,16 +216,27 @@ export default function InteractiveMap() {
   };
 
   return (
-    <div className="relative h-full w-full overflow-hidden">
+    <div ref={containerRef} className="relative h-full w-full overflow-hidden">
       <ComposableMap
         projection="geoAlbersUsa"
         className="h-full w-full"
         projectionConfig={{ scale: 1000 }}
       >
         <ZoomableGroup
-          zoom={1}
+          center={mapCenter}
+          zoom={mapZoom}
           maxZoom={5}
-          filterZoomEvent={(event) => (event as unknown as Event).type !== "wheel"}
+          filterZoomEvent={(event) => {
+            if (!event) return false;
+            if (event.type === "wheel") {
+              return Boolean((event as WheelEvent).ctrlKey);
+            }
+            return !("button" in event) || !(event as MouseEvent).button;
+          }}
+          onMoveEnd={({ coordinates, zoom }) => {
+            setMapCenter([coordinates[0], coordinates[1]]);
+            setMapZoom(zoom);
+          }}
         >
           <Geographies geography={geoUrl}>
             {({ geographies }) =>
