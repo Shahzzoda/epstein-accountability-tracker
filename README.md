@@ -53,7 +53,7 @@ Ensure you have **Node.js** installed.
 ### 3. Start the App
 1. Open your Terminal or Command Prompt.
 2. Type `cd` followed by a space, then drag the unzipped folder into the terminal window. It should look like `cd /Users/you/Desktop/rep-finder`. Press Enter.
-3. Type `npm install` and press Enter. Wait for it to finish (it might take a minute).
+3. Type `npm install --legacy-peer-deps` and press Enter. Wait for it to finish (it might take a minute).
 4. Type `npm run dev` and press Enter.
 
 ### 4. View it
@@ -70,3 +70,13 @@ We need help verifying data!
 
 - **Want to add missing data?**
   - Use the "Join the effort" link in the app footer to contact the team.
+
+## Environment Variables (Optional)
+
+The app works without any API keys. If you want to enable the voter registration and polling location feature (`/api/civic`), copy the example env file and add a Google API key:
+
+```
+cp .env.example .env
+```
+
+The key needs **Maps Geocoding** and **Civic Info** APIs enabled. See [Google's guide](https://developers.google.com/civic-information/docs/using_api) for setup.
