@@ -45,3 +45,6 @@ next-env.d.ts
 
 # Custom
 public/maps/districts/png/
+
+# Cloudflaregit 
+.wrangler/*
