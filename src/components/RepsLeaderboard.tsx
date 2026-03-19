@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import LegislatorAvatar from '@/components/LegislatorAvatar';
+import { getScoreTextColorClass } from '@/lib/scoreColors';
 import { calculateEpsteinScore } from '@/lib/scoring';
 
 interface Term {
@@ -219,7 +220,7 @@ export default function RepsLeaderboard() {
             </thead>
             <tbody>
               {sortedRows.map((row) => {
-                const scoreColor = row.points > 3.0 ? 'text-emerald-700' : row.points > 2.0 ? 'text-orange-700' : 'text-rose-700';
+                const scoreColor = getScoreTextColorClass(row.points);
                 return (
                 <tr
                   key={row.bioguide}

@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useMemo, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { ComposableMap, Geographies, Geography, ZoomableGroup } from "react-simple-maps";
 import { useRouter } from "next/navigation";
 import { calculateEpsteinScore, type RawScoreEntry } from "@/lib/scoring";
@@ -40,6 +40,57 @@ const FIPS_TO_STATE: Record<string, string> = {
 const STATE_TO_FIPS: Record<string, string> = Object.fromEntries(
   Object.entries(FIPS_TO_STATE).map(([fips, state]) => [state, fips])
 );
+
+type RgbColor = {
+  r: number;
+  g: number;
+  b: number;
+};
+
+const MAP_COLORS = {
+  bad: { r: 162, g: 47, b: 42 },
+  mid: { r: 245, g: 239, b: 226 },
+  good: { r: 22, g: 101, b: 52 },
+  stroke: { r: 241, g: 235, b: 224 },
+  dark: { r: 15, g: 23, b: 42 },
+  white: { r: 255, g: 255, b: 255 }
+} as const;
+
+const MAP_BUCKETS = [
+  { label: "Opposed", range: "(0.0-1.0)", sampleScore: 0.5 },
+  { label: "Limited", range: "(1.1-2.0)", sampleScore: 1.5 },
+  { label: "Minimal", range: "(2.1-3.0)", sampleScore: 2.5 },
+  { label: "Supportive", range: "(3.1-4.0)", sampleScore: 3.5 },
+  { label: "Leading", range: "(4.1-5.0)", sampleScore: 4.5 }
+] as const;
+
+function clamp(value: number, min: number, max: number) {
+  return Math.max(min, Math.min(max, value));
+}
+
+function mixColor(a: RgbColor, b: RgbColor, weight: number): RgbColor {
+  const normalizedWeight = clamp(weight, 0, 1);
+  return {
+    r: Math.round(a.r + (b.r - a.r) * normalizedWeight),
+    g: Math.round(a.g + (b.g - a.g) * normalizedWeight),
+    b: Math.round(a.b + (b.b - a.b) * normalizedWeight)
+  };
+}
+
+function toCss(color: RgbColor) {
+  return `rgb(${color.r}, ${color.g}, ${color.b})`;
+}
+
+function getMapColor(score?: number) {
+  if (typeof score !== "number") return MAP_COLORS.mid;
+
+  const normalizedScore = clamp(score, 0, 5) / 5;
+  if (normalizedScore <= 0.5) {
+    return mixColor(MAP_COLORS.bad, MAP_COLORS.mid, normalizedScore / 0.5);
+  }
+
+  return mixColor(MAP_COLORS.mid, MAP_COLORS.good, (normalizedScore - 0.5) / 0.5);
+}
 
 export default function InteractiveMap() {
   const router = useRouter();
@@ -136,64 +187,16 @@ export default function InteractiveMap() {
     };
   }, [mapZoom]);
 
-  const colorScale = useMemo(
-    () => ({
-      low: { r: 250, g: 233, b: 192 }, // brighter pale gold
-      midLow: { r: 140, g: 74, b: 0 }, // darker but still saturated bronze
-      midHigh: { r: 245, g: 255, b: 236 }, // very light green
-      high: { r: 0, g: 96, b: 36 }, // richer green
-      neutral: { r: 194, g: 203, b: 214 },
-      light: { r: 255, g: 255, b: 255 },
-      dark: { r: 15, g: 23, b: 42 }
-    }),
-    []
-  );
-
-  const mix = (a: { r: number; g: number; b: number }, b: { r: number; g: number; b: number }, weight: number) => {
-    const w = Math.max(0, Math.min(1, weight));
-    return {
-      r: Math.round(a.r + (b.r - a.r) * w),
-      g: Math.round(a.g + (b.g - a.g) * w),
-      b: Math.round(a.b + (b.b - a.b) * w)
-    };
-  };
-
-  const toCss = (color: { r: number; g: number; b: number }) => `rgb(${color.r}, ${color.g}, ${color.b})`;
-
-  const curveScore = (score?: number) => {
-    if (typeof score !== "number") return null;
-    const normalized = Math.max(0, Math.min(1, score / 5));
-    const contrast = 1.45;
-    const curved = 1 / (1 + Math.exp(-contrast * 6 * (normalized - 0.5)));
-    const min = 1 / (1 + Math.exp(contrast * 3));
-    const max = 1 / (1 + Math.exp(-contrast * 3));
-    return (curved - min) / (max - min);
-  };
-
-  const scoreToVividRgb = (score?: number) => {
-    const normalized = curveScore(score);
-    if (typeof normalized !== "number") return null;
-    if (normalized <= 0.5) {
-      return mix(colorScale.low, colorScale.midLow, normalized / 0.5);
-    }
-    return mix(colorScale.midHigh, colorScale.high, (normalized - 0.5) / 0.5);
-  };
-
   const scoreToVividColor = (score?: number) => {
-    const vivid = scoreToVividRgb(score);
-    return vivid ? toCss(vivid) : "#d7dde5";
+    return toCss(getMapColor(score));
   };
 
   const scoreToPressedColor = (score?: number) => {
-    const vivid = scoreToVividRgb(score);
-    if (!vivid) return "#b8c2cf";
-    return toCss(mix(vivid, colorScale.dark, 0.24));
+    return toCss(mixColor(getMapColor(score), MAP_COLORS.dark, 0.18));
   };
 
   const scoreToHoverColor = (score?: number) => {
-    const vivid = scoreToVividRgb(score);
-    if (!vivid) return "#cbd5e1";
-    return toCss(mix(vivid, colorScale.light, 0.14));
+    return toCss(mixColor(getMapColor(score), MAP_COLORS.white, 0.08));
   };
 
   const handleDistrictClick = (geo: DistrictGeo) => {
@@ -251,7 +254,7 @@ export default function InteractiveMap() {
                     default: {
                       fill: scoreToVividColor(districtScores[geo.properties?.GEOID ?? ""]),
                       outline: "none",
-                      stroke: "#f7fafc",
+                      stroke: toCss(MAP_COLORS.stroke),
                       strokeWidth: 0.55,
                       transition: "fill 180ms ease"
                     },
@@ -259,7 +262,7 @@ export default function InteractiveMap() {
                       fill: scoreToHoverColor(districtScores[geo.properties?.GEOID ?? ""]),
                       outline: "none",
                       cursor: "pointer",
-                      stroke: "#f7fafc",
+                      stroke: toCss(MAP_COLORS.stroke),
                       strokeWidth: 0.55,
                       transition: "fill 180ms ease"
                     },
@@ -281,17 +284,21 @@ export default function InteractiveMap() {
         </div>
       )}
 
-      <div className="pointer-events-none absolute bottom-3 right-3 z-40 rounded-full border border-slate-300/90 bg-white/75 px-3 py-2 text-[10px] font-semibold tracking-[0.08em] text-slate-700 backdrop-blur-[2px]">
-        <div className="mb-1 flex items-center justify-between gap-3 uppercase">
-          <span>Blocking</span>
-          <span>Leading</span>
+      <div className="pointer-events-none absolute bottom-3 right-3 z-40 rounded-2xl border border-slate-300/90 bg-white/78 px-3 py-2.5 text-[11px] font-semibold text-slate-700 backdrop-blur-[2px]">
+        <div className="mb-2 text-[10px] font-semibold uppercase tracking-[0.12em] text-slate-600">
+          District status
         </div>
-        <div
-          className="h-2 w-44 rounded-full border border-white/60"
-          style={{
-            background: "linear-gradient(90deg, rgb(140, 74, 0) 0%, rgb(250, 233, 192) 49%, rgb(245, 255, 236) 51%, rgb(0, 96, 36) 100%)"
-          }}
-        />
+        <div className="space-y-1.5">
+          {MAP_BUCKETS.map((bucket) => (
+            <div key={bucket.label} className="flex items-center gap-2">
+              <span
+                className="h-3 w-3 rounded-[4px] border border-black/5"
+                style={{ backgroundColor: toCss(getMapColor(bucket.sampleScore)) }}
+              />
+              <span>{bucket.label} {bucket.range}</span>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
