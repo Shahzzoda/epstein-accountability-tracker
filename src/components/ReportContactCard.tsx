@@ -9,7 +9,7 @@ interface ReportContactCardProps {
   website?: string;
   address?: string;
   contactForm?: string;
-  templateMode: 'supportive' | 'mixed' | 'not_recorded';
+  messageAsk: string;
 }
 
 function EnvelopeIcon() {
@@ -80,18 +80,11 @@ export default function ReportContactCard({
   website,
   address,
   contactForm,
-  templateMode
+  messageAsk
 }: ReportContactCardProps) {
   const [copyStatus, setCopyStatus] = useState('');
   const [name, setName] = useState('');
   const [cityZip, setCityZip] = useState('');
-
-  const modeAsk =
-    templateMode === 'supportive'
-      ? 'I expect your office to keep pushing for full release of eligible Epstein-file records and regular public updates.'
-      : templateMode === 'mixed'
-        ? 'I expect your office to strengthen support for full release of eligible Epstein-file records with a clear timeline.'
-        : 'I expect your office to support full release of eligible Epstein-file records and publish specific next steps.';
 
   const message = useMemo(() => {
     const intro = name ? `Hello, my name is ${name}.` : 'Hello, I am a constituent.';
@@ -101,12 +94,12 @@ export default function ReportContactCard({
       intro,
       location,
       `I am contacting ${officeLabel} ${officialName} about Epstein-file disclosure actions.`,
-      modeAsk,
+      messageAsk,
       'Please send a written response with the exact steps you support and the timeline you expect.'
     ]
       .filter(Boolean)
       .join('\n');
-  }, [name, cityZip, officeLabel, officialName, modeAsk]);
+  }, [name, cityZip, officeLabel, officialName, messageAsk]);
 
   const copyText = async (text: string, success: string) => {
     try {

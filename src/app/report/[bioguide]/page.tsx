@@ -8,6 +8,7 @@ import LegislatorAvatar from '@/components/LegislatorAvatar';
 import SocialLinks from '@/components/SocialLinks';
 import VoterActionCard from '@/components/VoterActionCard';
 import { calculateEpsteinScore } from '@/lib/scoring';
+import { buildReportActionRows, getReportToneContent } from './reportContent';
 
 interface Term {
   type: string;
@@ -83,15 +84,12 @@ interface ReportData {
   };
 }
 
-function ArrowSignal({ up }: { up: boolean }) {
-  return up ? (
-    <svg className="h-5 w-5 text-emerald-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-      <path d="M10 3l6 8h-4v6H8v-6H4l6-8z" />
-    </svg>
-  ) : (
-    <svg className="h-5 w-5 text-rose-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-      <path d="M10 17l-6-8h4V3h4v6h4l-6 8z" />
-    </svg>
+function StatusDot({ positive }: { positive: boolean }) {
+  return (
+    <span
+      className={`mt-1 h-3 w-3 flex-none rounded-full ${positive ? 'bg-emerald-600' : 'bg-rose-600'}`}
+      aria-hidden="true"
+    />
   );
 }
 
@@ -263,51 +261,21 @@ export default async function ReportPage({
       return getPriority(a.title) - getPriority(b.title);
     });
 
-  const actionRows = [
+  const actionRows = buildReportActionRows({
+    score: calculated.score,
+    publicPressureScore: score.public_pressure_score,
+    hasOversightSeat,
+    eta
+  });
+  const toneContent = getReportToneContent(
     {
-      label: 'Public advocacy',
-      isPositive: (score.public_pressure_score ?? 0) >= 2.4,
-      context: 'This office needs to create visible public pressure around the case. Public pressure raises the cost of delay and helps force DOJ follow-through.',
-      hidden: score.public_pressure_score === undefined
+      score: calculated.score,
+      publicPressureScore: score.public_pressure_score,
+      hasOversightSeat,
+      eta
     },
-    {
-      label: 'Oversight committee leverage',
-      isPositive: hasOversightSeat && ((score.public_pressure_score ?? 0) >= 2.4 || Boolean(eta?.sponsored) || Boolean(eta?.cosponsored) || Boolean(eta?.discharge_petition && eta?.discharge_petition !== 'NOT_APPLICABLE' && eta?.discharge_petition.signed)),
-      context: 'Members on Judiciary, Oversight, Intelligence, Homeland Security, and related committees have extra institutional capacity to force disclosure.',
-      hidden: !hasOversightSeat
-    },
-    {
-      label: 'Sponsored release legislation',
-      isPositive: Boolean(eta?.sponsored),
-      context: 'Leading by introducing the bill is the strongest early signal that they are willing to drive accountability in law.',
-      hidden: !eta?.sponsored
-    },
-    {
-      label: 'Cosponsored release legislation',
-      isPositive: Boolean(eta?.cosponsored),
-      context: 'Formally backing the bill as a cosponsor helps build the coalition needed to move disclosure legislation.',
-      hidden: false
-    },
-    {
-      label: 'Signed discharge petition',
-      isPositive: Boolean(eta?.discharge_petition && eta?.discharge_petition !== 'NOT_APPLICABLE' && eta?.discharge_petition.signed),
-      context: 'Signing the petition can force a House vote when leadership blocks floor action.',
-      hidden: eta?.discharge_petition === 'NOT_APPLICABLE'
-    },
-    {
-      label: 'Recorded vote support',
-      isPositive: eta?.signed === 'yes' || eta?.signed === true,
-      context: 'Their final vote (or Senate passage support) is an on-the-record position on Epstein-file disclosure.',
-      hidden: false
-    }
-  ]
-    .filter(row => !row.hidden)
-    .sort((a, b) => (a.isPositive === b.isPositive ? 0 : a.isPositive ? -1 : 1));
-
-  const supportiveCount = actionRows.filter((row) => row.isPositive).length;
-  const isSupportiveProfile = supportiveCount >= 3;
-  const isMixedProfile = supportiveCount > 0 && supportiveCount < 3;
-  const templateMode = isSupportiveProfile ? 'supportive' : isMixedProfile ? 'mixed' : 'not_recorded';
+    actionRows
+  );
 
   return (
     <main className="startup-shell min-h-screen px-4 py-4 sm:px-6 sm:py-5">
@@ -439,11 +407,11 @@ export default async function ReportPage({
           </p>
           <div className="mt-3 space-y-2">
             {actionRows.map((row) => (
-              <div key={row.label} className="flex items-center gap-2 py-1">
-                <ArrowSignal up={row.isPositive} />
+              <div key={row.id} className="flex items-start gap-2 py-1">
+                <StatusDot positive={row.isPositive} />
                 <div>
                   <p className="text-sm font-semibold text-slate-900">{row.label}</p>
-                  <p className="text-sm text-slate-600">{row.context}</p>
+                  <p className="text-sm text-slate-600">{row.message}</p>
                 </div>
               </div>
             ))}
@@ -451,10 +419,9 @@ export default async function ReportPage({
         </section>
 
         <section className="space-y-1">
-          <h2 className="text-2xl font-semibold leading-tight text-slate-900 sm:text-3xl">Unhappy with how your representative is handling this?</h2>
+          <h2 className="text-2xl font-semibold leading-tight text-slate-900 sm:text-3xl">{toneContent.outreachTitle}</h2>
           <p className="text-sm text-slate-700">
-            Consistent constituent pressure matters. Offices respond when voters ask for clear timelines, written answers, and public accountability.
-            Ask for a written response on Epstein-file disclosure steps + timeline.
+            {toneContent.outreachBody}
           </p>
         </section>
 
@@ -465,7 +432,7 @@ export default async function ReportPage({
           website={currentTerm.url}
           address={currentTerm.address}
           contactForm={currentTerm.contact_form}
-          templateMode={templateMode}
+          messageAsk={toneContent.contactAsk}
         />
 
         {upForElection2026 && (
