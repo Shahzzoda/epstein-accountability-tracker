@@ -1,22 +1,16 @@
 # Rep Finder
+With an interactive landing page, we can encourage exploration and curiousity
+<img width="1446" height="996" alt="image" src="https://github.com/user-attachments/assets/4173a43d-02fc-4682-b89e-8f0dbfe17097" />
+From landing, we can land to a district page that makes finding represenatives effortless.
+<img width="1404" height="963" alt="image" src="https://github.com/user-attachments/assets/fe4495f6-b279-40eb-a43a-691df8034462" />
+For any given law maker, we can zoom in to figure out what theyre doing and what they could do better. Here's senator Kirsten E. Gillibrand, she scores low due to the fact that she did the bare minimum. The law passed in senate unanimously, she didn't block but she also didnt co sponsor and seems suspiciously quite about this issue. 
+<img width="1432" height="986" alt="image" src="https://github.com/user-attachments/assets/58032a2e-c1a5-4830-a65e-acddbe0149b2" />
+From that one page you can contact her via her form, find her socials, call her office, and (not applicable here for the upcoming primaries) vote her out of office.    
 
+# Interested in contributing? Read on!
 **Epstein transparency — tracked to your district.**
 
 We’re building a public record of what Congress required, what DOJ/FBI have released, what they’re withholding, and which elected officials pushed for disclosure versus slowed it down. Then we tie it to your Rep and Senators with a simple scorecard and sources.
-
-## Pages
-
-### 1. Landing Page (`/`)
-- **Mission**: Explain the transparency initiative.
-- **Action**: "Find my representatives" button to locate the user's district.
-- **Backend API**: Send coordinates to our internal API route `/api/locate`.
-
-### 2. Results Page (`/results`)
-- **Filtering**: Filters a static dataset of legislators based on the user's State and Congressional District.
-- **Display**: Shows cards for:
-    - **Senators** (2 per state)
-    - **Representative** (1 per district)
-- **Details**: Each card includes the legislator's photo, party, tenure, office address, phone number, and website.
 
 ## Approach & Architecture
 
