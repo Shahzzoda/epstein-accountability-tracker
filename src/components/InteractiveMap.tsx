@@ -92,6 +92,18 @@ function getMapColor(score?: number) {
   return mixColor(MAP_COLORS.mid, MAP_COLORS.good, (normalizedScore - 0.5) / 0.5);
 }
 
+function isZoomEvent(value: unknown): value is Event {
+  return typeof value === "object" && value !== null && "type" in value;
+}
+
+function hasMouseButton(value: unknown): value is MouseEvent {
+  return isZoomEvent(value) && "button" in value;
+}
+
+function hasCtrlKey(value: unknown): value is Event & { ctrlKey: boolean } {
+  return isZoomEvent(value) && "ctrlKey" in value;
+}
+
 export default function InteractiveMap() {
   const router = useRouter();
   const containerRef = useRef<HTMLDivElement | null>(null);
@@ -230,11 +242,11 @@ export default function InteractiveMap() {
           zoom={mapZoom}
           maxZoom={5}
           filterZoomEvent={(event) => {
-            if (!event) return false;
+            if (!isZoomEvent(event)) return false;
             if (event.type === "wheel") {
-              return Boolean((event as WheelEvent).ctrlKey);
+              return hasCtrlKey(event) && event.ctrlKey;
             }
-            return !("button" in event) || !(event as MouseEvent).button;
+            return !hasMouseButton(event) || event.button === 0;
           }}
           onMoveEnd={({ coordinates, zoom }) => {
             setMapCenter([coordinates[0], coordinates[1]]);
