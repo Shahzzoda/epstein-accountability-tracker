@@ -159,15 +159,15 @@ export default function Home() {
               How&apos;s your district doing to push for Epstein Investigation?
             </h1>
             <p className="mx-auto max-w-2xl text-xs leading-relaxed sm:text-base">
-              Click anywhere on the map to open the district record. Every profile links to sources. Start with an{' '}
-              <Link href="/report/R000606" className="pointer-events-auto font-semibold text-[var(--brand-blue)] hover:underline">
-                example
-              </Link>{' '}
-              or review{' '}
+              Click anywhere on the map to open the district record. Every profile links to sources. Review our{' '}
               <Link href="/epstein-files" className="pointer-events-auto font-semibold text-[var(--brand-blue)] hover:underline">
                 methods
-              </Link>
-              .
+              </Link>{' '}
+              and learn more{' '}
+              <Link href="/about" className="pointer-events-auto font-semibold text-[var(--brand-blue)] hover:underline">
+                about
+              </Link>{' '}
+              the project.
             </p>
           </section>
 
