@@ -12,9 +12,6 @@ export default function Footer() {
                         <Link href="/epstein-files" className="hover:text-[var(--brand-blue)] hover:underline">
                             How scoring works
                         </Link>
-                        <Link href="/leaderboard" className="hover:text-[var(--brand-blue)] hover:underline">
-                            Leaderboard
-                        </Link>
                         <Link href="/about" className="hover:text-[var(--brand-blue)] hover:underline">
                             About
                         </Link>

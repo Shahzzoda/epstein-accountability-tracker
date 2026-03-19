@@ -88,8 +88,8 @@ export const REPORT_ACTION_DEFINITIONS: ReportActionDefinition[] = [
     label: 'Sponsored Epstein Files Transparency Act',
     negativeLabel: 'Did not sponsor the Epstein Files Transparency Act',
     isPositive: (context) => Boolean(context.eta?.sponsored),
-    positiveText: 'Sponsoring a bill means taking the lead on it. They did that here, which is one of the clearest signs of active effort to move this issue forward.',
-    negativeText: 'Sponsoring a bill means taking the lead on it. They have not done that here, even though it is one of the clearest ways to move this issue forward.'
+    positiveText: 'Sponsoring a bill means taking the lead on it. They did that here, which is one of the clearest signs of active effort to move this issue forward. Only one person can sponsor a bill.',
+    negativeText: 'Sponsoring a bill means taking the lead on it. They have not done that here, even though it is one of the clearest ways to move this issue forward. Only one person can sponsor a bill.'
   },
   {
     id: 'cosponsored-legislation',

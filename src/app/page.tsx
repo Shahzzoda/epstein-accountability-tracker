@@ -4,6 +4,19 @@ import { useState, useRef, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import InteractiveMap from '@/components/InteractiveMap';
+import RepsLeaderboard from '@/components/RepsLeaderboard';
+
+interface AddressSuggestionProperties {
+  name?: string;
+  housenumber?: string;
+  street?: string;
+  city?: string;
+  state?: string;
+}
+
+interface AddressSuggestion {
+  properties: AddressSuggestionProperties;
+}
 
 export default function Home() {
   const router = useRouter();
@@ -11,7 +24,7 @@ export default function Home() {
   const [error, setError] = useState('');
   const [showAddressInput, setShowAddressInput] = useState(false);
   const [address, setAddress] = useState('');
-  const [suggestions, setSuggestions] = useState<any[]>([]);
+  const [suggestions, setSuggestions] = useState<AddressSuggestion[]>([]);
   const [showSuggestions, setShowSuggestions] = useState(false);
   const debounceTimer = useRef<NodeJS.Timeout | null>(null);
 
@@ -95,7 +108,7 @@ export default function Home() {
     }, 300);
   };
 
-  const getSuggestionLabel = (p: any) => {
+  const getSuggestionLabel = (p: AddressSuggestionProperties) => {
     const parts = [];
     if (p.name) parts.push(p.name);
     const houseAndStreet = [p.housenumber, p.street].filter(Boolean).join(' ');
@@ -132,9 +145,9 @@ export default function Home() {
   };
 
   return (
-    <main className="startup-shell h-[calc(100dvh-3.5rem)] overflow-hidden text-[var(--ink)]">
-      <section className="mx-auto h-full w-full max-w-none">
-        <div className="fade-up civic-stage relative h-full">
+    <main className="startup-shell min-h-screen text-[var(--ink)]">
+      <section className="mx-auto w-full max-w-none">
+        <div className="fade-up civic-stage relative h-[calc(100dvh-3.5rem)]">
           <div className="map-zone h-full">
             <InteractiveMap />
           </div>
@@ -258,6 +271,18 @@ export default function Home() {
             )}
           </section>
         </div>
+      </section>
+
+      <section className="mx-auto w-full max-w-6xl px-4 py-10 sm:px-6 sm:py-12">
+        <div className="mb-6 space-y-2">
+          <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--brand-blue)]">Nationwide Ranking</p>
+          <h2 className="text-3xl leading-tight text-slate-900 sm:text-4xl">Top-performing representatives</h2>
+          <p className="max-w-3xl text-sm leading-relaxed text-[var(--ink-soft)] sm:text-base">
+            This leaderboard ranks House representatives by calculated points from tracked public-record actions.
+          </p>
+        </div>
+
+        <RepsLeaderboard />
       </section>
     </main>
   );

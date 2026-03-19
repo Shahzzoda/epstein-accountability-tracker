@@ -7,6 +7,7 @@ import ReportContactCard from '@/components/ReportContactCard';
 import LegislatorAvatar from '@/components/LegislatorAvatar';
 import SocialLinks from '@/components/SocialLinks';
 import VoterActionCard from '@/components/VoterActionCard';
+import CommitteeBadges, { type CommitteeSeat } from '@/components/CommitteeBadges';
 import { calculateEpsteinScore } from '@/lib/scoring';
 import { buildReportActionRows, getReportToneContent } from './reportContent';
 
@@ -27,12 +28,6 @@ interface Legislator {
   id: { bioguide: string };
   name: { official_full: string };
   terms: Term[];
-}
-
-interface CommitteeSeat {
-  title: string;
-  committee: string;
-  thomas_id: string;
 }
 
 interface ScoreEntry {
@@ -249,18 +244,6 @@ export default async function ReportPage({
   const upForElection2026 = score.election?.up_for_election_2026 ?? derivedUpForElection2026;
   const hasOversightSeat = hasRelevantOversightSeat(score.committee_seat || []);
 
-  // Sort committees by priority: Chair > Ranking > Vice > Member
-  const displayCommittees = (score.committee_seat || [])
-    .sort((a, b) => {
-      const getPriority = (t: string) => {
-        if (t.includes('Chair') || t.includes('Chairman')) return 0;
-        if (t.includes('Ranking')) return 1;
-        if (t.includes('Vice')) return 2;
-        return 3;
-      };
-      return getPriority(a.title) - getPriority(b.title);
-    });
-
   const actionRows = buildReportActionRows({
     score: calculated.score,
     publicPressureScore: score.public_pressure_score,
@@ -319,61 +302,7 @@ export default async function ReportPage({
                 )}
               </div>
 
-              {/* Committee Badges */}
-              {displayCommittees.length > 0 && (
-                <div className="mt-4 flex flex-col gap-3">
-                  {displayCommittees.map((c, i) => {
-                    const contextText = {
-                      'HSJU': 'Primary oversight of the Department of Justice and FBI. Has the power to subpoena Attorney General records, conduct impeachment hearings, and oversee constitutional rights.',
-                      'SSJU': 'Primary oversight of the Department of Justice and FBI. Handles confirmation of judges and Attorney General. Has power to subpoena DOJ records.',
-                      'HSGO': 'The main investigative body of Congress with broad subpoena power to investigate executive branch misconduct, including at the DOJ and intelligence agencies.',
-                      'SSGA': 'The Senate\'s primary oversight committee with broad jurisdiction over government operations and the Department of Homeland Security. Can investigate agency mismanagement.',
-                      'HLIG': 'Oversees the intelligence community (CIA, NSA, FBI) and holds the power to declassify information related to national security and intelligence failures.',
-                      'SLIN': 'Oversees the intelligence community and can investigate intelligence failures. Has power to review covert actions and budget.',
-                      'HSAP': 'Controls the "power of the purse." Can withhold funding from specific DOJ investigations or officials to force accountability and transparency.',
-                      'SSAP': 'Controls federal spending. Can leverage funding decisions to demand accountability and transparency from the DOJ and other agencies.',
-                      'HSRU': 'The "Speaker\'s Committee" that determines which bills reach the floor and under what rules, critical for forcing votes on transparency legislation.',
-                      'SSRA': 'Oversees Senate rules and procedures. Critical for determining how transparency legislation moves through the chamber.',
-                      'HSAS': 'Oversees the Department of Defense. Can demand accountability for military intelligence activities and executive branch national security decisions.',
-                      'SSAS': 'Oversees the Department of Defense. Holds confirmation power over military leadership and can investigate national security failures.',
-                      'HSFA': 'Oversees the State Department and foreign policy. Can investigate executive branch diplomatic conduct and international agreements.',
-                      'SSFR': 'Oversees foreign policy and treaties. Holds confirmation power over State Department officials and can investigate diplomatic failures.',
-                      'HSHM': 'Oversees the Department of Homeland Security. Can investigate border security failures and executive branch homeland security actions.',
-                      'HSWM': 'The chief tax-writing committee. Has unique authority to request tax returns and oversee Treasury Department enforcement actions.',
-                      'SSFI': 'Oversees taxation, trade, and health programs. Has jurisdiction over the Treasury Department and can investigate financial misconduct.',
-                      'HSIF': 'Oversees healthcare, energy, and telecommunications. Can investigate executive branch regulatory overreach and agency failures in these critical sectors.',
-                      'SSCM': 'Oversees commerce, science, and transportation. Can investigate executive branch regulatory actions and agency conduct in these areas.',
-                      'SSBU': 'Responsible for drafting the budget plan. Can highlight executive branch spending inefficiencies and demand fiscal responsibility.',
-                      'HSBU': 'Responsible for drafting the budget usage. Can highlight executive branch spending inefficiencies and demand fiscal responsibility.'
-                    }[c.thomas_id] || '';
-
-                    return (
-                      <div key={i} className="group relative flex w-fit cursor-help flex-wrap items-center gap-2.5">
-                        <div className="relative inline-flex items-center gap-1.5 rounded-lg bg-amber-50 px-3.5 py-1.5 text-sm font-bold text-amber-900 shadow-[0_0_15px_rgba(245,158,11,0.25)] ring-1 ring-inset ring-amber-600/20 backdrop-blur-sm transition-all hover:bg-amber-100 hover:shadow-[0_0_20px_rgba(245,158,11,0.4)]">
-                          {c.title && c.title !== 'Member' && (
-                            <span className="opacity-90">{c.title} of the</span>
-                          )}
-                          <span>{c.committee}</span>
-                        </div>
-
-                        {/* Hover Tooltip (Custom Modal) */}
-                        {contextText && (
-                          <div className="absolute bottom-full left-1/2 z-50 mb-3 w-72 -translate-x-1/2 opacity-0 transition-all duration-200 group-hover:visible group-hover:opacity-100 pointer-events-none">
-                            <div className="relative rounded-xl border border-amber-200 bg-amber-50 p-4 shadow-xl">
-                              <h4 className="mb-1 text-xs font-bold uppercase tracking-wider text-amber-600">High Leverage</h4>
-                              <p className="text-sm leading-relaxed text-amber-900">
-                                {contextText}
-                              </p>
-                              {/* Arrow */}
-                              <div className="absolute left-1/2 top-full -mt-2 h-4 w-4 -translate-x-1/2 rotate-45 border-b border-r border-amber-200 bg-amber-50"></div>
-                            </div>
-                          </div>
-                        )}
-                      </div>
-                    );
-                  })}
-                </div>
-              )}
+              <CommitteeBadges seats={score.committee_seat || []} className="!mt-1.5" />
             </div>
           </div>
           <div className="text-right">
