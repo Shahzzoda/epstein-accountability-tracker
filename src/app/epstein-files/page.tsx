@@ -1,5 +1,3 @@
-import Link from 'next/link';
-
 const LAST_UPDATED = 'March 12, 2026';
 const METHOD_VERSION = 'v0.5';
 
@@ -139,9 +137,6 @@ epstein_transparency_act.discharge_petition.signed: false`}
             <a href="#" className="hover:underline">Something looks wrong?</a>
             <a href="#" className="hover:underline">Join the effort</a>
           </div>
-          <Link href="/" className="text-sm font-semibold text-slate-600 hover:text-slate-900 hover:underline">
-            &larr; Back to district lookup
-          </Link>
         </div>
       </div>
     </main>
