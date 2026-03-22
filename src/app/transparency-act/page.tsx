@@ -1,5 +1,3 @@
-import Link from 'next/link';
-
 export default function TransparencyActPage() {
   return (
     <main className="startup-shell min-h-screen px-6 py-10 lg:px-8">
@@ -100,11 +98,6 @@ export default function TransparencyActPage() {
           </p>
         </section>
 
-        <div className="pt-2">
-          <Link href="/" className="font-semibold text-[var(--brand-blue)] underline underline-offset-2">
-            &larr; Back to district lookup
-          </Link>
-        </div>
       </div>
     </main>
   );
